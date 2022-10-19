@@ -15,3 +15,13 @@ export const projectsPerPage = 8;
 export const tokensPerPage = 12;
 export const confirmations = 3;
 export const isDev = false;
+
+if (!process.env.REACT_APP_TITLE) {
+		throw new Error("`REACT_APP_TITLE` not set")
+}
+
+console.log("REACT_APP_TITLE is", process.env.REACT_APP_TITLE)
+
+export const config = {
+		GIT_SHA: process.env.REACT_APP_TITLE,
+}
