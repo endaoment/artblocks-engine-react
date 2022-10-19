@@ -41,7 +41,7 @@
   },
   "scripts": {
     "start": "GENERATE_SOURCEMAP=false react-scripts start",
-    "build": "react-scripts build",
+    "build": "export REACT_APP_TITLE=\"$REACT_APP_TITLE\" && export REACT_APP_GRAPHQL_URL=\"$REACT_APP_GRAPHQL_URL\" && export REACT_APP_CORE_CONTRACT_ADDRESS=\"$REACT_APP_CORE_CONTRACT_ADDRESS\" && export REACT_APP_MINT_CONTRACT_ADDRESS=\"$REACT_APP_MINT_CONTRACT_ADDRESS\" && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
