@@ -1,5 +1,5 @@
 import type { AddEthereumChainParameter } from '@web3-react/types';
-import { jsonRpcProviderMainnetUrl, jsonRpcProviderRopstenUrl, jsonRpcProviderGoerliUrl } from 'config';
+import { jsonRpcProviderMainnetUrl, jsonRpcProviderGoerliUrl } from 'config';
 
 interface BasicChainInformation {
   url: string;
@@ -15,10 +15,6 @@ export const CHAINS: { [chainId: number]: BasicChainInformation | ExtendedChainI
   1: {
     url: jsonRpcProviderMainnetUrl,
     name: 'Mainnet',
-  },
-  3: {
-    url: jsonRpcProviderRopstenUrl,
-    name: 'Ropsten',
   },
   5: {
     url: jsonRpcProviderGoerliUrl,
