@@ -16,7 +16,7 @@ import { appTitle } from 'config';
 
 const navItems = [
   {
-    label: 'Projects ' + process.env.REACT_APP_TITLE,
+    label: 'Projects',
     url: '/projects'
   }
 ]
