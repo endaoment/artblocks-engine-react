@@ -8,6 +8,7 @@ window.Buffer = window.Buffer || require('buffer').Buffer;
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
     <App />

@@ -18,6 +18,7 @@ function App() {
           <Route path="token/:id" element={<TokenPage />} />
         </Routes>
       </Router>
+
       <ToastContainer
         autoClose={10000}
         position="bottom-right"

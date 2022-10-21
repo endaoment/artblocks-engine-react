@@ -1,0 +1,25 @@
+#toboPage header {
+  position: absolute;
+  width: 100%;
+}
+
+img#toboLogo {
+  height: 80px;
+  background-color: #FFF;
+  margin: auto;
+  display: block;
+  padding: 20px;
+  padding-left: 56px;
+  padding-right: 56px;
+  border-radius: 0px 0px 38px 38px;
+}
+
+@media only screen and (max-width: 767px) {
+  img#toboLogo {
+    height: 60px;
+    padding: 15px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-radius: 0px 0px 28px 28px;
+  }
+}
