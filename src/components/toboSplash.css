@@ -1,0 +1,121 @@
+#toboSplashHeader {
+  overflow: hidden;
+  height: 647px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img#splashHeaderBg {
+  height: 100%;
+}
+
+#splashHeaderBgOverlay {
+  width: 100%;
+  height: 100%;
+  background: #59CCF5;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+}
+
+.splashHeaderLine {
+  background-color: #FFF;
+  height: 2px;
+  width: calc(50% - 250px);
+  position: absolute;
+  left: 0;
+}
+
+#splashHeaderLineXR {
+  left: auto;
+  right: 0;
+}
+
+#splashHeaderLineYT {
+  left: calc(50% - 1px);
+  width: 2px;
+  height: calc(50% - 64px);
+  top: 0;
+}
+
+#splashHeaderLineYB {
+  left: calc(50% - 1px);
+  width: 2px;
+  height: calc(50% - 128px);
+  bottom: 0;
+}
+
+#toboSplashHeader h2 {
+  position: absolute;
+  color: #FFF;
+  font-family: "anonymous-pro-b", serif;
+  font-size: 48px;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#splashHeaderLogos {
+  position: absolute;
+  bottom: calc(50% - 108px);
+}
+
+#splashHeaderLogos span {
+  color: #FFF;
+  font-family: "anonymous-pro-b", serif;
+  font-size: 20px;
+  line-height: 1;
+}
+
+#splashHeaderLogos a {
+  margin-left: 16px;
+}
+
+#splashHeaderLogos a img {
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+  #splashHeaderLineXL,
+  #splashHeaderLineXR {
+    width: calc(50% - 165px);
+  }
+
+  #splashHeaderLineYT {
+    height: calc(50% - 50px);
+  }
+
+  #splashHeaderLineYB {
+    height: calc(50% - 250px);
+  }
+
+  #toboSplashHeader h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  #splashHeaderLogos {
+    text-align: center;
+    bottom: calc(50% - 230px);
+  }
+
+  #splashHeaderLogos * {
+    display: block;
+  }
+
+  #splashHeaderLogos span {
+    font-size: 16px;
+  }
+
+  #splashHeaderLogos a {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  #splashHeaderLogos a img {
+    transform: scale(0.75, 0.75);
+  }
+}

@@ -1,6 +1,7 @@
 #toboPage header {
   position: absolute;
   width: 100%;
+  top: 0;
 }
 
 img#toboLogo {

@@ -3,7 +3,7 @@ import './toboHeader.css';
 const TOBOHeader = () => {
   return (
     <header>
-      <img src="img/logo.svg" alt="TURNOUT FOR BURNOUT" id="toboLogo" />
+      <h1><img src="img/logo.svg" alt="TURNOUT FOR BURNOUT" id="toboLogo" /></h1>
     </header>
   );
 }

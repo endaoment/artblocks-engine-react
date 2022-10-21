@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "anonymous-pro-b";
+  src: url("fonts/anonymous-pro-b.woff2") format("woff2");
+}
+
 #toboPage {
   width: 100%;
   max-width: 1512px;
@@ -5,4 +10,13 @@
   left: 0;
   right: 0;
   position: absolute;
+}
+
+#toboPage h1,
+#toboPage h2,
+#toboPage h3,
+#toboPage h4,
+#toboPage h5,
+#toboPage h6 {
+  margin: 0;
 }

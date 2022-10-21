@@ -8,11 +8,11 @@ interface Props {
 const Page = ({ children }: Props) => {
   return (
     <div id="toboPage">
-      <TOBOHeader />
-
       <main>
         { children }
       </main>
+
+      <TOBOHeader />
     </div>
   );
 }
