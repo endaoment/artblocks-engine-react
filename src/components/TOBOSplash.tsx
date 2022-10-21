@@ -31,9 +31,9 @@ function SplashHeader() {
 
       <div id="splashHeaderLogos">
         <span>POWERED BY</span>
-        <a href="https://www.artblocks.io/" target="_blank"><img src="img/logo-artblocks.svg" alt="ArtBlocks" /></a>
-        <a href="https://sostento.org/" target="_blank"><img src="img/logo-sostento.svg" alt="Sostento" /></a>
-        <a href="https://endaoment.org/" target="_blank"><img src="img/logo-endaoment.svg" alt="Endaoment" /></a>
+        <a href="https://www.artblocks.io/" target="_blank" rel="noreferrer"><img src="img/logo-artblocks.svg" alt="ArtBlocks" /></a>
+        <a href="https://sostento.org/" target="_blank" rel="noreferrer"><img src="img/logo-sostento.svg" alt="Sostento" /></a>
+        <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="img/logo-endaoment.svg" alt="Endaoment" /></a>
       </div>
     </div>
   );
