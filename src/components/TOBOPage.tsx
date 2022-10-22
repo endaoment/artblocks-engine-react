@@ -5,7 +5,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-const Page = ({ children }: Props) => {
+const TOBOPage = ({ children }: Props) => {
   return (
     <div id="toboPage">
       <main>
@@ -17,4 +17,4 @@ const Page = ({ children }: Props) => {
   );
 }
 
-export default Page;
+export default TOBOPage;

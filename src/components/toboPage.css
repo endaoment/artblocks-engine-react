@@ -3,13 +3,26 @@
   src: url("fonts/anonymous-pro-b.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "inter-bold";
+  src: url("fonts/inter-bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "inter-medium";
+  src: url("fonts/inter-medium.woff2") format("woff2");
+}
+
+:root {
+  --tobo-blue: #59CCF5;
+}
+
 #toboPage {
   width: 100%;
   max-width: 1512px;
   margin: auto;
-  left: 0;
-  right: 0;
-  position: absolute;
+  position: relative;
+  line-height: 0;
 }
 
 #toboPage h1,

@@ -1,10 +1,12 @@
+/* SplashHeader */
+
 #toboSplashHeader {
   overflow: hidden;
   height: 647px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  position: relative;
 }
 
 img#splashHeaderBg {
@@ -14,11 +16,10 @@ img#splashHeaderBg {
 #splashHeaderBgOverlay {
   width: 100%;
   height: 100%;
-  background: #59CCF5;
+  background-color: var(--tobo-blue);
   mix-blend-mode: multiply;
   opacity: 0.5;
   position: absolute;
-  top: 0;
 }
 
 .splashHeaderLine {
@@ -34,18 +35,18 @@ img#splashHeaderBg {
   right: 0;
 }
 
-#splashHeaderLineYT {
+#splashHeaderLineYT,
+#splashHeaderLineYB {
   left: calc(50% - 1px);
   width: 2px;
-  height: calc(50% - 64px);
+  height: calc(50% - 62px);
   top: 0;
 }
 
 #splashHeaderLineYB {
-  left: calc(50% - 1px);
-  width: 2px;
-  height: calc(50% - 128px);
+  top: auto;
   bottom: 0;
+  height: calc(50% - 126px);
 }
 
 #toboSplashHeader h2 {
@@ -60,62 +61,198 @@ img#splashHeaderBg {
 
 #splashHeaderLogos {
   position: absolute;
-  bottom: calc(50% - 108px);
+  top: 50%;
+  margin-top: 57px;
 }
 
 #splashHeaderLogos span {
   color: #FFF;
   font-family: "anonymous-pro-b", serif;
   font-size: 20px;
-  line-height: 1;
+  margin-right: 4px;
+  margin-left: 12px;
+  vertical-align: -2px;
 }
 
 #splashHeaderLogos a {
-  margin-left: 16px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 #splashHeaderLogos a img {
   vertical-align: middle;
+  height: 49px;
 }
 
 @media only screen and (max-width: 767px) {
+  #toboSplashHeader {
+    height: 431px;
+  }
+
   #splashHeaderLineXL,
   #splashHeaderLineXR {
-    width: calc(50% - 165px);
+    width: calc(50% - 160px);
   }
 
   #splashHeaderLineYT {
-    height: calc(50% - 50px);
+    height: calc(50% - 48px);
   }
 
   #splashHeaderLineYB {
-    height: calc(50% - 250px);
+    height: calc(50% - 112px);
   }
 
   #toboSplashHeader h2 {
     font-size: 30px;
-    line-height: 30px;
+    line-height: 1;
   }
 
   #splashHeaderLogos {
     text-align: center;
-    bottom: calc(50% - 230px);
-  }
-
-  #splashHeaderLogos * {
-    display: block;
+    margin-top: 56px;
   }
 
   #splashHeaderLogos span {
-    font-size: 16px;
+    font-size: 14px;
+    display: block;
+    margin: 0;
+    margin-bottom: 12px;
   }
 
   #splashHeaderLogos a {
-    margin-left: 0;
-    margin-top: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
   }
 
   #splashHeaderLogos a img {
-    transform: scale(0.75, 0.75);
+    height: 24px;
   }
+}
+
+/* SplashModule */
+
+.toboSplashModule {
+  border-radius: 38px 38px 0px 0px;
+  position: relative;
+  width: 100%;
+  margin-top: -38px;
+  aspect-ratio: 36/19;
+  background-color: #FFF;
+}
+
+.splashModuleColumn {
+  float: left;
+  width: 50%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .toboSplashModule {
+    border-radius: 28px 28px 0px 0px;
+    margin-top: -28px;
+    aspect-ratio: 9/19;
+  }
+
+  .splashModuleColumn {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+/* SplashModule1 */
+
+#toboSplashModule1 .splashModuleColumnL img {
+  width: 100%;
+  padding-left: 9.9%;
+  padding-right: 7.5%;
+  padding-top: 14.5%;
+  padding-bottom: 11.5%;
+}
+
+#splashModule1Circle {
+  position: absolute;
+  width: 29.7%;
+  aspect-ratio: 4/4;
+  background-color: var(--tobo-blue);
+  mix-blend-mode: multiply;
+  border-radius: 999px;
+  top: 35.5%;
+  right: 3.9%;
+}
+
+img#splashModule1Shape {
+  width: 60.1%;
+  position: absolute;
+  right: 2.6%;
+  top: 74.3%;
+}
+
+img#splashModule1Logo {
+  width: 100%;
+  padding-left: 3.4%;
+  padding-right: 31.2%;
+  padding-top: 17%;
+}
+
+#toboSplashModule1 .splashModuleColumnR p {
+  margin: 0;
+  margin-top: 3.8%;
+  margin-left: 3.4%;
+  margin-right: 25.9%;
+  font-family: "anonymous-pro-b", serif;
+  font-size: 32px;
+  line-height: 31px;
+  letter-spacing: 0em;
+}
+
+#splashModule1Banner {
+  background-color: var(--tobo-blue);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 552px;
+  height: 56px;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "inter-bold", sans-serif;
+  color: #FFF;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0em;
+  margin-top: -28px;
+}
+
+#splashModule1Banner span {
+  font-family: "inter-medium", sans-serif;
+}
+
+@media only screen and (max-width: 767px) {
+  #toboSplashModule1 .splashModuleColumnR p {
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  #splashModule1Banner {
+    width: 320px;
+    height: 38px;
+    font-size: 16px;
+    margin-top: -19px;
+  }
+}
+
+/* SplashModule2 */
+
+#toboSplashModule2 {
+  background-color: #FADF4F;
+}
+
+/* SplashModule3 */
+
+#toboSplashModule3 {
+  background-color: #FF737D;
 }
