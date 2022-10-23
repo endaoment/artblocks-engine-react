@@ -6,6 +6,24 @@ import './toboSplash.css';
 function SplashModule3() {
   return (
     <div className="toboSplashModule" id="toboSplashModule3">
+      <div className="splashModuleColumn splashModuleColumnL">
+        <img src="img/tobo/splash/module-3-hero.png" alt="" />
+      </div>
+
+      <div className="splashModuleColumn splashModuleColumnR">
+        <h3>SHARE THE CAUSE</h3>
+        <p>Endaoment and Sostento are 501c3 charitable organizations. Proceeds will directly support programs that reduce burnout among frontline healthcare workers who provide services to families living in poverty.</p>
+
+        <div id="splashModule3Social">
+          <span>SHARE THE CAUSE</span>
+          <a href="https://twitter.com/endaomentdotorg" target="_blank" rel="noreferrer">Twitter</a>
+          <a href="https://www.linkedin.com/company/endaoment/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/endaomentdotorg/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://vimeo.com/" target="_blank" rel="noreferrer">Vimeo</a>
+        </div>
+      </div>
+
+      <div className="clear"></div>
     </div>
   );
 }

@@ -198,7 +198,7 @@ img#splashModule1Logo {
   padding-top: 130px;
 }
 
-#toboSplashModule1 .splashModuleColumnR p {
+#toboPage #toboSplashModule1 .splashModuleColumnR p {
   margin-bottom: 25px;
   margin-top: 26px;
   margin-left: 3.4%;
@@ -275,7 +275,7 @@ img#splashModule1Logo {
     padding-top: 65px;
   }
 
-  #toboSplashModule1 .splashModuleColumnR p {
+  #toboPage #toboSplashModule1 .splashModuleColumnR p {
     font-size: 18px;
     line-height: 1.1;
   }
@@ -304,13 +304,14 @@ img#splashModule1Logo {
   margin-top: 116px;
 }
 
-#toboSplashModule2 p {
+#toboPage #toboSplashModule2 p {
   margin-left: 14.6%;
   margin-top: 29px;
 }
 
 #toboSplashModule2 button {
   margin-left: 14.6%;
+  margin-top: 33px;
 }
 
 #toboSplashModule2 .splashModuleColumnR {
@@ -350,7 +351,7 @@ img#splashModule1Logo {
     margin-top: 58px;
   }
 
-  #toboSplashModule2 p {
+  #toboPage #toboSplashModule2 p {
     margin-right: 4.6%;
   }
 
@@ -371,5 +372,88 @@ img#splashModule1Logo {
 
 #toboSplashModule3 {
   background-color: #FF737D;
-  height: 500px;
+  padding-bottom: 70px;
+}
+
+#toboSplashModule3 .splashModuleColumnL img {
+  width: 100%;
+  padding-left: 5.5%;
+  padding-right: 6.4%;
+  padding-top: 16px;
+}
+
+#toboSplashModule3 .splashModuleColumnR {
+  padding-bottom: 64px;
+}
+
+#toboSplashModule3 h3 {
+  margin-left: 5.4%;
+  margin-top: 150px;
+}
+
+#toboPage #toboSplashModule3 p {
+  margin-left: 5.4%;
+  margin-top: 28px;
+  margin-right: 12.9%;
+}
+
+#splashModule3Social {
+  margin-left: 5.4%;
+  margin-top: 51px;
+  width: 270px;
+}
+
+#splashModule3Social span {
+  font-family: "oswald-medium", sans-serif;
+  display: block;
+  line-height: 1;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#splashModule3Social a {
+  line-height: 1;
+  color: #000;
+  font-size: 22px;
+  font-family: "inter-bold", sans-serif;
+  margin-top: 5px;
+  display: inline-block;
+  width: 135px;
+}
+
+#splashModule3Social a:active {
+  filter: invert(1);
+}
+
+@media (hover: hover) {
+  #splashModule3Social a:hover {
+    filter: invert(1);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #toboSplashModule3 {
+    padding-bottom: 40px;
+  }
+
+  #toboSplashModule3 .splashModuleColumnR {
+    padding-bottom: 32px;
+  }
+
+  #toboSplashModule3 h3 {
+    margin-top: 50px;
+  }
+
+  #splashModule3Social {
+    width: 200px;
+  }
+
+  #splashModule3Social span {
+    font-size: 18px;
+  }
+
+  #splashModule3Social a {
+    font-size: 16px;
+    width: 100px;
+  }
 }
