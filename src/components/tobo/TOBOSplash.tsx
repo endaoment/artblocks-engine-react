@@ -23,15 +23,15 @@ function SplashModule2() {
 function SplashModule1() {
   return (
     <div className="toboSplashModule" id="toboSplashModule1">
-      <img src="img/splash/module-1-shape.png" alt="" id="splashModule1Shape" />
+      <img src="img/tobo/splash/module-1-shape.png" alt="" id="splashModule1Shape" />
 
       <div className="splashModuleColumn splashModuleColumnL">
-        <img src="img/splash/module-1-hero.jpg" alt="" />
+        <img src="img/tobo/splash/module-1-hero.jpg" alt="" />
         <div id="splashModule1Circle"></div>
       </div>
 
       <div className="splashModuleColumn splashModuleColumnR">
-        <img src="img/splash/module-1-logo.svg" alt="TURNOUT FOR BURNOUT" id="splashModule1Logo" />
+        <img src="img/tobo/splash/module-1-logo.svg" alt="TURNOUT FOR BURNOUT" id="splashModule1Logo" />
         <p>Raising funds to reduce burnout among hard working health workers through an NFT charity mining event & auction.</p>
       </div>
 
@@ -46,7 +46,7 @@ function SplashModule1() {
 function SplashHeader() {
   return (
     <div id="toboSplashHeader">
-      <img src="img/splash/header.jpg" alt="" id="splashHeaderBg" />
+      <img src="img/tobo/splash/header.jpg" alt="" id="splashHeaderBg" />
       <div id="splashHeaderBgOverlay"></div>
       <div className="splashHeaderLine" id="splashHeaderLineXL"></div>
       <div className="splashHeaderLine" id="splashHeaderLineXR"></div>
@@ -61,9 +61,9 @@ function SplashHeader() {
 
       <div id="splashHeaderLogos">
         <span>POWERED BY</span>
-        <a href="https://www.artblocks.io/" target="_blank" rel="noreferrer"><img src="img/splash/logo-artblocks.png" alt="ArtBlocks" /></a>
-        <a href="https://sostento.org/" target="_blank" rel="noreferrer"><img src="img/splash/logo-sostento.png" alt="Sostento" /></a>
-        <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="img/splash/logo-endaoment.png" alt="Endaoment" /></a>
+        <a href="https://www.artblocks.io/" target="_blank" rel="noreferrer"><img src="img/tobo/splash/logo-artblocks.png" alt="ArtBlocks" /></a>
+        <a href="https://sostento.org/" target="_blank" rel="noreferrer"><img src="img/tobo/splash/logo-sostento.png" alt="Sostento" /></a>
+        <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="img/tobo/splash/logo-endaoment.png" alt="Endaoment" /></a>
       </div>
     </div>
   );

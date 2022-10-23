@@ -1,4 +1,4 @@
-import TOBOHeader from 'components/TOBOHeader';
+import TOBOHeader from 'components/tobo/TOBOHeader';
 import './toboPage.css';
 
 interface Props {
