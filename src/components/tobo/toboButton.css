@@ -16,16 +16,18 @@
   background-repeat: no-repeat;
   background-position: right 25px center;
   position: relative;
-  outline: 1px solid #FFF;
+  outline: 1px solid transparent;
 }
 
 @media (hover: hover) {
   #toboPage button.toboButton:hover {
+    outline: 1px solid #FFF;
     filter: invert(1);
   }
 }
 
 #toboPage button.toboButton:active {
+  outline: 1px solid #FFF;
   filter: invert(1);
 }
 
@@ -48,7 +50,7 @@ button.toboButton img {
   margin-left: 10px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
   #toboPage button.toboButton {
     border-radius: 12px;
     height: 48px;

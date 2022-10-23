@@ -13,8 +13,25 @@ function SplashModule3() {
 /* SplashModule2 */
 
 function SplashModule2() {
+  const spaceClick = () => {
+    window.open('https://endaoment.org');
+  }
+
   return (
     <div className="toboSplashModule" id="toboSplashModule2">
+      <div className="splashModuleColumn splashModuleColumnL">
+        <h3>THE COLORS THAT HEAL</h3>
+        <p>This generative art collection is a box of memories,a garden of hope,and a beacon of encouragement via ArtBlocks Engine platform.</p>
+        <TOBOButton text="Come to the Space" action={ spaceClick } />
+      </div>
+
+      <div className="splashModuleColumn splashModuleColumnR">
+        <img src="img/tobo/splash/module-2-hero.jpg" alt="" />
+        <div className="splashModule2Circle" id="splashModule2Circle1"></div>
+        <div className="splashModule2Circle" id="splashModule2Circle2"></div>
+      </div>
+
+      <div className="clear"></div>
     </div>
   );
 }
