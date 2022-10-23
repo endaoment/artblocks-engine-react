@@ -1,0 +1,61 @@
+/* TOBOButton */
+
+#toboPage button.toboButton {
+  background-color: #000;
+  color: #FFF;
+  border-radius: 14px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  padding-left: 19px;
+  padding-right: 74px;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "inter-bold", sans-serif;
+  background-image: url('assets/img/button-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+  position: relative;
+  outline: 1px solid #FFF;
+}
+
+@media (hover: hover) {
+  #toboPage button.toboButton:hover {
+    filter: invert(1);
+  }
+}
+
+#toboPage button.toboButton:active {
+  filter: invert(1);
+}
+
+#toboPage button.toboButton.disabled {
+  outline: 1px dashed #FFF;
+  filter: invert(1);
+  cursor: default;
+}
+
+button.toboButton span {
+  font-size: 18px;
+  font-family: "inter-medium", sans-serif;
+  position: absolute;
+  right: 74px;
+}
+
+button.toboButton img {
+  height: 33px;
+  vertical-align: -11px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  #toboPage button.toboButton {
+    border-radius: 12px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  button.toboButton span {
+    display: none;
+  }
+}

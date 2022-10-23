@@ -1,3 +1,4 @@
+import TOBOButton from './TOBOButton';
 import './toboSplash.css';
 
 /* SplashModule3 */
@@ -21,6 +22,14 @@ function SplashModule2() {
 /* SplashModule1 */
 
 function SplashModule1() {
+  const nftClick = () => {
+    window.open('https://endaoment.org');
+  }
+
+  const cryptoClick = () => {
+    window.open('https://endaoment.org');
+  }
+
   return (
     <div className="toboSplashModule" id="toboSplashModule1">
       <img src="img/tobo/splash/module-1-shape.png" alt="" id="splashModule1Shape" />
@@ -33,6 +42,13 @@ function SplashModule1() {
       <div className="splashModuleColumn splashModuleColumnR">
         <img src="img/tobo/splash/module-1-logo.svg" alt="TURNOUT FOR BURNOUT" id="splashModule1Logo" />
         <p>Raising funds to reduce burnout among hard working health workers through an NFT charity mining event & auction.</p>
+        <TOBOButton text="Donate NFT" viaEndaoment={ true } action={ nftClick } />
+        <TOBOButton text="Donate Crypto" viaEndaoment={ true } action={ cryptoClick } />
+
+        <div id="splashModule1Mint">
+          <TOBOButton text="Mint a Charity Piece" disabled={ true } />
+          <span>Minting November X, 2022</span>
+        </div>
       </div>
 
       <div className="clear"></div>
@@ -61,9 +77,9 @@ function SplashHeader() {
 
       <div id="splashHeaderLogos">
         <span>POWERED BY</span>
-        <a href="https://www.artblocks.io/" target="_blank" rel="noreferrer"><img src="img/tobo/splash/logo-artblocks.png" alt="ArtBlocks" /></a>
-        <a href="https://sostento.org/" target="_blank" rel="noreferrer"><img src="img/tobo/splash/logo-sostento.png" alt="Sostento" /></a>
-        <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="img/tobo/splash/logo-endaoment.png" alt="Endaoment" /></a>
+        <a href="https://www.artblocks.io/" target="_blank" rel="noreferrer"><img src="img/tobo/logo-artblocks.png" alt="ArtBlocks" /></a>
+        <a href="https://sostento.org/" target="_blank" rel="noreferrer"><img src="img/tobo/logo-sostento.png" alt="Sostento" /></a>
+        <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="img/tobo/logo-endaoment.png" alt="Endaoment" /></a>
       </div>
     </div>
   );

@@ -161,6 +161,10 @@ img#splashHeaderBg {
 
 /* SplashModule1 */
 
+#toboSplashModule1 {
+  padding-bottom: 164px;
+}
+
 img#splashModule1Shape {
   width: 30%;
   position: absolute;
@@ -173,7 +177,6 @@ img#splashModule1Shape {
   padding-left: 9.9%;
   padding-right: 7.5%;
   padding-top: 118px;
-  padding-bottom: 164px;
 }
 
 #splashModule1Circle {
@@ -188,10 +191,6 @@ img#splashModule1Shape {
   right: 3.9%;
 }
 
-#toboSplashModule1 .splashModuleColumnR {
-  padding-bottom: 243px;
-}
-
 img#splashModule1Logo {
   width: 100%;
   padding-left: 3.4%;
@@ -200,13 +199,33 @@ img#splashModule1Logo {
 }
 
 #toboSplashModule1 .splashModuleColumnR p {
-  margin: 0;
+  margin-bottom: 25px;
   margin-top: 26px;
   margin-left: 3.4%;
   margin-right: 25.9%;
   font-family: "anonymous-pro-b", serif;
   font-size: 32px;
   line-height: 31px;
+}
+
+#toboSplashModule1 .splashModuleColumnR button {
+  margin-top: 10px;
+  margin-left: 3.4%;
+  width: 438px;
+}
+
+#toboSplashModule1 #splashModule1Mint button {
+  margin-top: 31px;
+}
+
+#splashModule1Mint span {
+  line-height: 1;
+  margin-left: 3.4%;
+  margin-top: 10px;
+  display: block;
+  padding-left: 20px;
+  font-family: "inter-regular", sans-serif;
+  font-size: 14px;
 }
 
 #splashModule1Banner {
@@ -233,21 +252,20 @@ img#splashModule1Logo {
 }
 
 @media only screen and (max-width: 767px) {
+  #toboSplashModule1 {
+    padding-bottom: 83px;
+  }
+
   img#splashModule1Shape {
-    top: 86%;
+    top: 87.5%;
   }
 
   #toboSplashModule1 .splashModuleColumnL img {
     padding-top: 59px;
-    padding-bottom: 0;
   }
 
   #splashModule1Circle {
     top: 59px;
-  }
-
-  #toboSplashModule1 .splashModuleColumnR {
-    padding-bottom: 86px;
   }
 
   img#splashModule1Logo {
@@ -255,8 +273,12 @@ img#splashModule1Logo {
   }
 
   #toboSplashModule1 .splashModuleColumnR p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.1;
+  }
+
+  #toboSplashModule1 .splashModuleColumnR button {
+    width: 298px;
   }
 
   #splashModule1Banner {

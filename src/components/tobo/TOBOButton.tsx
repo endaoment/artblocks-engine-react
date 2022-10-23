@@ -1,11 +1,16 @@
-import './toboHeader.css';
+import './toboButton.css';
 
-const TOBOHeader = () => {
+const TOBOButton = (props: { text: string; viaEndaoment?: boolean | undefined; disabled?: boolean | undefined; action?: Function; }) => {
+  const buttonClick = () => {
+    props.action!();
+  }
+
   return (
-    <header>
-      <h1><img src="img/logo.svg" alt="TURNOUT FOR BURNOUT" id="toboLogo" /></h1>
-    </header>
+    <button onClick={ props.action ? buttonClick : () => null} className={ `toboButton ${ props.disabled && 'disabled' }` }>
+      { props.text }
+      { props.viaEndaoment && <span>via<img src="img/tobo/logo-endaoment.png" alt="Endaoment" /></span> }
+    </button>
   );
 }
 
-export default TOBOHeader;
+export default TOBOButton;
