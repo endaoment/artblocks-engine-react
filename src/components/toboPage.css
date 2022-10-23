@@ -33,3 +33,7 @@
 #toboPage h6 {
   margin: 0;
 }
+
+.clear {
+  clear: both;
+}

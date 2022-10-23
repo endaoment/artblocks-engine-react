@@ -23,17 +23,19 @@ function SplashModule2() {
 function SplashModule1() {
   return (
     <div className="toboSplashModule" id="toboSplashModule1">
+      <img src="img/splash/module-1-shape.png" alt="" id="splashModule1Shape" />
+
       <div className="splashModuleColumn splashModuleColumnL">
         <img src="img/splash/module-1-hero.jpg" alt="" />
         <div id="splashModule1Circle"></div>
       </div>
 
       <div className="splashModuleColumn splashModuleColumnR">
-        <img src="img/splash/module-1-shape.png" alt="" id="splashModule1Shape" />
         <img src="img/splash/module-1-logo.svg" alt="TURNOUT FOR BURNOUT" id="splashModule1Logo" />
         <p>Raising funds to reduce burnout among hard working health workers through an NFT charity mining event & auction.</p>
       </div>
 
+      <div className="clear"></div>
       <div id="splashModule1Banner">Art Blocks Mint + <span>&nbsp;Charity Fundraiser</span></div>
     </div>
   );

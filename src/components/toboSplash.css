@@ -55,7 +55,6 @@ img#splashHeaderBg {
   font-family: "anonymous-pro-b", serif;
   font-size: 48px;
   line-height: 42px;
-  letter-spacing: 0em;
   text-align: center;
 }
 
@@ -87,6 +86,10 @@ img#splashHeaderBg {
 @media only screen and (max-width: 767px) {
   #toboSplashHeader {
     height: 431px;
+  }
+
+  img#splashHeaderBg {
+    margin-left: 100px; /* Shift bg image on mobile */
   }
 
   #splashHeaderLineXL,
@@ -132,11 +135,10 @@ img#splashHeaderBg {
 /* SplashModule */
 
 .toboSplashModule {
-  border-radius: 38px 38px 0px 0px;
+  border-radius: 70px 70px 0px 0px;
   position: relative;
   width: 100%;
-  margin-top: -38px;
-  aspect-ratio: 36/19;
+  margin-top: -70px;
   background-color: #FFF;
 }
 
@@ -144,31 +146,34 @@ img#splashHeaderBg {
   float: left;
   width: 50%;
   position: relative;
-  height: 100%;
-  overflow: hidden;
 }
 
 @media only screen and (max-width: 767px) {
   .toboSplashModule {
-    border-radius: 28px 28px 0px 0px;
-    margin-top: -28px;
-    aspect-ratio: 9/19;
+    border-radius: 36px 36px 0px 0px;
+    margin-top: -36px;
   }
 
   .splashModuleColumn {
     width: 100%;
-    height: 50%;
   }
 }
 
 /* SplashModule1 */
 
+img#splashModule1Shape {
+  width: 30%;
+  position: absolute;
+  right: 1.3%;
+  top: 67%;
+}
+
 #toboSplashModule1 .splashModuleColumnL img {
   width: 100%;
   padding-left: 9.9%;
   padding-right: 7.5%;
-  padding-top: 14.5%;
-  padding-bottom: 11.5%;
+  padding-top: 118px;
+  padding-bottom: 164px;
 }
 
 #splashModule1Circle {
@@ -178,33 +183,30 @@ img#splashHeaderBg {
   background-color: var(--tobo-blue);
   mix-blend-mode: multiply;
   border-radius: 999px;
-  top: 35.5%;
+  top: 118px;
+  margin-top: 22.5%;
   right: 3.9%;
 }
 
-img#splashModule1Shape {
-  width: 60.1%;
-  position: absolute;
-  right: 2.6%;
-  top: 74.3%;
+#toboSplashModule1 .splashModuleColumnR {
+  padding-bottom: 243px;
 }
 
 img#splashModule1Logo {
   width: 100%;
   padding-left: 3.4%;
   padding-right: 31.2%;
-  padding-top: 17%;
+  padding-top: 130px;
 }
 
 #toboSplashModule1 .splashModuleColumnR p {
   margin: 0;
-  margin-top: 3.8%;
+  margin-top: 26px;
   margin-left: 3.4%;
   margin-right: 25.9%;
   font-family: "anonymous-pro-b", serif;
   font-size: 32px;
   line-height: 31px;
-  letter-spacing: 0em;
 }
 
 #splashModule1Banner {
@@ -213,6 +215,7 @@ img#splashModule1Logo {
   margin: auto;
   left: 0;
   right: 0;
+  top: 0;
   width: 552px;
   height: 56px;
   border-radius: 999px;
@@ -222,8 +225,6 @@ img#splashModule1Logo {
   font-family: "inter-bold", sans-serif;
   color: #FFF;
   font-size: 28px;
-  line-height: 34px;
-  letter-spacing: 0em;
   margin-top: -28px;
 }
 
@@ -232,6 +233,27 @@ img#splashModule1Logo {
 }
 
 @media only screen and (max-width: 767px) {
+  img#splashModule1Shape {
+    top: 86%;
+  }
+
+  #toboSplashModule1 .splashModuleColumnL img {
+    padding-top: 59px;
+    padding-bottom: 0;
+  }
+
+  #splashModule1Circle {
+    top: 59px;
+  }
+
+  #toboSplashModule1 .splashModuleColumnR {
+    padding-bottom: 86px;
+  }
+
+  img#splashModule1Logo {
+    padding-top: 65px;
+  }
+
   #toboSplashModule1 .splashModuleColumnR p {
     font-size: 16px;
     line-height: 1.1;
@@ -249,10 +271,12 @@ img#splashModule1Logo {
 
 #toboSplashModule2 {
   background-color: #FADF4F;
+  height: 500px;
 }
 
 /* SplashModule3 */
 
 #toboSplashModule3 {
   background-color: #FF737D;
+  height: 500px;
 }
