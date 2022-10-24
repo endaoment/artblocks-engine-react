@@ -1,4 +1,5 @@
 import TOBOHeader from 'components/tobo/TOBOHeader';
+import TOBOFooter from 'components/tobo/TOBOFooter';
 import './toboPage.css';
 
 interface Props {
@@ -12,6 +13,7 @@ const TOBOPage = ({ children }: Props) => {
         { children }
       </main>
 
+      <TOBOFooter />
       <TOBOHeader />
     </div>
   );

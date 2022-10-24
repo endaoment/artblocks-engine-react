@@ -1,0 +1,142 @@
+#toboPage footer {
+  border-radius: 70px 70px 0px 0px;
+  position: relative;
+  width: 100%;
+  margin-top: -70px;
+  background-color: #FFF;
+}
+
+img#footer-logo {
+  width: 26.7%;
+  margin-left: 11.1%;
+  margin-top: 68px;
+}
+
+#footerDetails {
+  width: 50%;
+  float: right;
+  padding-top: 53px;
+}
+
+span.footerDetailsHeading {
+  line-height: 1;
+  font-size: 22px;
+  font-family: "inter-bold", sans-serif;
+  color: var(--tobo-yellow);
+}
+
+#footerDetailsSocial {
+  float: left;
+  padding-left: 5.4%;
+  padding-right: 8.7%;
+  width: 200px;
+}
+
+#footerDetailsSocial a {
+  line-height: 1;
+  color: #000;
+  display: block;
+  font-size: 22px;
+  font-family: "inter-bold", sans-serif;
+  margin-top: 12px;
+}
+
+#footerDetailsDisclaimer {
+  float: left;
+  width: calc(100% - 200px);
+  padding-right: 8.5%;
+}
+
+#footerDetailsDisclaimer span.footerDetailsHeading {
+  color: var(--tobo-red);
+}
+
+#toboPage #footerDetailsDisclaimer p {
+  font-size: 16px;
+  font-family: "inter-regular", sans-serif;
+  line-height: 1.3;
+  margin-top: 12px;
+}
+
+span#footerDetailsCopy {
+  opacity: 0.25;
+  line-height: 1;
+  margin-top: 15px;
+  display: block;
+}
+
+#footerLogos {
+  background-color: #241F21;
+  height: 97px;
+  margin-top: 62px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#footerLogos span {
+  font-size: 22px;
+  font-family: "inter-bold", sans-serif;
+  color: #FFF;
+  position: absolute;
+  left: 46px;
+}
+
+#footerLogos img {
+  height: 49px;
+  margin-right: 40px;
+}
+
+@media only screen and (max-width: 1023px) {
+  #footerLogos span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #toboPage footer {
+    border-radius: 36px 36px 0px 0px;
+    margin-top: -36px;
+  }
+
+  img#footer-logo {
+    width: 53.4%;
+    margin-top: 34px;
+  }
+
+  #footerDetails {
+    padding-top: 27px;
+  }
+
+  span.footerDetailsHeading {
+    font-size: 16px;
+  }
+
+  #footerDetailsSocial {
+    width: 128px;
+  }
+
+  #footerDetailsSocial a {
+    font-size: 16px;
+  }
+
+  #footerDetailsDisclaimer {
+    width: calc(100% - 128px);
+  }
+
+  #footerDetails {
+    width: 100%;
+  }
+
+  #footerLogos {
+    margin-top: 31px;
+    height: 64px;
+    justify-content: center;
+  }
+
+  #footerLogos img {
+    height: 24px;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+}
