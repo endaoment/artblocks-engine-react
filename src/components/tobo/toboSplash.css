@@ -183,6 +183,8 @@ img#splashModule1Shape {
   padding-left: 9.9%;
   padding-right: 7.5%;
   margin-top: 118px;
+  max-height: 50vh;
+  object-fit: cover;
 }
 
 #splashModule1Circle {
