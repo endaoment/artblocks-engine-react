@@ -28,17 +28,17 @@
 /* Vars */
 
 :root {
-  --tobo-blue: #59CCF5;
-  --tobo-yellow: #FADF4F;
-  --tobo-red: #FF737D;
-  --tobo-dark: #241F21;
+  --tobo-blue: #59ccf5;
+  --tobo-yellow: #fadf4f;
+  --tobo-red: #ff737d;
+  --tobo-dark: #241f21;
 }
 
 /* TOBOPage */
 
 #toboPage {
   width: 100%;
-  max-width: 1512px;
+  /* max-width: 1512px; */
   margin: auto;
   position: relative;
   line-height: 0;

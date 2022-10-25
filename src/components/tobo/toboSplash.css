@@ -1,16 +1,24 @@
+body {
+  background-color: var(--tobo-blue) !important;
+}
+
 /* SplashHeader */
 
 #toboSplashHeader {
+  position: sticky;
+  top: 0;
   overflow: hidden;
   height: 647px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 img#splashHeaderBg {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top left;
 }
 
 #splashHeaderBgOverlay {
@@ -23,7 +31,7 @@ img#splashHeaderBg {
 }
 
 .splashHeaderLine {
-  background-color: #FFF;
+  background-color: #fff;
   height: 2px;
   width: calc(50% - 250px);
   position: absolute;
@@ -51,7 +59,7 @@ img#splashHeaderBg {
 
 #toboSplashHeader h2 {
   position: absolute;
-  color: #FFF;
+  color: #fff;
   font-family: "anonymous-pro-b", serif;
   font-size: 48px;
   line-height: 42px;
@@ -65,7 +73,7 @@ img#splashHeaderBg {
 }
 
 #splashHeaderLogos span {
-  color: #FFF;
+  color: #fff;
   font-family: "anonymous-pro-b", serif;
   font-size: 20px;
   margin-right: 4px;
@@ -86,10 +94,6 @@ img#splashHeaderBg {
 @media only screen and (max-width: 767px) {
   #toboSplashHeader {
     height: 431px;
-  }
-
-  img#splashHeaderBg {
-    margin-left: 100px; /* Shift bg image on mobile */
   }
 
   #splashHeaderLineXL,
@@ -137,9 +141,11 @@ img#splashHeaderBg {
 
 .toboSplashModule {
   border-radius: 70px 70px 0px 0px;
-  position: relative;
+  position: sticky;
+  top: 0;
   margin-top: -70px;
-  background-color: #FFF;
+  min-height: 75vh;
+  background-color: #fff;
 }
 
 .splashModuleColumn {
@@ -201,7 +207,7 @@ img#splashModule1Logo {
   margin-bottom: 25px;
   margin-top: 26px;
   margin-left: 3.4%;
-  width: 70.6%
+  width: 70.6%;
 }
 
 #toboSplashModule1 .splashModuleColumnR button {
@@ -240,7 +246,7 @@ img#splashModule1Logo {
   justify-content: center;
   align-items: center;
   font-family: "inter-bold", sans-serif;
-  color: #FFF;
+  color: #fff;
   font-size: 28px;
 }
 
@@ -366,7 +372,7 @@ img#splashModule1Logo {
 /* SplashModule3 */
 
 #toboSplashModule3 {
-  background-color: #FF737D;
+  background-color: #ff737d;
   padding-bottom: 70px;
 }
 
