@@ -76,7 +76,7 @@ function SplashModule1() {
 
       <div className="splashModuleColumn splashModuleColumnR">
         <img src="img/tobo/splash/module-1-logo.svg" alt="TURNOUT FOR BURNOUT" id="splashModule1Logo" />
-        <p>Raising funds to reduce burnout among hard working health workers through an NFT charity mining event & auction.</p>
+        <p>Raising funds to reduce burnout among hard working health workers through an NFT charity mining event &amp; auction.</p>
         <TOBOButton text="Donate NFT" viaEndaoment={ true } action={ nftClick } />
         <TOBOButton text="Donate Crypto" viaEndaoment={ true } action={ cryptoClick } />
 
@@ -119,6 +119,8 @@ function SplashHeader() {
     </div>
   );
 }
+
+/* TOBOSplash */
 
 const TOBOSplash = () => {
   return (

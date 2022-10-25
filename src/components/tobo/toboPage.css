@@ -57,6 +57,7 @@
 #toboPage h3 {
   font-size: 62px;
   font-family: "oswald-medium", sans-serif;
+  color: var(--tobo-dark);
 }
 
 #toboPage p {
@@ -64,6 +65,7 @@
   font-size: 32px;
   line-height: 1;
   margin: 0;
+  color: var(--tobo-dark);
 }
 
 #toboPage .clear {
