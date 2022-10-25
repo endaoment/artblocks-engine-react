@@ -1,5 +1,7 @@
 import './toboFooter.css';
 
+/* TOBOFooter */
+
 const TOBOFooter = () => {
   return (
     <footer>
@@ -7,7 +9,7 @@ const TOBOFooter = () => {
 
       <div id="footerDetails">
         <div id="footerDetailsSocial">
-          <span className="footerDetailsHeading">Social</span>
+          <h6>Social</h6>
           <a href="https://twitter.com/endaomentdotorg" target="_blank" rel="noreferrer">Twitter</a>
           <a href="https://www.linkedin.com/company/endaoment/" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://www.instagram.com/endaomentdotorg/" target="_blank" rel="noreferrer">Instagram</a>
@@ -15,9 +17,9 @@ const TOBOFooter = () => {
         </div>
 
         <div id="footerDetailsDisclaimer">
-          <span className="footerDetailsHeading">Disclaimer</span>
+          <h6>Disclaimer</h6>
           <p>Dedicated a variety of causes finding solutions for burnout and combatting the resulting symptoms. Dedicated a variety of causes finding solutions for burnout and combatting the resulting symptoms</p>
-          <span id="footerDetailsCopy">(c) 2022</span>
+          <span>(c) 2022</span>
         </div>
       </div>
 

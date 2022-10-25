@@ -1,3 +1,5 @@
+/* TOBOFooter */
+
 #toboPage footer {
   border-radius: 70px 70px 0px 0px;
   position: relative;
@@ -8,18 +10,18 @@
 
 img#footer-logo {
   width: 26.7%;
-  margin-left: 11.1%;
-  margin-top: 68px;
+  margin-left: 4.3%;
+  margin-top: 47px;
 }
 
 #footerDetails {
   width: 50%;
   float: right;
-  padding-top: 53px;
+  margin-top: 53px;
+  display: flex;
 }
 
-span.footerDetailsHeading {
-  line-height: 1;
+#footerDetails h6 {
   font-size: 22px;
   font-family: "inter-bold", sans-serif;
   color: var(--tobo-yellow);
@@ -27,14 +29,13 @@ span.footerDetailsHeading {
 
 #footerDetailsSocial {
   float: left;
-  padding-left: 5.4%;
-  padding-right: 8.7%;
-  width: 200px;
+  margin-right: 8.7%;
+  margin-left: 6.8%;
 }
 
 #footerDetailsSocial a {
   line-height: 1;
-  color: #000;
+  color: var(--tobo-dark);
   display: block;
   font-size: 22px;
   font-family: "inter-bold", sans-serif;
@@ -43,35 +44,38 @@ span.footerDetailsHeading {
 
 #footerDetailsDisclaimer {
   float: left;
-  width: calc(100% - 200px);
-  padding-right: 8.5%;
+  width: 61.5%;
+  margin-right: 8.5%;
 }
 
-#footerDetailsDisclaimer span.footerDetailsHeading {
+#footerDetailsDisclaimer h6 {
   color: var(--tobo-red);
 }
 
 #toboPage #footerDetailsDisclaimer p {
   font-size: 16px;
   font-family: "inter-regular", sans-serif;
-  line-height: 1.3;
+  line-height: 21px;
   margin-top: 12px;
+  color: var(--tobo-dark);
 }
 
-span#footerDetailsCopy {
+#footerDetailsDisclaimer span {
   opacity: 0.25;
   line-height: 1;
   margin-top: 15px;
   display: block;
+  font-size: 16px;
 }
 
 #footerLogos {
-  background-color: #241F21;
+  background-color: var(--tobo-dark);
   height: 97px;
   margin-top: 62px;
   display: flex;
   justify-content: right;
   align-items: center;
+  position: relative;
 }
 
 #footerLogos span {
@@ -80,16 +84,22 @@ span#footerDetailsCopy {
   color: #FFF;
   position: absolute;
   left: 46px;
+  line-height: 1;
 }
 
 #footerLogos img {
-  height: 49px;
-  margin-right: 40px;
+  height: 48px;
+  margin-right: 43px;
 }
 
 @media only screen and (max-width: 1023px) {
   #footerLogos span {
-    display: none;
+    font-size: 16px;
+    left: 32px;
+  }
+
+  #footerLogos img {
+    margin-right: 24px;
   }
 }
 
@@ -101,31 +111,29 @@ span#footerDetailsCopy {
 
   img#footer-logo {
     width: 53.4%;
-    margin-top: 34px;
+    margin-top: 23px;
   }
 
   #footerDetails {
-    padding-top: 27px;
+    margin-top: 26px;
+    width: 100%;
   }
 
-  span.footerDetailsHeading {
+  #footerDetails h6 {
     font-size: 16px;
-  }
-
-  #footerDetailsSocial {
-    width: 128px;
   }
 
   #footerDetailsSocial a {
     font-size: 16px;
   }
 
-  #footerDetailsDisclaimer {
-    width: calc(100% - 128px);
+  #toboPage #footerDetailsDisclaimer p {
+    font-size: 14px;
+    line-height: 1.25;
   }
 
-  #footerDetails {
-    width: 100%;
+  #footerDetailsDisclaimer span {
+    font-size: 14px;
   }
 
   #footerLogos {
@@ -134,9 +142,16 @@ span#footerDetailsCopy {
     justify-content: center;
   }
 
+  #footerLogos span {
+    left: auto;
+    font-size: 10px;
+    top: 12px;
+  }
+
   #footerLogos img {
     height: 24px;
-    margin-right: 6px;
-    margin-left: 6px;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 16px;
   }
 }

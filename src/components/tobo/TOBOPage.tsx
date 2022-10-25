@@ -2,6 +2,8 @@ import TOBOHeader from 'components/tobo/TOBOHeader';
 import TOBOFooter from 'components/tobo/TOBOFooter';
 import './toboPage.css';
 
+/* TOBOPage */
+
 interface Props {
   children: React.ReactNode;
 }
