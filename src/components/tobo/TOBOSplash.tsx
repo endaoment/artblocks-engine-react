@@ -85,7 +85,7 @@ function SplashModule2() {
       </div>
 
       <div className="splashModuleColumn splashModuleColumnR">
-        <img src="img/tobo/splash/module-2-hero.jpg" alt="" />
+        <img src="https://res.cloudinary.com/art-blocks/image/fetch/f_auto,c_limit,w_384,q_auto/https://endaoment-gallery-for-good---flex-goerli.s3.amazonaws.com/20.png" alt="" />
         <div className="splashModule2Circle" id="splashModule2Circle1"></div>
         <div className="splashModule2Circle" id="splashModule2Circle2"></div>
       </div>
