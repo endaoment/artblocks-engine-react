@@ -1,13 +1,15 @@
+/* TOBOHeader */
+
 #toboPage header {
   position: fixed;
   width: 100%;
-  max-width: 1512px;
+  /* max-width: 1512px; */
   top: 0;
 }
 
 img#toboLogo {
   height: 80px;
-  background-color: #FFF;
+  background-color: #fff;
   margin: auto;
   display: block;
   padding: 20px;
