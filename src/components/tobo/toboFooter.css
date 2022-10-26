@@ -1,0 +1,157 @@
+/* TOBOFooter */
+
+#toboPage footer {
+  border-radius: 70px 70px 0px 0px;
+  position: relative;
+  width: 100%;
+  margin-top: -70px;
+  background-color: #FFF;
+}
+
+img#footer-logo {
+  width: 26.7%;
+  margin-left: 4.3%;
+  margin-top: 47px;
+}
+
+#footerDetails {
+  width: 50%;
+  float: right;
+  margin-top: 53px;
+  display: flex;
+}
+
+#footerDetails h6 {
+  font-size: 22px;
+  font-family: "inter-bold", sans-serif;
+  color: var(--tobo-yellow);
+}
+
+#footerDetailsSocial {
+  float: left;
+  margin-right: 8.7%;
+  margin-left: 6.8%;
+}
+
+#footerDetailsSocial a {
+  line-height: 1;
+  color: var(--tobo-dark);
+  display: block;
+  font-size: 22px;
+  font-family: "inter-bold", sans-serif;
+  margin-top: 12px;
+}
+
+#footerDetailsDisclaimer {
+  float: left;
+  width: 61.5%;
+  margin-right: 8.5%;
+}
+
+#footerDetailsDisclaimer h6 {
+  color: var(--tobo-red);
+}
+
+#toboPage #footerDetailsDisclaimer p {
+  font-size: 16px;
+  font-family: "inter-regular", sans-serif;
+  line-height: 21px;
+  margin-top: 12px;
+  color: var(--tobo-dark);
+}
+
+#footerDetailsDisclaimer span {
+  opacity: 0.25;
+  line-height: 1;
+  margin-top: 15px;
+  display: block;
+  font-size: 16px;
+}
+
+#footerLogos {
+  background-color: var(--tobo-dark);
+  height: 97px;
+  margin-top: 62px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: relative;
+}
+
+#footerLogos span {
+  font-size: 22px;
+  font-family: "inter-bold", sans-serif;
+  color: #FFF;
+  position: absolute;
+  left: 46px;
+  line-height: 1;
+}
+
+#footerLogos img {
+  height: 48px;
+  margin-right: 43px;
+}
+
+@media only screen and (max-width: 1023px) {
+  #footerLogos span {
+    font-size: 16px;
+    left: 32px;
+  }
+
+  #footerLogos img {
+    margin-right: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #toboPage footer {
+    border-radius: 36px 36px 0px 0px;
+    margin-top: -36px;
+  }
+
+  img#footer-logo {
+    width: 53.4%;
+    margin-top: 23px;
+  }
+
+  #footerDetails {
+    margin-top: 26px;
+    width: 100%;
+  }
+
+  #footerDetails h6 {
+    font-size: 16px;
+  }
+
+  #footerDetailsSocial a {
+    font-size: 16px;
+  }
+
+  #toboPage #footerDetailsDisclaimer p {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+  #footerDetailsDisclaimer span {
+    font-size: 14px;
+  }
+
+  #footerLogos {
+    margin-top: 31px;
+    height: 64px;
+    justify-content: center;
+  }
+
+  #footerLogos span {
+    left: auto;
+    font-size: 10px;
+    top: 12px;
+  }
+
+  #footerLogos img {
+    height: 24px;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 16px;
+  }
+}

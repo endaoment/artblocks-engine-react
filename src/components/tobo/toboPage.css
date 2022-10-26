@@ -1,3 +1,5 @@
+/* Fonts */
+
 @font-face {
   font-family: "anonymous-pro-b";
   src: url("assets/fonts/anonymous-pro-b.woff2") format("woff2");
@@ -23,15 +25,20 @@
   src: url("assets/fonts/oswald-medium.woff2") format("woff2");
 }
 
+/* Vars */
+
 :root {
-  --tobo-blue: #59CCF5;
-  --tobo-yellow: #FADF4F;
-  --tobo-red: #FF737D;
+  --tobo-blue: #59ccf5;
+  --tobo-yellow: #fadf4f;
+  --tobo-red: #ff737d;
+  --tobo-dark: #241f21;
 }
+
+/* TOBOPage */
 
 #toboPage {
   width: 100%;
-  max-width: 1512px;
+  /* max-width: 1512px; */
   margin: auto;
   position: relative;
   line-height: 0;
@@ -44,19 +51,21 @@
 #toboPage h5,
 #toboPage h6 {
   margin: 0;
+  line-height: 1;
 }
 
 #toboPage h3 {
-  line-height: 1;
   font-size: 62px;
   font-family: "oswald-medium", sans-serif;
+  color: var(--tobo-dark);
 }
 
 #toboPage p {
   font-family: "anonymous-pro-b", serif;
   font-size: 32px;
-  line-height: 31px;
+  line-height: 1;
   margin: 0;
+  color: var(--tobo-dark);
 }
 
 #toboPage .clear {
@@ -78,6 +87,5 @@
 
   #toboPage p {
     font-size: 18px;
-    line-height: 1.1;
   }
 }
