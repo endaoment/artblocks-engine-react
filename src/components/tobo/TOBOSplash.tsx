@@ -38,7 +38,7 @@ function SplashModule4() {
             target="_blank"
             rel="noreferrer"
           >
-            Erick Calderon, Arblocks CEO
+            Erick Calderon, Artblocks CEO
           </a>
         </p>
       </div>
