@@ -262,6 +262,7 @@ img#splashModule1Logo {
 @media only screen and (max-width: 767px) {
   #toboSplashModule1 {
     padding-bottom: 83px;
+    position: relative;
   }
   #toboSplashModule1 .splashModuleColumnR {
     margin-left: 10%;
