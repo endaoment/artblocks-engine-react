@@ -1,7 +1,3 @@
-body {
-  background-color: var(--tobo-blue) !important;
-}
-
 /* SplashHeader */
 
 #toboSplashHeader {
@@ -146,6 +142,7 @@ img#splashHeaderBg {
   margin-top: -70px;
   min-height: 75vh;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .splashModuleColumn {
@@ -444,7 +441,7 @@ img#splashModule1Logo {
   #toboSplashModule3 {
     padding-bottom: 40px;
   }
-  
+
   #toboSplashModule3 .splashModuleColumnR {
     padding-bottom: 32px;
   }
@@ -456,15 +453,15 @@ img#splashModule1Logo {
   #toboSplashModule3 h3 {
     margin-top: 50px;
   }
-  
+
   #splashModule3Social {
     width: 200px;
   }
-  
+
   #splashModule3Social span {
     font-size: 18px;
   }
-  
+
   #splashModule3Social a {
     font-size: 16px;
     width: 100px;
