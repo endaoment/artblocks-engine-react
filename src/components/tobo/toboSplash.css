@@ -142,7 +142,6 @@ img#splashHeaderBg {
   margin-top: -70px;
   min-height: 75vh;
   background-color: #fff;
-  overflow: hidden;
 }
 
 .splashModuleColumn {
@@ -155,6 +154,7 @@ img#splashHeaderBg {
   .toboSplashModule {
     border-radius: 36px 36px 0px 0px;
     margin-top: -36px;
+    position: relative;
   }
 
   .splashModuleColumn {
@@ -239,7 +239,6 @@ img#splashModule1Logo {
   top: 0;
   width: 460px;
   height: 56px;
-  margin-top: 0px;
   border-radius: 0 0 38px 38px;
   display: flex;
   justify-content: center;
@@ -264,8 +263,9 @@ img#splashModule1Logo {
     padding-bottom: 83px;
     position: relative;
   }
+
   #toboSplashModule1 .splashModuleColumnR {
-    margin-left: 10%;
+    padding-left: 10%;
   }
 
   img#splashModule1Shape {
@@ -288,7 +288,6 @@ img#splashModule1Logo {
     width: 320px;
     height: 38px;
     font-size: 16px;
-    margin-top: 0px;
     border-radius:  0px 0px 36px 36px;
   }
 }
@@ -350,7 +349,6 @@ img#splashModule1Logo {
 @media only screen and (max-width: 767px) {
   #toboSplashModule2 .splashModuleColumn {
     width: 90%;
-    margin-left: 0;
   }
 
   #toboSplashModule2 h3 {
@@ -445,10 +443,7 @@ img#splashModule1Logo {
 
   #toboSplashModule3 .splashModuleColumnR {
     padding-bottom: 32px;
-  }
-
-  #toboSplashModule3 .splashModuleColumnR {
-    margin-left: 8%;
+    padding-left: 8%;
   }
 
   #toboSplashModule3 h3 {

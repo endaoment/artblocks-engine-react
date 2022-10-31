@@ -35,7 +35,6 @@ const TOBOFooter = () => {
           >
             Instagram
           </a>
-          {/* <a href="https://vimeo.com/" target="_blank" rel="noreferrer">Vimeo</a> */}
         </div>
 
         <div id="footerDetailsDisclaimer">

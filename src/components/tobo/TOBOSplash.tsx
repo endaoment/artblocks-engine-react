@@ -1,24 +1,13 @@
-import { useStickySection } from "utils/layoutEffects";
 import TOBOButton from "./TOBOButton";
 import "./toboSplash.css";
 
 /* SplashModule4 */
 
 function SplashModule4() {
-  const spaceClick = () => {
-    window.open(
-      "https://twitter.com/artblocksengine/status/1564256836764798978"
-    );
-  };
-
-  // const { ref, css } = useStickySection();
-
   return (
     <div
       className="toboSplashModule"
       id="toboSplashModule4"
-      // ref={ref}
-      // style={css}
     >
       <div className="splashModuleColumn splashModuleColumnL">
         <h3>FROM ARTISTS WHO UNDERSTAND</h3>
@@ -48,8 +37,8 @@ function SplashModule4() {
           src="https://endaoment-gallery-for-good---flex-goerli.s3.amazonaws.com/8.png"
           alt=""
         />
-        <div className="splashModule2Circle" id="splashModule2Circle1"></div>
-        <div className="splashModule2Circle" id="splashModule2Circle2"></div>
+        <div className="splashModule4Circle" id="splashModule4Circle1"></div>
+        <div className="splashModule4Circle" id="splashModule4Circle2"></div>
       </div>
 
       <div className="clear"></div>
@@ -60,19 +49,16 @@ function SplashModule4() {
 /* SplashModule3 */
 
 function SplashModule3() {
-  const spaceClick = () => {
+  const postClick = () => {
     window.open(
       "http://twitter.com/intent/tweet?text=Join%20me%20November%2015th%20for%20the%20%23TurnoutForBurnout!%20Mint%20generative%20art%20to%20fund%20wellness%20programs%20for%20healthcare%20workers.%20%0A%0ALearn%20more%20at%3A&url=http%3A%2F%2Fwww.turnoutforburnout.com%0A%0ABrought%20to%20you%20by%20your%20friends%20at%0A%40EndaomentDotOrg%20%40Sostento%20and%20%40Artblocks_io%20"
     );
   };
 
-  // const { ref, css } = useStickySection();
   return (
     <div
       className="toboSplashModule"
       id="toboSplashModule3"
-      // ref={ref}
-      // style={css}
     >
       <div className="splashModuleColumn splashModuleColumnL">
         <img src="img/tobo/splash/module-3-hero.png" alt="" />
@@ -83,15 +69,15 @@ function SplashModule3() {
         <p>
           <a href="https://sostento.org" target="_blank" rel="noreferrer">
             Sostento
-          </a>{" "}
-          is a tax-exempt 501c3 charitable organization. Proceeds will directly
+          </a>
+          &nbsp;is a tax-exempt 501c3 charitable organization. Proceeds will directly
           support programs that reduce burnout among frontline healthcare
           workers who provide services to families living in poverty.
         </p>
 
         <div id="splashModule3Social">
           <span>TWEET YOUR SUPPORT</span>
-          <TOBOButton text="Post Now" action={spaceClick} />
+          <TOBOButton text="Post Now" action={postClick} />
         </div>
       </div>
 
@@ -108,14 +94,10 @@ function SplashModule2() {
     );
   };
 
-  // const { ref, css } = useStickySection();
-
   return (
     <div
       className="toboSplashModule"
       id="toboSplashModule2"
-      // ref={ref}
-      // style={css}
     >
       <div className="splashModuleColumn splashModuleColumnL">
         <h3>"THE COLORS THAT HEAL"</h3>
@@ -162,14 +144,10 @@ function SplashModule1() {
     window.open("https://app.endaoment.org/orgs/843739888");
   };
 
-  // const { ref, css } = useStickySection();
-
   return (
     <div
       className="toboSplashModule"
       id="toboSplashModule1"
-      // ref={ref}
-      // style={css}
     >
       <img
         src="img/tobo/splash/module-1-shape.png"
