@@ -37,7 +37,7 @@
 /* TOBOPage */
 
 body {
-  background-color: var(--tobo-blue) !important;
+  background-color: var(--tobo-blue);
 }
 
 #toboPage {
