@@ -9,11 +9,8 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import ConnectWallet from "components/ConnectWallet";
-import { appTitle } from "config";
-import { Button } from "@mui/material";
 import { StyledButton } from "./tobo/components/StyledButton";
 
 const navItems = [

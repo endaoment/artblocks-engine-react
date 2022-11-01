@@ -3,9 +3,6 @@ import useProjects from "hooks/useProjects";
 import Box from "@mui/material/Box";
 import Alert from "@mui/material/Alert";
 import Typography from "@mui/material/Typography";
-import InputLabel from "@mui/material/InputLabel";
-import FormControl from "@mui/material/FormControl";
-import NativeSelect from "@mui/material/NativeSelect";
 import Masonry from "@mui/lab/Masonry";
 import { OrderDirection, Project } from "utils/types";
 import { useWindowSize } from "hooks/useWindowSize";
@@ -13,7 +10,6 @@ import useTheme from "@mui/material/styles/useTheme";
 import ProjectSummary from "./ProjectSummary";
 import Loading from "./Loading";
 import { projectsPerPage } from "config";
-import { Pagination } from "@mui/material";
 
 const ProjectList = () => {
   const size = useWindowSize();

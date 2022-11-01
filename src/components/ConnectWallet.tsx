@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useWeb3React } from "@web3-react/core";
-import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
