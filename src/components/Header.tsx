@@ -96,7 +96,7 @@ const Header = () => {
             }}
           >
             <img
-              src="img/tobo/logo.svg"
+              src="/img/tobo/logo.svg"
               alt="TURNOUT FOR BURNOUT"
               id="toboLogo"
             />
