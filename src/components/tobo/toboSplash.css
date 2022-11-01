@@ -2,7 +2,7 @@
 
 #toboSplashHeader {
   position: sticky;
-  top: 0;
+  top: 80px;
   overflow: hidden;
   height: 647px;
   display: flex;
@@ -90,6 +90,7 @@ img#splashHeaderBg {
 @media only screen and (max-width: 767px) {
   #toboSplashHeader {
     height: 431px;
+    top: 60px;
   }
 
   #splashHeaderLineXL,

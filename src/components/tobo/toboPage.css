@@ -42,10 +42,13 @@ body {
 
 #toboPage {
   width: 100%;
-  /* max-width: 1512px; */
   margin: auto;
   position: relative;
   line-height: 0;
+}
+
+#toboPage main {
+  margin-top: 80px;
 }
 
 #toboPage h1,
@@ -85,6 +88,10 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  #toboPage main {
+    margin-top: 60px;
+  }
+
   #toboPage h3 {
     font-size: 30px;
   }

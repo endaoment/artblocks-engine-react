@@ -30,10 +30,8 @@ img#toboMobileLogo {
   border-radius: 14px;
   position: absolute;
   right: 15px;
-  top: 14px;
+  top: 12px;
   cursor: pointer;
-  box-shadow: none;
-  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 767px) {
