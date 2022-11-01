@@ -33,7 +33,9 @@ const LinkBehavior = React.forwardRef<
 
 const { palette } = createTheme();
 
-const headerFonts = { fontFamily: "anonymous-pro-b, serif" };
+const headerFonts = {
+  fontFamily: "oswald-medium, anonymous-pro-b, serif",
+};
 
 // A custom theme for this app
 const theme = createTheme({
@@ -52,10 +54,10 @@ const theme = createTheme({
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"',
     ].join(","),
-    h1: { ...headerFonts },
-    h2: { ...headerFonts },
-    h3: { ...headerFonts },
-    h4: { ...headerFonts },
+    h1: { ...headerFonts, textTransform: "uppercase" },
+    h2: { ...headerFonts, textTransform: "uppercase" },
+    h3: { ...headerFonts, textTransform: "uppercase" },
+    h4: { ...headerFonts, textTransform: "uppercase" },
   },
   palette: {
     primary: {
