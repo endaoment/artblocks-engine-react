@@ -36,6 +36,10 @@
 
 /* TOBOPage */
 
+body {
+  background-color: var(--tobo-blue) !important;
+}
+
 #toboPage {
   width: 100%;
   /* max-width: 1512px; */
