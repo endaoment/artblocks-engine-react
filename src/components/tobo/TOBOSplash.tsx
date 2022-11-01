@@ -167,7 +167,7 @@ function SplashModule1() {
           id="splashModule1Logo"
         />
         <p>
-          Face it—we're all a bit burnt out. Let's raise funds to reduce burnout
+          Face it — we're all a bit burnt out. Let's raise funds to reduce burnout
           amongst healthcare workers through a generative art event &amp;
           auction.
         </p>
