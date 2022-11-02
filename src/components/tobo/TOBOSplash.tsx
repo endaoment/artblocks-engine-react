@@ -1,4 +1,5 @@
 import TOBOButton from "./TOBOButton";
+import TOBOProjects from "./TOBOProjects";
 import "./toboSplash.css";
 
 /* SplashModule4 */
@@ -6,10 +7,10 @@ import "./toboSplash.css";
 function SplashModule4() {
   return (
     <div
-      className="toboSplashModule"
+      className="toboModule"
       id="toboSplashModule4"
     >
-      <div className="splashModuleColumn splashModuleColumnL">
+      <div className="moduleColumn splashModuleColumnL">
         <h3>FROM ARTISTS WHO UNDERSTAND</h3>
         <p>
           "Some people might navigate workload and pressure more efficiently
@@ -32,7 +33,7 @@ function SplashModule4() {
         </p>
       </div>
 
-      <div className="splashModuleColumn splashModuleColumnR">
+      <div className="moduleColumn splashModuleColumnR">
         <img
           src="https://endaoment-gallery-for-good---flex-goerli.s3.amazonaws.com/8.png"
           alt=""
@@ -57,14 +58,14 @@ function SplashModule3() {
 
   return (
     <div
-      className="toboSplashModule"
+      className="toboModule"
       id="toboSplashModule3"
     >
-      <div className="splashModuleColumn splashModuleColumnL">
+      <div className="moduleColumn splashModuleColumnL">
         <img src="img/tobo/splash/module-3-hero.png" alt="" />
       </div>
 
-      <div className="splashModuleColumn splashModuleColumnR">
+      <div className="moduleColumn splashModuleColumnR">
         <h3>FIGHTING BURNOUT</h3>
         <p>
           <a href="https://sostento.org" target="_blank" rel="noreferrer">
@@ -96,10 +97,10 @@ function SplashModule2() {
 
   return (
     <div
-      className="toboSplashModule"
+      className="toboModule"
       id="toboSplashModule2"
     >
-      <div className="splashModuleColumn splashModuleColumnL">
+      <div className="moduleColumn splashModuleColumnL">
         <h3>"THE COLORS THAT HEAL"</h3>
         <p>
           Our marquee generative art collection is a box of memories,a garden of
@@ -119,7 +120,7 @@ function SplashModule2() {
         </p>
       </div>
 
-      <div className="splashModuleColumn splashModuleColumnR">
+      <div className="moduleColumn splashModuleColumnR">
         <img
           src="https://endaoment-gallery-for-good---flex-goerli.s3.amazonaws.com/20.png"
           alt=""
@@ -146,7 +147,7 @@ function SplashModule1() {
 
   return (
     <div
-      className="toboSplashModule"
+      className="toboModule"
       id="toboSplashModule1"
     >
       <img
@@ -155,12 +156,12 @@ function SplashModule1() {
         id="splashModule1Shape"
       />
 
-      <div className="splashModuleColumn splashModuleColumnL">
+      <div className="moduleColumn splashModuleColumnL">
         <img src="img/tobo/splash/module-1-hero.jpg" alt="" />
         <div id="splashModule1Circle"></div>
       </div>
 
-      <div className="splashModuleColumn splashModuleColumnR">
+      <div className="moduleColumn splashModuleColumnR">
         <img
           src="img/tobo/splash/module-1-logo.svg"
           alt="TURNOUT FOR BURNOUT"
@@ -235,6 +236,7 @@ const TOBOSplash = () => {
       <SplashModule2 />
       <SplashModule3 />
       <SplashModule4 />
+      <TOBOProjects />
     </div>
   );
 };

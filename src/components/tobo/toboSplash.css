@@ -134,35 +134,6 @@ img#splashHeaderBg {
   }
 }
 
-/* SplashModule */
-
-.toboSplashModule {
-  border-radius: 70px 70px 0px 0px;
-  position: sticky;
-  top: 0;
-  margin-top: -70px;
-  min-height: 75vh;
-  background-color: #fff;
-}
-
-.splashModuleColumn {
-  float: left;
-  width: 50%;
-  position: relative;
-}
-
-@media only screen and (max-width: 767px) {
-  .toboSplashModule {
-    border-radius: 36px 36px 0px 0px;
-    margin-top: -36px;
-    position: relative;
-  }
-
-  .splashModuleColumn {
-    width: 100%;
-  }
-}
-
 /* SplashModule1 */
 
 #toboSplashModule1 {

@@ -1,4 +1,4 @@
-import TOBOConnectWallet from './TOBOConnectWallet';
+import ConnectWallet from '../ConnectWallet';
 import './toboHeader.css';
 
 /* TOBOHeader */
@@ -11,7 +11,7 @@ const TOBOHeader = () => {
         <img src="img/tobo/logo-footer.svg" alt="TURNOUT FOR BURNOUT" id="toboMobileLogo" />
       </h1>
 
-      <TOBOConnectWallet />
+      <ConnectWallet />
     </header>
   );
 }

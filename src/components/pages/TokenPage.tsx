@@ -1,17 +1,17 @@
-import Page from "components/Page";
-import { useParams } from "react-router-dom";
-import TokenDetails from "components/TokenDetails";
-import ProjectList from "components/ProjectList";
+import Page from 'components/Page';
+import { useParams } from 'react-router-dom';
+import TokenDetails from 'components/TokenDetails';
 
 const TokenPage = () => {
   const { id } = useParams();
 
   return (
     <Page>
-      {id && <TokenDetails id={id} />}
-      <ProjectList />
+      {
+        id && <TokenDetails id={id} />
+      }
     </Page>
-  );
-};
+  )
+}
 
 export default TokenPage;
