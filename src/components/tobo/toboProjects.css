@@ -2,6 +2,8 @@
 
 #toboProjects {
   background-color: var(--tobo-yellow);
+  min-height: 125vh;
+  padding-bottom: 187px;
 }
 
 #toboProjects .moduleColumn {
@@ -37,8 +39,16 @@ a#projectsArtBlocks img#artBlocksArrow {
 }
 
 @media only screen and (max-width: 767px) {
+  #toboProjects {
+    padding-bottom: 94px;
+  }
+
   #toboProjects h3 {
     margin-top: 50px;
+  }
+
+  #toboProjects p {
+    width: 75%;
   }
 
   a#projectsArtBlocks {
@@ -55,5 +65,106 @@ a#projectsArtBlocks img#artBlocksArrow {
     height: 16px;
     margin-left: 8px;
     vertical-align: 6px;
+  }
+}
+
+/* TOBOProject */
+
+.toboProject {
+  background-color: #FFF;
+  margin-left: 5.6%;
+  width: 88.7%;
+  margin-top: 45px;
+  border-radius: 65px;
+  padding-bottom: 47px;
+  position: relative;
+}
+
+img#projectHero {
+  width: 27.8%;
+  margin-top: 47px;
+  margin-left: 3.5%;
+  float: left;
+}
+
+.projectCircle {
+  position: absolute;
+  width: 7.8%;
+  aspect-ratio: 4/4;
+  background-color: var(--tobo-red);
+  mix-blend-mode: multiply;
+  border-radius: 999px;
+  top: 239px;
+  left: 27.4%;
+}
+
+.projectDetails {
+  float: right;
+  width: 57.3%;
+  margin-right: 4%;
+  margin-top: 47px;
+}
+
+#toboProjects .projectDetails h3 {
+  margin-top: 22px;
+  margin-left: 0;
+}
+
+#toboProjects .projectDetails h4 {
+  margin-top: 14px;
+  font-family: "anonymous-pro-b", serif;
+  font-size: 36px;
+}
+
+.projectDetails h4 span {
+  color: var(--tobo-red);
+}
+
+#toboProjects .projectDetails p {
+  margin-top: 25px;
+  width: 100%;
+  margin-left: 0;
+  font-size: 20px;
+  font-family: "inter-regular", sans-serif;
+  line-height: 134%;
+  letter-spacing: 0.015em;
+}
+
+@media only screen and (max-width: 767px) {
+  .toboProject {
+    border-radius: 36px;
+    padding-bottom: 24px;
+  }
+
+  img#projectHero {
+    width: 90%;
+    margin-top: 32px;
+    margin-left: 5%;
+  }
+
+  .projectCircle {
+    width: 16%;
+    left: auto;
+    right: -2.8%;
+  }
+
+  .projectDetails {
+    width: 90%;
+    margin-right: 5%;
+    margin-top: 24px;
+  }
+
+  #toboProjects .projectDetails h3 {
+    margin-top: 12px;
+  }
+
+  #toboProjects .projectDetails h4 {
+    margin-top: 8px;
+    font-size: 24px;
+  }
+
+  #toboProjects .projectDetails p {
+    margin-top: 12px;
+    font-size: 14px;
   }
 }
