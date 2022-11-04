@@ -103,6 +103,7 @@ img#projectHero {
   width: 57.3%;
   margin-right: 4%;
   margin-top: 47px;
+  position: relative;
 }
 
 #toboProjects .projectDetails h3 {
@@ -128,6 +129,64 @@ img#projectHero {
   font-family: "inter-regular", sans-serif;
   line-height: 134%;
   letter-spacing: 0.015em;
+}
+
+span.projectMinted {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+  font-family: "inter-regular", sans-serif;
+  border: 1px solid var(--tobo-dark);
+  line-height: 1;
+  border-radius: 999px;
+  padding: 14px;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+.projectLogos {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+  padding-top: 21px;
+}
+
+.projectLogos span {
+  display: block;
+  line-height: 1;
+  font-size: 21px;
+  color: var(--tobo-red);
+  font-family: "inter-bold", sans-serif;
+}
+
+.projectLogos a {
+  margin-top: 20px;
+  float: left;
+  margin-right: 37px;
+}
+
+.projectLogos a img {
+  filter: invert(1);
+  height: 45px;
+}
+
+#toboPage button.projectMint {
+  background-color: var(--tobo-red);
+  color: #FFF;
+  font-family: "inter-medium", sans-serif;
+  font-size: 28px;
+  border-radius: 999px;
+  padding: 12px;
+  padding-left: 29px;
+  padding-right: 29px;
+  cursor: pointer;
+  position: absolute;
+  right: 3.6%;
+  margin-top: 20px;
+}
+
+button.projectMint span {
+  font-family: "inter-bold", sans-serif;
 }
 
 @media only screen and (max-width: 767px) {
@@ -166,5 +225,39 @@ img#projectHero {
   #toboProjects .projectDetails p {
     margin-top: 12px;
     font-size: 14px;
+  }
+
+  span.projectMinted {
+    font-size: 12px;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .projectLogos {
+    margin-top: 16px;
+    padding-top: 12px;
+  }
+
+  .projectLogos span {
+    font-size: 16px;
+  }
+
+  .projectLogos a {
+    margin-top: 12px;
+    margin-right: 12px;
+  }
+
+  .projectLogos a img {
+    height: 28px;
+  }
+
+  #toboPage button.projectMint {
+    font-size: 16px;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    right: 3.6%;
+    margin-top: 8px;
   }
 }

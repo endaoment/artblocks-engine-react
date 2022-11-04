@@ -12,9 +12,20 @@ const TOBOProject = () => {
         <h3>JPEG 1</h3>
         <h4>by <span>istgalo</span></h4>
         <p>Dedicated a variety of causes finding solutions for burnout and combatting the resulting symptoms. Dedicated a variety of causes finding solutions for burnout and combatting the resulting symptoms. Dedicated a variety of causes finding solutions for burnout and combatting the resulting symptoms.</p>
+        <span className="projectMinted">1 of 400 minted</span>
+
+        <div className="projectLogos">
+          <span>Proceeds go to:</span>
+          <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="img/tobo/logo-endaoment.png" alt="Endaoment" /></a>
+          <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="img/tobo/logo-endaoment.png" alt="Endaoment" /></a>
+          <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="img/tobo/logo-endaoment.png" alt="Endaoment" /></a>
+          <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="img/tobo/logo-endaoment.png" alt="Endaoment" /></a>
+          <div className="clear"></div>
+        </div>
       </div>
 
       <div className="clear"></div>
+      <button className="projectMint"><span>Mint</span> / Learn more</button>
     </div>
   );
 }
