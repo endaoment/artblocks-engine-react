@@ -5,10 +5,7 @@ import "./toboSplash.css";
 
 function SplashModule4() {
   return (
-    <div
-      className="toboSplashModule"
-      id="toboSplashModule4"
-    >
+    <div className="toboSplashModule" id="toboSplashModule4">
       <div className="splashModuleColumn splashModuleColumnL">
         <h3>FROM ARTISTS WHO UNDERSTAND</h3>
         <p>
@@ -56,10 +53,7 @@ function SplashModule3() {
   };
 
   return (
-    <div
-      className="toboSplashModule"
-      id="toboSplashModule3"
-    >
+    <div className="toboSplashModule" id="toboSplashModule3">
       <div className="splashModuleColumn splashModuleColumnL">
         <img src="img/tobo/splash/module-3-hero.png" alt="" />
       </div>
@@ -70,9 +64,9 @@ function SplashModule3() {
           <a href="https://sostento.org" target="_blank" rel="noreferrer">
             Sostento
           </a>
-          &nbsp;is a tax-exempt 501c3 charitable organization. Proceeds will directly
-          support programs that reduce burnout among frontline healthcare
-          workers who provide services to families living in poverty.
+          &nbsp;is a tax-exempt 501c3 charitable organization. Proceeds will
+          directly support programs that reduce burnout among frontline
+          healthcare workers who provide services to families living in poverty.
         </p>
 
         <div id="splashModule3Social">
@@ -89,23 +83,21 @@ function SplashModule3() {
 
 function SplashModule2() {
   const spaceClick = () => {
-    window.open(
-      "https://twitter.com/artblocksengine/status/1564256836764798978"
-    );
+    window.open("https://twitter.com/i/spaces/1nAJErlaQabxL");
   };
 
   return (
-    <div
-      className="toboSplashModule"
-      id="toboSplashModule2"
-    >
+    <div className="toboSplashModule" id="toboSplashModule2">
       <div className="splashModuleColumn splashModuleColumnL">
         <h3>"THE COLORS THAT HEAL"</h3>
         <p>
           Our marquee generative art collection is a box of memories,a garden of
           hope,and a beacon of encouragement from generative artist Ryan Green.
         </p>
-        <TOBOButton text="About AB Engine" action={spaceClick} />
+        <TOBOButton
+          text="Set Reminder: 11/7 Twitter Space"
+          action={spaceClick}
+        />
         <p>
           "Having someone that will say 'I see you, let me go with you' is a
           simple gesture that is profoundly encouraging.” -&nbsp;
@@ -145,10 +137,7 @@ function SplashModule1() {
   };
 
   return (
-    <div
-      className="toboSplashModule"
-      id="toboSplashModule1"
-    >
+    <div className="toboSplashModule" id="toboSplashModule1">
       <img
         src="img/tobo/splash/module-1-shape.png"
         alt=""
@@ -167,9 +156,9 @@ function SplashModule1() {
           id="splashModule1Logo"
         />
         <p>
-          Face it — we're all a bit burnt out. Let's raise funds to reduce burnout
-          amongst healthcare workers through a generative art event &amp;
-          auction.
+          Face it — we're all a bit burnt out. Let's raise funds to reduce
+          burnout amongst healthcare workers through a generative art event
+          &amp; auction.
         </p>
         <TOBOButton text="Donate NFTs" viaEndaoment={true} action={nftClick} />
         <TOBOButton
