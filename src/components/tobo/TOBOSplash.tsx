@@ -92,7 +92,7 @@ function SplashModule2() {
         </p>
         <div id="splashModule2Mint">
           <TOBOButton text="Generate Artwork" disabled={true} />
-          <span>Minting begins November 15th, 2022</span>
+          <span>Minting begins 11/15/22</span>
         </div>
         <p>
           "Having someone that will say 'I see you, let me go with you' is a
@@ -169,7 +169,7 @@ function SplashModule1() {
 
         <div id="splashModule1Mint">
           <TOBOButton text="Listen: Twitter Space" action={spaceClick} />
-          <span>Space begins 4pm ET November 7th, 2022</span>
+          <span>Space begins 4pm today</span>
         </div>
       </div>
 
