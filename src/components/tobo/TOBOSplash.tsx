@@ -62,7 +62,7 @@ function SplashModule3() {
       id="toboSplashModule3"
     >
       <div className="moduleColumn splashModuleColumnL">
-        <img src="img/tobo/splash/module-3-hero.png" alt="" />
+        <img src="/img/tobo/splash/module-3-hero.png" alt="" />
       </div>
 
       <div className="moduleColumn splashModuleColumnR">
@@ -151,19 +151,19 @@ function SplashModule1() {
       id="toboSplashModule1"
     >
       <img
-        src="img/tobo/splash/module-1-shape.png"
+        src="/img/tobo/splash/module-1-shape.png"
         alt=""
         id="splashModule1Shape"
       />
 
       <div className="moduleColumn splashModuleColumnL">
-        <img src="img/tobo/splash/module-1-hero.jpg" alt="" />
+        <img src="/img/tobo/splash/module-1-hero.jpg" alt="" />
         <div id="splashModule1Circle"></div>
       </div>
 
       <div className="moduleColumn splashModuleColumnR">
         <img
-          src="img/tobo/splash/module-1-logo.svg"
+          src="/img/tobo/splash/module-1-logo.svg"
           alt="TURNOUT FOR BURNOUT"
           id="splashModule1Logo"
         />
@@ -198,7 +198,7 @@ function SplashModule1() {
 function SplashHeader() {
   return (
     <div id="toboSplashHeader">
-      <img src="img/tobo/splash/header.jpg" alt="" id="splashHeaderBg" />
+      <img src="/img/tobo/splash/header.jpg" alt="" id="splashHeaderBg" />
       <div id="splashHeaderBgOverlay"></div>
       <div className="splashHeaderLine" id="splashHeaderLineXL"></div>
       <div className="splashHeaderLine" id="splashHeaderLineXR"></div>
@@ -213,13 +213,13 @@ function SplashHeader() {
       <div id="splashHeaderLogos">
         <span>POWERED BY</span>
         <a href="https://sostento.org/" target="_blank" rel="noreferrer">
-          <img src="img/tobo/logo-sostento.png" alt="Sostento" />
+          <img src="/img/tobo/logo-sostento.png" alt="Sostento" />
         </a>
         <a href="https://endaoment.org/" target="_blank" rel="noreferrer">
-          <img src="img/tobo/logo-endaoment.png" alt="Endaoment" />
+          <img src="/img/tobo/logo-endaoment.png" alt="Endaoment" />
         </a>
         <a href="https://www.artblocks.io/" target="_blank" rel="noreferrer">
-          <img src="img/tobo/logo-artblocks.png" alt="ArtBlocks" />
+          <img src="/img/tobo/logo-artblocks.png" alt="ArtBlocks" />
         </a>
       </div>
     </div>

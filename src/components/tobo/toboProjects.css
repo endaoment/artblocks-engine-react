@@ -113,8 +113,6 @@ img#projectHero {
 
 #toboProjects .projectDetails h4 {
   margin-top: 14px;
-  font-family: "anonymous-pro-b", serif;
-  font-size: 36px;
 }
 
 .projectDetails h4 span {
@@ -219,7 +217,6 @@ button.projectMint span {
 
   #toboProjects .projectDetails h4 {
     margin-top: 8px;
-    font-size: 24px;
   }
 
   #toboProjects .projectDetails p {

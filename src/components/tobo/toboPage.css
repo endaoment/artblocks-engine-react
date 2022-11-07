@@ -67,6 +67,12 @@ body {
   color: var(--tobo-dark);
 }
 
+#toboPage h4 {
+  font-family: "anonymous-pro-b", serif;
+  font-size: 36px;
+  color: var(--tobo-dark);
+}
+
 #toboPage p {
   font-family: "anonymous-pro-b", serif;
   font-size: 32px;
@@ -86,8 +92,6 @@ body {
   outline: none;
   line-height: 1;
 }
-
-/* SplashModule */
 
 .toboModule {
   border-radius: 70px 70px 0px 0px;
@@ -111,6 +115,10 @@ body {
 
   #toboPage h3 {
     font-size: 30px;
+  }
+
+  #toboPage h4 {
+    font-size: 24px;
   }
 
   #toboPage p {

@@ -5,7 +5,7 @@ import "./toboProjects.css";
 const TOBOProject = () => {
   return (
     <div className="toboProject">
-      <img src="img/tobo/project/project-hero.png" alt="" id="projectHero" />
+      <img src="/img/tobo/project/project-hero.png" alt="" id="projectHero" />
       <div className="projectCircle"></div>
 
       <div className="projectDetails">
@@ -16,10 +16,10 @@ const TOBOProject = () => {
 
         <div className="projectLogos">
           <span>Proceeds go to:</span>
-          <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="img/tobo/logo-endaoment.png" alt="Endaoment" /></a>
-          <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="img/tobo/logo-endaoment.png" alt="Endaoment" /></a>
-          <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="img/tobo/logo-endaoment.png" alt="Endaoment" /></a>
-          <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="img/tobo/logo-endaoment.png" alt="Endaoment" /></a>
+          <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="/img/tobo/logo-endaoment.png" alt="Endaoment" /></a>
+          <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="/img/tobo/logo-endaoment.png" alt="Endaoment" /></a>
+          <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="/img/tobo/logo-endaoment.png" alt="Endaoment" /></a>
+          <a href="https://endaoment.org/" target="_blank" rel="noreferrer"><img src="/img/tobo/logo-endaoment.png" alt="Endaoment" /></a>
           <div className="clear"></div>
         </div>
       </div>
@@ -38,7 +38,7 @@ const TOBOProjects = () => {
       <div className="moduleColumn">
         <h3>PROJECTS</h3>
         <p>Dedicated a variety of causes finding solutions for burnout and combatting the resulting symptoms.</p>
-        <a href="https://www.artblocks.io/" target="_blank" rel="noreferrer" id="projectsArtBlocks"><img src="img/tobo/logo-artblocks.png" alt="ArtBlocks" /><img src="img/tobo/button-arrow.svg" alt="" id="artBlocksArrow" /></a>
+        <a href="https://www.artblocks.io/" target="_blank" rel="noreferrer" id="projectsArtBlocks"><img src="/img/tobo/logo-artblocks.png" alt="ArtBlocks" /><img src="/img/tobo/button-arrow.svg" alt="" id="artBlocksArrow" /></a>
       </div>
 
       <div className="clear"></div>

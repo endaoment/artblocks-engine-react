@@ -1,0 +1,37 @@
+/* Project details */
+
+#toboProjectDetails {
+  padding-bottom: 141px;
+  border-top: 1px solid var(--tobo-dark);
+  padding-top: 69px;
+}
+
+#projectDetailsPreview {
+  float: left;
+  width: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#projectDetailsInfo {
+  float: right;
+  width: 50%;
+  padding-right: 6%;
+}
+
+@media only screen and (max-width: 767px) {
+  #toboProjectDetails {
+    padding-top: 32px;
+    padding-bottom: 71px;
+  }
+
+  #projectDetailsPreview {
+    width: 100%;
+  }
+
+  #projectDetailsInfo {
+    width: 100%;
+    padding-left: 6%;
+    margin-top: 16px;
+  }
+}
