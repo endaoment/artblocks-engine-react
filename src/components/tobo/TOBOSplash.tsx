@@ -82,10 +82,6 @@ function SplashModule3() {
 /* SplashModule2 */
 
 function SplashModule2() {
-  const spaceClick = () => {
-    window.open("https://twitter.com/i/spaces/1nAJErlaQabxL");
-  };
-
   return (
     <div className="toboSplashModule" id="toboSplashModule2">
       <div className="splashModuleColumn splashModuleColumnL">
@@ -94,10 +90,10 @@ function SplashModule2() {
           Our marquee generative art collection is a box of memories,a garden of
           hope,and a beacon of encouragement from generative artist Ryan Green.
         </p>
-        <TOBOButton
-          text="Set Reminder: 11/7 Twitter Space"
-          action={spaceClick}
-        />
+        <div id="splashModule2Mint">
+          <TOBOButton text="Generate Artwork" disabled={true} />
+          <span>Minting begins November 15th, 2022</span>
+        </div>
         <p>
           "Having someone that will say 'I see you, let me go with you' is a
           simple gesture that is profoundly encouraging.” -&nbsp;
@@ -136,6 +132,10 @@ function SplashModule1() {
     window.open("https://app.endaoment.org/orgs/843739888");
   };
 
+  const spaceClick = () => {
+    window.open("https://twitter.com/i/spaces/1nAJErlaQabxL");
+  };
+
   return (
     <div className="toboSplashModule" id="toboSplashModule1">
       <img
@@ -160,7 +160,7 @@ function SplashModule1() {
           burnout amongst healthcare workers through a generative art event
           &amp; auction.
         </p>
-        <TOBOButton text="Donate NFTs" viaEndaoment={true} action={nftClick} />
+        <TOBOButton text="Donate NFTs" viaEndaoment={false} action={nftClick} />
         <TOBOButton
           text="Donate Crypto"
           viaEndaoment={true}
@@ -168,8 +168,8 @@ function SplashModule1() {
         />
 
         <div id="splashModule1Mint">
-          <TOBOButton text="Mint a Charity Piece" disabled={true} />
-          <span>Minting begins November 15th, 2022</span>
+          <TOBOButton text="Listen: Twitter Space" action={spaceClick} />
+          <span>Space begins 4pm ET November 7th, 2022</span>
         </div>
       </div>
 

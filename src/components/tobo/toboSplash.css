@@ -217,6 +217,14 @@ img#splashModule1Logo {
 
 #toboSplashModule1 #splashModule1Mint button {
   margin-top: 31px;
+  background-color: var(--tobo-blue);
+  
+}
+
+@media (hover: hover) {
+  #toboSplashModule1 #splashModule1Mint button:hover {
+  background-color: var(--tobo-light);
+  }
 }
 
 #splashModule1Mint span {
@@ -316,6 +324,22 @@ img#splashModule1Logo {
 #toboSplashModule2 button {
   margin-left: 14.6%;
   margin-top: 33px;
+}
+
+#toboSplashModule2 #splashModule2Mint button {
+  margin-top: 31px;
+  background-color: ;
+}
+
+#splashModule2Mint span {
+  line-height: 1;
+  margin-left: 14.6%;
+  margin-top: 10px;
+  display: block;
+  padding-left: 20px;
+  font-family: "inter-regular", sans-serif;
+  font-size: 14px;
+  color: var(--tobo-dark);
 }
 
 #toboSplashModule2 .splashModuleColumnR {
