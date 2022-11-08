@@ -1,6 +1,6 @@
 import './toboMint.css';
 
-const TOBOMint = (props: { file: string; }) => {
+const TOBOMint = (props: { file: string; num: string; }) => {
   const expandClick = () => {
 
   }
@@ -15,8 +15,8 @@ const TOBOMint = (props: { file: string; }) => {
 
   return (
     <div className="toboMint">
-      <img src="/img/tobo/project/project-hero.png" alt="" />
-      <span>MINT #0</span>
+      <img src={ props.file } alt="" />
+      <span>MINT #{ props.num }</span>
       <button onClick={ expandClick }><img src="/img/tobo/mint/icon-mint-expand.png" alt="" /></button>
       <button onClick={ fullClick }><img src="/img/tobo/mint/icon-mint-full.png" alt="" /></button>
       <button onClick={ linkClick }><img src="/img/tobo/mint/icon-mint-link.png" alt="" /></button>
