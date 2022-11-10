@@ -71,7 +71,7 @@ a#projectsArtBlocks img#artBlocksArrow {
 /* TOBOProject */
 
 .toboProject {
-  background-color: #FFF;
+  background-color: #fff;
   margin-left: 5.6%;
   width: 88.7%;
   margin-top: 45px;
@@ -170,7 +170,7 @@ span.projectMinted {
 
 #toboPage button.projectMint {
   background-color: var(--tobo-red);
-  color: #FFF;
+  color: #fff;
   font-family: "inter-medium", sans-serif;
   font-size: 28px;
   border-radius: 999px;
@@ -181,6 +181,11 @@ span.projectMinted {
   position: absolute;
   right: 3.6%;
   margin-top: 20px;
+  transition: transform 0.5s;
+}
+
+button.projectMint:hover {
+  transform: translateY(-8px);
 }
 
 button.projectMint span {
