@@ -169,7 +169,12 @@ function SplashModule1() {
 
         <div id="splashModule1Mint">
           <TOBOButton text="Listen: Twitter Space" action={spaceClick} />
-          <span>Space begins 4pm ET today</span>
+          <span>
+            Space begins November 17th at 4PM EST:{" "}
+            <a href="https://www.eventbrite.com/e/turnout-for-burnout-wellness-through-collective-action-tickets-460095597317">
+              Eventbrite
+            </a>
+          </span>
         </div>
       </div>
 

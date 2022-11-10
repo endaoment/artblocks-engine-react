@@ -1,5 +1,14 @@
 /* SplashHeader */
 
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 #toboSplashHeader {
   position: sticky;
   top: 0;
@@ -218,12 +227,11 @@ img#splashModule1Logo {
 #toboSplashModule1 #splashModule1Mint button {
   margin-top: 31px;
   background-color: var(--tobo-blue);
-  
 }
 
 @media (hover: hover) {
   #toboSplashModule1 #splashModule1Mint button:hover {
-  background-color: var(--tobo-light);
+    background-color: var(--tobo-light);
   }
 }
 
@@ -296,7 +304,7 @@ img#splashModule1Logo {
     width: 320px;
     height: 38px;
     font-size: 16px;
-    border-radius:  0px 0px 36px 36px;
+    border-radius: 0px 0px 36px 36px;
   }
 }
 
