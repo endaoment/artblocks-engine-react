@@ -1,17 +1,30 @@
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import useProjects from 'hooks/useProjects';
+import { projectsPerPage } from 'config';
+import { OrderDirection, Project } from 'utils/types';
+import { mediaUrl } from 'config';
 import "./toboProjects.css";
 
 /* TOBOProject */
 
-const TOBOProject = () => {
+const TOBOProject = (props: { project: Project}) => {
+  const navigate = useNavigate();
+  const token = props.project?.tokens[0];
+
+  const ctaClick = () => {
+    navigate(`/project/${ props.project.projectId }`);
+  }
+
   return (
     <div className="toboProject">
-      <img src="/img/tobo/project/project-hero.png" alt="" id="projectHero" />
+      <img src={ `${ mediaUrl }/thumb/${ token.tokenId }.png` } alt="" id="projectHero" />
       <div className="projectCircle"></div>
 
       <div className="projectDetails">
-        <h3>JPEG 1</h3>
-        <h4>by <span>istgalo</span></h4>
-        <p>Dedicated a variety of causes finding solutions for burnout and combatting the resulting symptoms. Dedicated a variety of causes finding solutions for burnout and combatting the resulting symptoms. Dedicated a variety of causes finding solutions for burnout and combatting the resulting symptoms.</p>
+        <h3>{ props.project.name }</h3>
+        <h4>by <span>{ props.project.artistName }</span></h4>
+        <p>{ props.project.description }</p>
         <span className="projectMinted">1 of 400 minted</span>
 
         <div className="projectLogos">
@@ -25,7 +38,7 @@ const TOBOProject = () => {
       </div>
 
       <div className="clear"></div>
-      <button className="projectMint"><span>Mint</span> / Learn more</button>
+      <button className="projectMint" onClick={ ctaClick }><span>Mint</span> / Learn more</button>
     </div>
   );
 }
@@ -33,6 +46,12 @@ const TOBOProject = () => {
 /* TOBOProjects*/
 
 const TOBOProjects = () => {
+  const [currentPage] = useState(0);
+  const skip = currentPage * projectsPerPage;
+  const first = projectsPerPage;
+  const [orderDirection] = useState<OrderDirection>(OrderDirection.DESC);
+  const { data } = useProjects({ skip, first, orderDirection });
+
   return (
     <div className="toboModule" id="toboProjects">
       <div className="moduleColumn">
@@ -42,7 +61,7 @@ const TOBOProjects = () => {
       </div>
 
       <div className="clear"></div>
-      <TOBOProject />
+      { data?.projects && data.projects?.map((project: Project, i: number) => (<TOBOProject key={ i } project={ project } />)) }
     </div>
   );
 };
