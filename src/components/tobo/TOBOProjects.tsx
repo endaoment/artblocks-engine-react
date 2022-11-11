@@ -25,7 +25,7 @@ const TOBOProject = (props: { project: Project}) => {
         <h3>{ props.project.name }</h3>
         <h4>by <span>{ props.project.artistName }</span></h4>
         <p>{ props.project.description }</p>
-        <span className="projectMinted">1 of 400 minted</span>
+        <span className="projectMinted">{ `${ props.project.invocations } of ${ props.project.maxInvocations } minted` }</span>
 
         <div className="projectLogos">
           <span>Proceeds go to:</span>

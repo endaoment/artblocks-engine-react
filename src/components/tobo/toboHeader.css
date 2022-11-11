@@ -8,6 +8,10 @@
   top: 0;
 }
 
+#toboPage header h1 {
+  cursor: pointer;
+}
+
 img#toboLogo {
   height: 80px;
   margin: auto;
