@@ -2,12 +2,12 @@
 import TOBOPage from 'components/tobo/TOBOPage';
 //import Alert from '@mui/material/Alert';
 //import ProjectDetails from 'components/ProjectDetails';
-//import { useParams } from 'react-router-dom';
-//import { coreContractAddress } from 'config';
+import { useParams } from 'react-router-dom';
+import { coreContractAddress } from 'config';
 import TOBOProject from 'components/tobo/TOBOProject';
 
 const ProjectPage = () => {
-  //const { projectId } = useParams();
+  const { projectId } = useParams();
 
   return (
     <TOBOPage>
@@ -20,7 +20,7 @@ const ProjectPage = () => {
           </Alert>
         )
       } */}
-      <TOBOProject />
+      <TOBOProject id={ coreContractAddress?.toLowerCase() + '-' + projectId } />
     </TOBOPage>
   )
 }

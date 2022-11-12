@@ -10,15 +10,15 @@ function OtherTokens() {
       <h3>OTHER JPEG TOKENS</h3>
 
       <div className="otherTokensMint">
-        <TOBOMint file="/img/tobo/project/project-hero.png" num="1" />
+        <TOBOMint id="1" />
       </div>
 
       <div className="otherTokensMint">
-        <TOBOMint file="/img/tobo/project/project-hero.png" num="2" />
+        <TOBOMint id="1" />
       </div>
 
       <div className="otherTokensMint">
-        <TOBOMint file="/img/tobo/project/project-hero.png" num="3" />
+        <TOBOMint id="1" />
       </div>
 
       <div className="clear"></div>
@@ -54,10 +54,10 @@ function TokenInfo() {
         <br />
         <br />
         <span>Owned by:</span> ryangreen8</p>
-        <a href="" target="_blank" rel="noreferrer" className="detailsFooterLink"><span>View on Archipelego</span> -&gt;</a>
-        <a href="" target="_blank" rel="noreferrer" className="detailsFooterLink"><span>View on OpenSea</span> -&gt;</a>
-        <a href="" target="_blank" rel="noreferrer" className="detailsFooterLink"><span>View on Etherscan</span> -&gt;</a>
-        <a href="" target="_blank" rel="noreferrer" className="detailsFooterLink"><span>View on LooksRare</span> -&gt;</a>
+        <a href="https://endaoment.org/" target="_blank" rel="noreferrer" className="detailsFooterLink"><span>View on Archipelego</span> -&gt;</a>
+        <a href="https://endaoment.org/" target="_blank" rel="noreferrer" className="detailsFooterLink"><span>View on OpenSea</span> -&gt;</a>
+        <a href="https://endaoment.org/" target="_blank" rel="noreferrer" className="detailsFooterLink"><span>View on Etherscan</span> -&gt;</a>
+        <a href="https://endaoment.org/" target="_blank" rel="noreferrer" className="detailsFooterLink"><span>View on LooksRare</span> -&gt;</a>
       </div>
 
       <div className="moduleColumn" id="infoMeta">

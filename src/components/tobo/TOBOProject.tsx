@@ -1,26 +1,25 @@
 import TOBOButton from "./TOBOButton";
 import TOBOMint from "./TOBOMint";
 import TOBOProjects from "./TOBOProjects";
+import useProject from 'hooks/useProject';
 import "./toboProject.css";
 
 /* Tokens */
 
-function ProjectTokens() {
+function ProjectTokens(props: { id: string }) {
+  const { data } = useProject(props.id);
+  const project = data?.project;
+  const invocations = parseInt(project?.invocations);
+
   return (
     <div id="toboProjectTokens">
       <h3>TOKENS</h3>
 
-      <div className="projectTokensMint">
-        <TOBOMint file="/img/tobo/project/project-hero.png" num="1" />
+      { project && [...Array(invocations < 10 ? invocations : 10)].map((_n, i: number) => (
+      <div key={ i } className="projectTokensMint">
+        <TOBOMint id={ i.toString() } />
       </div>
-
-      <div className="projectTokensMint">
-        <TOBOMint file="/img/tobo/project/project-hero.png" num="2" />
-      </div>
-
-      <div className="projectTokensMint">
-        <TOBOMint file="/img/tobo/project/project-hero.png" num="3" />
-      </div>
+    ))}
 
       <div className="clear"></div>
     </div>
@@ -29,7 +28,11 @@ function ProjectTokens() {
 
 /* Project Details */
 
-function ProjectDetails() {
+function ProjectDetails(props: { id: string }) {
+  const { data } = useProject(props.id);
+  const project = data?.project;
+  const token = project?.tokens[0];
+
   const nftClick = () => {
     window.open("https://opensea.io/endaoment");
   };
@@ -41,21 +44,19 @@ function ProjectDetails() {
   return (
     <div id="toboProjectDetails">
       <div id="projectDetailsPreview">
-        <TOBOMint file="/img/tobo/project/project-hero.png" num="1" />
+        { token && <TOBOMint id={ token.tokenId } /> }
       </div>
 
       <div id="projectDetailsInfo">
-        <h3>JPEG 1</h3>
+        <h3>{ project && project.name }</h3>
         <button id="infoMint">Mint</button>
         <div className="clear"></div>
-        <h4>RYAN GREEN</h4>
-        <h5><span>3</span> of <span>275</span> minted</h5>
+        <h4>{ project && project.artistName }</h4>
+        <h5><span>{ project && project.invocations }</span> of <span>{ project && project.maxInvocations }</span> minted</h5>
         <p id="infoTime">This descending auction has a start time of Oct 31, 2022, 12:00 PM GMT-5 at the price of 1.5 Ξ and will exponentially decrease until the resting price of 0.15 Ξ is met.<br />
         <br />
         <span>price per token:</span> 1.5Ξ</p>
-        <p id="infoNote">Compression has been the driving force behind the image-based internet since the early 90s. No compression, no Netscape, no social media, no NFTs. The JPEG compression has specifically enabled photography-based imagery on the net. It has always served that purpose and over time become the de facto default for showing high quality imagery online. But compression always leaves a trace, which has become the lens through which the network sees the world of uploaded images.<br />
-        <br />
-        "A painting is not a picture of an experience, but is the experience." ― Mark Rothko</p>
+        <p id="infoNote">{ project && project.description }</p>
 
         <div id="infoLinks">
           <span id="linksHeading">Proceeds go to:</span>
@@ -75,11 +76,15 @@ function ProjectDetails() {
 
 /* TOBOProject */
 
-const TOBOProject = () => {
+const TOBOProject = (props: { id: string | undefined }) => {
   return (
     <div id="toboProject">
-      <ProjectDetails />
-      <ProjectTokens />
+      { props.id &&
+        <>
+          <ProjectDetails id={ props.id } />
+          <ProjectTokens id={ props.id } />
+        </>
+      }
       <TOBOProjects />
     </div>
   );
