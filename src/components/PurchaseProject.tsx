@@ -52,7 +52,7 @@ const PurchaseProject = ({ project }:Props) => {
 
   const mint = () => {
     if (!provider || !mintContractAddress) {
-      return; 
+      return;
     }
     notifyTx({
       method: mintAction,
@@ -67,7 +67,7 @@ const PurchaseProject = ({ project }:Props) => {
       },
       onSubmitted: () => setPending(true),
       onError: () => setPending(false),
-    }); 
+    });
   }
 
   if (!project) {
@@ -130,7 +130,7 @@ const PurchaseProject = ({ project }:Props) => {
       symbol: project.currencySymbol,
     }
   }
-  
+
   const Mint = () => (
     <Button
       variant="contained"
@@ -138,7 +138,8 @@ const PurchaseProject = ({ project }:Props) => {
       onClick={mint}
 
     >
-      Purchase a mint { utils.formatEther(weiPrice) } { project.currencySymbol }
+    Mint
+      { /* Purchase a mint { utils.formatEther(weiPrice) } { project.currencySymbol } */ }
     </Button>
   );
 

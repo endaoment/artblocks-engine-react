@@ -2,6 +2,9 @@ import TOBOButton from "./TOBOButton";
 import TOBOMint from "./TOBOMint";
 import TOBOProjects from "./TOBOProjects";
 import useProject from 'hooks/useProject';
+import PurchaseProject from '../PurchaseProject';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import "./toboProject.css";
 
 /* Tokens */
@@ -49,7 +52,11 @@ function ProjectDetails(props: { id: string }) {
 
       <div id="projectDetailsInfo">
         <h3>{ project && project.name }</h3>
-        <button id="infoMint">Mint</button>
+
+        <div id="infoMint">
+          { project && <PurchaseProject project={project} /> }
+        </div>
+
         <div className="clear"></div>
         <h4>{ project && project.artistName }</h4>
         <h5><span>{ project && project.invocations }</span> of <span>{ project && project.maxInvocations }</span> minted</h5>

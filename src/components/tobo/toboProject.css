@@ -26,7 +26,7 @@
   color: var(--tobo-dark);
 }
 
-button#infoMint {
+#infoMint button {
   width: 155px;
   height: 56px;
   background-color: var(--tobo-dark);
@@ -42,7 +42,7 @@ button#infoMint {
   transition: transform 0.5s;
 }
 
-button#infoMint:hover {
+#infoMint button:hover {
   outline: 1px solid #fff;
   filter: invert(1);
   transform: translatey(-6px) rotate(-2deg);
@@ -148,7 +148,7 @@ span#linksHeading {
     float: none;
   }
 
-  button#infoMint {
+  #infoMint button {
     float: none;
     margin-top: 16px;
     width: 96px;
