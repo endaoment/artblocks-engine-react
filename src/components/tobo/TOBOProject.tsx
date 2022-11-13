@@ -3,8 +3,6 @@ import TOBOMint from "./TOBOMint";
 import TOBOProjects from "./TOBOProjects";
 import useProject from 'hooks/useProject';
 import PurchaseProject from '../PurchaseProject';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
 import "./toboProject.css";
 
 /* Tokens */
@@ -47,7 +45,7 @@ function ProjectDetails(props: { id: string }) {
   return (
     <div id="toboProjectDetails">
       <div id="projectDetailsPreview">
-        { token && <TOBOMint invocation={ token.tokenId } /> }
+        { token && <TOBOMint invocation="0" /> }
       </div>
 
       <div id="projectDetailsInfo">
