@@ -17,7 +17,7 @@ function ProjectTokens(props: { id: string }) {
 
       { project && [...Array(invocations < 10 ? invocations : 10)].map((_n, i: number) => (
       <div key={ i } className="projectTokensMint">
-        <TOBOMint id={ i.toString() } />
+        <TOBOMint invocation={ i.toString() } />
       </div>
     ))}
 
@@ -44,7 +44,7 @@ function ProjectDetails(props: { id: string }) {
   return (
     <div id="toboProjectDetails">
       <div id="projectDetailsPreview">
-        { token && <TOBOMint id={ token.tokenId } /> }
+        { token && <TOBOMint invocation={ token.tokenId } /> }
       </div>
 
       <div id="projectDetailsInfo">

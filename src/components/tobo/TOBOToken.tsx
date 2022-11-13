@@ -1,25 +1,26 @@
 import TOBOMint from "./TOBOMint";
 import TOBOProjects from "./TOBOProjects";
+import useProject from 'hooks/useProject';
+import useToken from 'hooks/useToken';
+import { mediaUrl } from 'config';
 import "./toboToken.css";
 
 /* OtherTokens */
 
-function OtherTokens() {
+function OtherTokens(props: {id: string}) {
+  const { data } = useProject(props.id);
+  const project = data?.project;
+  const invocations = parseInt(project?.invocations);
+
   return (
     <div id="toboOtherTokens">
       <h3>OTHER JPEG TOKENS</h3>
 
-      <div className="otherTokensMint">
-        <TOBOMint id="1" />
-      </div>
-
-      <div className="otherTokensMint">
-        <TOBOMint id="1" />
-      </div>
-
-      <div className="otherTokensMint">
-        <TOBOMint id="1" />
-      </div>
+      { project && [...Array(invocations < 10 ? invocations : 10)].map((_n, i: number) => (
+        <div key={ i } className="otherTokensMint">
+          <TOBOMint invocation={ i.toString() } />
+        </div>
+      ))}
 
       <div className="clear"></div>
     </div>
@@ -38,7 +39,8 @@ function InfoItem(props: { feature: string; value: string; }) {
   );
 }
 
-function TokenInfo() {
+function TokenInfo(props: {token: any;}) {
+  //console.log(props.token)
   return (
     <div id="toboTokenInfo">
       <div className="moduleColumn" id="infoDetails">
@@ -76,24 +78,31 @@ function TokenInfo() {
 
 /* TokenPreview */
 
-function TokenPreview() {
+function TokenPreview(props: {token: any; invocation: string}) {
   return (
     <div id="toboTokenPreview">
-      <img src="/img/tobo/project/project-hero.png" alt="" />
-      <h3>JPEG #2<span>by RYAN GREEN</span></h3>
+      <img src={ `${ mediaUrl }/thumb/${ props.invocation }.png` } alt="" />
+      <h3>{ props.token.project.name }<span>by { props.token.project.artistName }</span></h3>
     </div>
   );
 }
 
 /* TOBOToken */
 
-const TOBOToken = () => {
+const TOBOToken = (props: {id: string | undefined}) => {
+  const { data } = useToken(props.id ?? '');
+  const token = data?.token;
+
   return (
     <div id="toboToken">
-      <TokenPreview />
-      <TokenInfo />
-      <OtherTokens />
-      <TOBOProjects />
+      { token &&
+      <>
+        <TokenPreview token={ token } invocation={ token.invocation } />
+        <TokenInfo token={ token } />
+        <OtherTokens id={ token.project.id } />
+        <TOBOProjects />
+      </>
+      }
     </div>
   );
 };
