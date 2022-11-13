@@ -109,7 +109,7 @@ const PurchaseProject = ({ project }:Props) => {
         color="primary"
         onClick={connect}
       >
-        Connect to purchase
+        Connect
       </Button>
     );
   }
