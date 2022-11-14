@@ -2,9 +2,9 @@
 
 #toboSplashHeader {
   position: sticky;
-  top: 80px;
+  top: 0px;
   overflow: hidden;
-  height: 647px;
+  height: 680px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,18 +39,23 @@ img#splashHeaderBg {
   right: 0;
 }
 
+#splashHeaderLineXR,
+#splashHeaderLineXL {
+  transform: translateY(-20px);
+}
+
 #splashHeaderLineYT,
 #splashHeaderLineYB {
   left: calc(50% - 1px);
   width: 2px;
-  height: calc(50% - 62px);
+  height: calc(50% - 82px);
   top: 0;
 }
 
 #splashHeaderLineYB {
   top: auto;
   bottom: 0;
-  height: calc(50% - 126px);
+  height: calc(50% - 106px);
 }
 
 #toboSplashHeader h2 {
@@ -60,12 +65,13 @@ img#splashHeaderBg {
   font-size: 48px;
   line-height: 42px;
   text-align: center;
+  transform: translateY(-20px);
 }
 
 #splashHeaderLogos {
   position: absolute;
   top: 50%;
-  margin-top: 57px;
+  margin-top: 37px;
 }
 
 #splashHeaderLogos span {
@@ -260,7 +266,7 @@ img#splashModule1Logo {
     width: 320px;
     height: 38px;
     font-size: 16px;
-    border-radius:  0px 0px 36px 36px;
+    border-radius: 0px 0px 36px 36px;
   }
 }
 
@@ -441,6 +447,7 @@ img#splashModule1Logo {
 
 #toboSplashModule4 .moduleColumn.splashModuleColumnL {
   width: 61%;
+  padding-right: 60px;
 }
 
 #toboSplashModule4 h3 {

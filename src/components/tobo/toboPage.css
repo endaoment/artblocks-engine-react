@@ -62,7 +62,7 @@ a:hover {
 }
 
 #toboPage main {
-  margin-top: 80px;
+  margin-top: 0px;
 }
 
 #toboPage h1,
@@ -110,7 +110,7 @@ a:hover {
 .toboModule {
   border-radius: 70px 70px 0px 0px;
   position: sticky;
-  top: 80px;
+  top: 0px;
   margin-top: -70px;
   min-height: 75vh;
   background-color: #fff;

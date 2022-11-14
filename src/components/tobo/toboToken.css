@@ -1,8 +1,11 @@
 /* Token preview */
 
+#toboToken {
+  margin-top: 80px;
+}
+
 #toboTokenPreview {
   padding-bottom: 60px;
-  border-top: 1px solid var(--tobo-dark);
   padding-top: 53px;
 }
 

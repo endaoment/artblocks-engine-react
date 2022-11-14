@@ -1,8 +1,11 @@
 /* Project details */
 
+#toboProject {
+  margin-top: 80px;
+}
+
 #toboProjectDetails {
   padding-bottom: 71px;
-  border-top: 1px solid var(--tobo-dark);
   padding-top: 69px;
 }
 
@@ -27,7 +30,7 @@
 }
 
 #infoMint button {
-  width: 320px !important;
+  /* width: 320px !important; */
   height: 56px;
   background-color: var(--tobo-dark);
   display: flex;
@@ -39,6 +42,7 @@
   font-size: 22px;
   cursor: pointer;
   transition: transform 0.5s;
+  background-image: none;
 }
 
 #infoMint button:hover {
