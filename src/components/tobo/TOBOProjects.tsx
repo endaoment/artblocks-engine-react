@@ -18,7 +18,7 @@ const TOBOProject = (props: { project: Project}) => {
 
   return (
     <div className="toboProject">
-      <img src={ `${ mediaUrl }/thumb/${ token.tokenId }.png` } alt="" id="projectHero" />
+      <img src={ `${ mediaUrl }/thumb/0.png` } alt="" id="projectHero" />
       <div className="projectCircle"></div>
 
       <div className="projectDetails">
