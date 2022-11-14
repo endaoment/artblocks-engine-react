@@ -80,7 +80,7 @@ a#projectsArtBlocks img#artBlocksArrow {
   position: relative;
 }
 
-img#projectHero {
+div#projectHero {
   width: 27.8%;
   margin-top: 47px;
   margin-left: 3.5%;

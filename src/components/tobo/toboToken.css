@@ -6,7 +6,7 @@
   padding-top: 53px;
 }
 
-#toboTokenPreview img {
+#toboTokenPreview div {
   margin: auto;
   width: 39.5%;
   display: block;
@@ -29,7 +29,7 @@
     padding-top: 24px;
   }
 
-  #toboTokenPreview img {
+  #toboTokenPreview div {
     width: 85%;
   }
 

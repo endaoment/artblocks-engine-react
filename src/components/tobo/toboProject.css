@@ -27,7 +27,7 @@
 }
 
 #infoMint button {
-  width: 155px;
+  width: 555px;
   height: 56px;
   background-color: var(--tobo-dark);
   display: flex;
@@ -37,7 +37,7 @@
   color: #fff;
   font-family: "inter-bold", sans-serif;
   font-size: 22px;
-  float: right;
+  float: left;
   cursor: pointer;
   transition: transform 0.5s;
 }

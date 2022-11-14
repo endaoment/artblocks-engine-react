@@ -1,4 +1,5 @@
 import TOBOButton from "./TOBOButton";
+import TOBOLiveMint from "./TOBOLiveMint";
 import TOBOProjects from "./TOBOProjects";
 import "./toboSplash.css";
 
@@ -6,10 +7,7 @@ import "./toboSplash.css";
 
 function SplashModule4() {
   return (
-    <div
-      className="toboModule"
-      id="toboSplashModule4"
-    >
+    <div className="toboModule" id="toboSplashModule4">
       <div className="moduleColumn splashModuleColumnL">
         <h3>FROM ARTISTS WHO UNDERSTAND</h3>
         <p>
@@ -34,10 +32,7 @@ function SplashModule4() {
       </div>
 
       <div className="moduleColumn splashModuleColumnR">
-        <img
-          src="https://endaoment-gallery-for-good---flex-goerli.s3.amazonaws.com/8.png"
-          alt=""
-        />
+        <TOBOLiveMint invocation="5" />
         <div className="splashModule4Circle" id="splashModule4Circle1"></div>
         <div className="splashModule4Circle" id="splashModule4Circle2"></div>
       </div>
@@ -57,10 +52,7 @@ function SplashModule3() {
   };
 
   return (
-    <div
-      className="toboModule"
-      id="toboSplashModule3"
-    >
+    <div className="toboModule" id="toboSplashModule3">
       <div className="moduleColumn splashModuleColumnL">
         <img src="/img/tobo/splash/module-3-hero.png" alt="" />
       </div>
@@ -71,9 +63,9 @@ function SplashModule3() {
           <a href="https://sostento.org" target="_blank" rel="noreferrer">
             Sostento
           </a>
-          &nbsp;is a tax-exempt 501c3 charitable organization. Proceeds will directly
-          support programs that reduce burnout among frontline healthcare
-          workers who provide services to families living in poverty.
+          &nbsp;is a tax-exempt 501c3 charitable organization. Proceeds will
+          directly support programs that reduce burnout among frontline
+          healthcare workers who provide services to families living in poverty.
         </p>
 
         <div id="splashModule3Social">
@@ -96,10 +88,7 @@ function SplashModule2() {
   };
 
   return (
-    <div
-      className="toboModule"
-      id="toboSplashModule2"
-    >
+    <div className="toboModule" id="toboSplashModule2">
       <div className="moduleColumn splashModuleColumnL">
         <h3>"THE COLORS THAT HEAL"</h3>
         <p>
@@ -121,10 +110,7 @@ function SplashModule2() {
       </div>
 
       <div className="moduleColumn splashModuleColumnR">
-        <img
-          src="https://endaoment-gallery-for-good---flex-goerli.s3.amazonaws.com/20.png"
-          alt=""
-        />
+        <TOBOLiveMint invocation="2" />
         <div className="splashModule2Circle" id="splashModule2Circle1"></div>
         <div className="splashModule2Circle" id="splashModule2Circle2"></div>
       </div>
@@ -146,10 +132,7 @@ function SplashModule1() {
   };
 
   return (
-    <div
-      className="toboModule"
-      id="toboSplashModule1"
-    >
+    <div className="toboModule" id="toboSplashModule1">
       <img
         src="/img/tobo/splash/module-1-shape.png"
         alt=""
@@ -168,9 +151,9 @@ function SplashModule1() {
           id="splashModule1Logo"
         />
         <p>
-          Face it — we're all a bit burnt out. Let's raise funds to reduce burnout
-          amongst healthcare workers through a generative art event &amp;
-          auction.
+          Face it — we're all a bit burnt out. Let's raise funds to reduce
+          burnout amongst healthcare workers through a generative art event
+          &amp; auction.
         </p>
         <TOBOButton text="Donate NFTs" viaEndaoment={true} action={nftClick} />
         <TOBOButton
@@ -185,10 +168,10 @@ function SplashModule1() {
         </div>
       </div>
 
-      <div className="clear"></div>
+      {/* <div className="clear"></div>
       <div id="splashModule1Banner">
         Generative Art + <span>&nbsp;Charity Fundraiser</span>
-      </div>
+      </div> */}
     </div>
   );
 }
@@ -232,11 +215,11 @@ const TOBOSplash = () => {
   return (
     <div className="splashContainer">
       <SplashHeader />
+      <TOBOProjects />
       <SplashModule1 />
       <SplashModule2 />
       <SplashModule3 />
       <SplashModule4 />
-      <TOBOProjects />
     </div>
   );
 };

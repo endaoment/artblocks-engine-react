@@ -1,0 +1,50 @@
+/* TOBOMint */
+
+.toboMint {
+  background-color: #FAFAFA;
+  border-radius: 0 0 12px 12px;
+}
+
+.toboMint iframe {
+  width: 100%;
+  height: 10%;
+  cursor: pointer;
+}
+
+.toboMint span {
+  line-height: 1;
+  font-family: "anonymous-pro-b", serif;
+  font-size: 22px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--tobo-dark);
+  margin-top: 19px;
+  margin-left: 20px;
+  float: left;
+  cursor: pointer;
+}
+
+.toboMint button {
+  float: right;
+  cursor: pointer;
+}
+
+.toboMint button img {
+  width: 36px;
+  margin: 16px;
+  margin-left: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .toboMint span {
+    font-size: 16px;
+    padding-bottom: 4px;
+    margin-top: 12px;
+    margin-left: 16px;
+  }
+
+  .toboMint button img {
+    width: 24px;
+    margin: 8px;
+    margin-left: 6px;
+  }
+}
