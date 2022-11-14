@@ -2,7 +2,11 @@ import { useNavigate } from "react-router-dom";
 import { generatorUrl, coreContractAddress, mediaUrl } from "config";
 import "./toboMint.css";
 
-const TOBOMint = (props: { invocation: string; live?: boolean }) => {
+const TOBOMint = (props: {
+  invocation: string;
+  live?: boolean;
+  hideInfo?: boolean;
+}) => {
   const navigate = useNavigate();
 
   const expandClick = () => {
@@ -28,7 +32,7 @@ const TOBOMint = (props: { invocation: string; live?: boolean }) => {
       className="toboMint"
       style={{ backgroundColor: props.live ? "transparent" : "#FAFAFA" }}
     >
-      {props.live && (
+      {props.live ? (
         <iframe
           title={props.invocation}
           src={`${generatorUrl}/${coreContractAddress?.toLowerCase()}/${
@@ -39,14 +43,15 @@ const TOBOMint = (props: { invocation: string; live?: boolean }) => {
           frameBorder="0"
           scrolling="no"
         />
+      ) : (
+        <img
+          onClick={linkClick}
+          src={`${mediaUrl}/thumb/${props.invocation}.png`}
+          alt=""
+        />
       )}
-      {!props.live && (
+      {!props.hideInfo && (
         <>
-          <img
-            onClick={linkClick}
-            src={`${mediaUrl}/thumb/${props.invocation}.png`}
-            alt=""
-          />
           <span onClick={linkClick}>ARTWORK #{props.invocation}</span>
           <button onClick={expandClick}>
             <img src="/img/tobo/mint/icon-mint-expand.png" alt="" />

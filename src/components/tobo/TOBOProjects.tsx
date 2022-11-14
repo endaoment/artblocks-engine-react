@@ -22,7 +22,7 @@ const TOBOProject = (props: { project: Project }) => {
 
   return (
     <a className="toboProject" href={`/project/${props.project.projectId}`}>
-      <TOBOMint invocation="0" />
+      <TOBOMint invocation="0" live />
       <div className="projectCircle"></div>
 
       <div className="projectDetails">

@@ -46,7 +46,7 @@ function ProjectDetails(props: { id: string }) {
   return (
     <div id="toboProjectDetails">
       <div id="projectDetailsPreview">
-        {token && <TOBOMint invocation="0" />}
+        {token && <TOBOMint invocation="0" live />}
       </div>
 
       <div id="projectDetailsInfo">

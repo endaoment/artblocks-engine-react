@@ -38,7 +38,7 @@ function SplashModule4() {
       </div>
 
       <div className="moduleColumn splashModuleColumnR">
-        <TOBOMint invocation="5" live={true} />
+        <TOBOMint invocation="5" live={true} hideInfo />
         <div className="splashModule4Circle" id="splashModule4Circle1"></div>
         <div className="splashModule4Circle" id="splashModule4Circle2"></div>
       </div>
@@ -116,7 +116,7 @@ function SplashModule2() {
       </div>
 
       <div className="moduleColumn splashModuleColumnR">
-        <TOBOMint invocation="2" live={true} />
+        <TOBOMint invocation="2" live={true} hideInfo />
         <div className="splashModule2Circle" id="splashModule2Circle1"></div>
         <div className="splashModule2Circle" id="splashModule2Circle2"></div>
       </div>
