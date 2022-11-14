@@ -47,7 +47,7 @@ const TOBOMint = (props: { invocation: string; live?: boolean }) => {
             src={`${mediaUrl}/thumb/${props.invocation}.png`}
             alt=""
           />
-          <span onClick={linkClick}>MINT #{props.invocation}</span>
+          <span onClick={linkClick}>ARTWORK #{props.invocation}</span>
           <button onClick={expandClick}>
             <img src="/img/tobo/mint/icon-mint-expand.png" alt="" />
           </button>

@@ -25,7 +25,7 @@
 
 a#projectsArtBlocks {
   position: absolute;
-  top: 150px;
+  top: 140px;
   right: 150px;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@ a#projectsArtBlocks {
 }
 
 a#projectsArtBlocks img {
-  height: 80px;
+  height: 60px;
   filter: invert(1);
 }
 

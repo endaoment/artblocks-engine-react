@@ -24,7 +24,7 @@ const TOBOHeader = () => {
         />
       </h1>
 
-      {isActive && <ConnectWallet />}
+      <ConnectWallet className={!isActive ? "hide" : ""} />
     </header>
   );
 };

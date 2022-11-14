@@ -136,7 +136,7 @@ const PurchaseProject = ({ project }: Props) => {
 
   const Mint = () => (
     <button className="toboButton mintButton" onClick={mint}>
-      Mint
+      Generate Artwork
       {/* Purchase a mint { utils.formatEther(weiPrice) } { project.currencySymbol } */}
     </button>
   );

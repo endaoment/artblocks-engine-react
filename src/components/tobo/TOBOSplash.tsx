@@ -34,7 +34,7 @@ function SplashModule4() {
             Erick Calderon, Artblocks CEO
           </a>
         </p>
-        <TOBOButton text="Mint a Charity Piece" action={mintClick} />
+        <TOBOButton text="Generate a Charity Piece" action={mintClick} />
       </div>
 
       <div className="moduleColumn splashModuleColumnR">
@@ -169,7 +169,7 @@ function SplashModule1() {
         </p>
 
         <div id="splashModule1Mint">
-          <TOBOButton text="Mint a Charity Piece" action={mintClick} />
+          <TOBOButton text="Generate a Charity Piece" action={mintClick} />
           {/*<span>Minting begins November 15th, 2022</span>*/}
         </div>
 
