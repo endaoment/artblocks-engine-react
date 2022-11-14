@@ -27,7 +27,7 @@
 }
 
 #infoMint button {
-  width: 555px;
+  width: 320px !important;
   height: 56px;
   background-color: var(--tobo-dark);
   display: flex;
@@ -37,7 +37,6 @@
   color: #fff;
   font-family: "inter-bold", sans-serif;
   font-size: 22px;
-  float: left;
   cursor: pointer;
   transition: transform 0.5s;
 }
@@ -149,9 +148,8 @@ span#linksHeading {
   }
 
   #infoMint button {
-    float: none;
     margin-top: 16px;
-    width: 96px;
+    width: 260px !important;
     height: 40px;
     font-size: 18px;
   }

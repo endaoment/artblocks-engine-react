@@ -1,13 +1,18 @@
 /* TOBOMint */
 
 .toboMint {
-  background-color: #FAFAFA;
   border-radius: 0 0 12px 12px;
 }
 
 .toboMint img {
   width: 100%;
   cursor: pointer;
+}
+
+.toboMint iframe {
+  aspect-ratio: 3/4;
+  height: 100%;
+  width: 100%;
 }
 
 .toboMint span {

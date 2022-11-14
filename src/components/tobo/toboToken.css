@@ -6,7 +6,7 @@
   padding-top: 53px;
 }
 
-#toboTokenPreview div {
+#toboTokenPreview iframe {
   margin: auto;
   width: 39.5%;
   display: block;
@@ -29,7 +29,7 @@
     padding-top: 24px;
   }
 
-  #toboTokenPreview div {
+  #toboTokenPreview iframe {
     width: 85%;
   }
 
@@ -57,7 +57,7 @@
 }
 
 #infoDetails {
-  border-right: 1px solid var(--tobo-dark);
+  /* border-right: 1px solid var(--tobo-dark); */
 }
 
 #infoDetails a {

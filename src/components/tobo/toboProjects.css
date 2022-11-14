@@ -4,6 +4,8 @@
   background-color: var(--tobo-yellow);
   min-height: 125vh;
   padding-bottom: 187px;
+  position: relative;
+  top: 0;
 }
 
 #toboProjects .moduleColumn {
@@ -44,7 +46,7 @@ a#projectsArtBlocks img#artBlocksArrow {
   }
 
   #toboProjects h3 {
-    margin-top: 50px;
+    margin-top: 96px;
   }
 
   #toboProjects p {
@@ -80,7 +82,7 @@ a#projectsArtBlocks img#artBlocksArrow {
   position: relative;
 }
 
-div#projectHero {
+.toboProject iframe {
   width: 27.8%;
   margin-top: 47px;
   margin-left: 3.5%;
@@ -109,6 +111,7 @@ div#projectHero {
 #toboProjects .projectDetails h3 {
   margin-top: 22px;
   margin-left: 0;
+  font-size: 48px;
 }
 
 #toboProjects .projectDetails h4 {
@@ -119,6 +122,30 @@ div#projectHero {
   color: var(--tobo-red);
 }
 
+.projectDetails button {
+  width: 320px;
+  height: 56px;
+  background-color: var(--tobo-dark) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  color: #fff;
+  font-family: "inter-bold", sans-serif;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  margin-top: 24px;
+}
+
+.projectDetails button:hover {
+  outline: 1px solid #fff;
+  filter: invert(1);
+  transform: translatey(-6px) rotate(-2deg);
+  transform-origin: center center;
+  box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.5);
+}
+
 #toboProjects .projectDetails p {
   margin-top: 25px;
   width: 100%;
@@ -127,6 +154,23 @@ div#projectHero {
   font-family: "inter-regular", sans-serif;
   line-height: 134%;
   letter-spacing: 0.015em;
+}
+
+p#projectTime {
+  font-size: 20px;
+  line-height: 134%;
+  font-family: "inter-regular", sans-serif;
+  padding: 21px;
+  padding-left: 28px;
+  padding-right: 28px;
+  border-radius: 27px;
+  border: 1px solid var(--tobo-dark);
+  margin-top: 39px;
+  color: var(--tobo-dark);
+}
+
+p#projectTime span {
+  font-family: "inter-bold", sans-serif;
 }
 
 span.projectMinted {
@@ -198,7 +242,7 @@ button.projectMint span {
     padding-bottom: 24px;
   }
 
-  img#projectHero {
+  .toboProject iframe {
     width: 90%;
     margin-top: 32px;
     margin-left: 5%;
@@ -216,8 +260,16 @@ button.projectMint span {
     margin-top: 24px;
   }
 
+  .projectDetails button {
+    margin-top: 16px;
+    width: 260px;
+    height: 40px;
+    font-size: 18px;
+  }
+
   #toboProjects .projectDetails h3 {
-    margin-top: 12px;
+    margin-top: 48px;
+    font-size: 30px;
   }
 
   #toboProjects .projectDetails h4 {
@@ -227,6 +279,14 @@ button.projectMint span {
   #toboProjects .projectDetails p {
     margin-top: 12px;
     font-size: 14px;
+  }
+
+  p#projectTime {
+    font-size: 14px;
+    line-height: 1.25;
+    padding: 16px;
+    border-radius: 16px;
+    margin-top: 24px;
   }
 
   span.projectMinted {

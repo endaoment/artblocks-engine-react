@@ -294,11 +294,11 @@ img#splashModule1Logo {
   width: 39%;
 }
 
-#toboSplashModule2 .moduleColumn.splashModuleColumnR img {
+#toboSplashModule2 .moduleColumn.splashModuleColumnR iframe {
   width: 72.2%;
-  position: absolute;
+  position: relative;
   margin-top: 79px;
-  right: 15.2%;
+  right: 0;
 }
 
 .splashModule2Circle {
@@ -331,12 +331,9 @@ img#splashModule1Logo {
     margin-right: 4.6%;
   }
 
-  #toboSplashModule2 .moduleColumn.splashModuleColumnR {
-    padding-bottom: 50%;
-  }
-
-  #toboSplashModule2 .moduleColumn.splashModuleColumnR img {
+  #toboSplashModule2 .moduleColumn.splashModuleColumnR iframe {
     margin-top: 40px;
+    width: 100%;
   }
 
   .splashModule2Circle {
@@ -465,11 +462,11 @@ img#splashModule1Logo {
   width: 39%;
 }
 
-#toboSplashModule4 .moduleColumn.splashModuleColumnR img {
+#toboSplashModule4 .moduleColumn.splashModuleColumnR iframe {
   width: 72.2%;
-  position: absolute;
+  position: relative;
   margin-top: 79px;
-  right: 15.2%;
+  right: 0;
 }
 
 .splashModule4Circle {
@@ -503,12 +500,9 @@ img#splashModule1Logo {
     margin-right: 4.6%;
   }
 
-  #toboSplashModule4 .moduleColumn.splashModuleColumnR {
-    padding-bottom: 50%;
-  }
-
-  #toboSplashModule4 .moduleColumn.splashModuleColumnR img {
+  #toboSplashModule4 .moduleColumn.splashModuleColumnR iframe {
     margin-top: 40px;
+    width: 100%;
   }
 
   .splashModule4Circle {
