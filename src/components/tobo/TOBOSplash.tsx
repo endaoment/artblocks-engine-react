@@ -1,17 +1,18 @@
 import TOBOButton from "./TOBOButton";
 import TOBOProjects from "./TOBOProjects";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import TOBOMint from "./TOBOMint";
 import "./toboSplash.css";
 
 /* SplashModule4 */
 
 function SplashModule4() {
+  const navigate = useNavigate();
+  const mintClick = () => {
+    navigate("/project/0");
+  };
   return (
-    <div
-      className="toboModule"
-      id="toboSplashModule4"
-    >
+    <div className="toboModule" id="toboSplashModule4">
       <div className="moduleColumn splashModuleColumnL">
         <h3>FROM ARTISTS WHO UNDERSTAND</h3>
         <p>
@@ -33,10 +34,11 @@ function SplashModule4() {
             Erick Calderon, Artblocks CEO
           </a>
         </p>
+        <TOBOButton text="Mint a Charity Piece" action={mintClick} />
       </div>
 
       <div className="moduleColumn splashModuleColumnR">
-        <TOBOMint invocation="5" live={ true } />
+        <TOBOMint invocation="5" live={true} />
         <div className="splashModule4Circle" id="splashModule4Circle1"></div>
         <div className="splashModule4Circle" id="splashModule4Circle2"></div>
       </div>
@@ -56,10 +58,7 @@ function SplashModule3() {
   };
 
   return (
-    <div
-      className="toboModule"
-      id="toboSplashModule3"
-    >
+    <div className="toboModule" id="toboSplashModule3">
       <div className="moduleColumn splashModuleColumnL">
         <img src="/img/tobo/splash/module-3-hero.png" alt="" />
       </div>
@@ -70,9 +69,9 @@ function SplashModule3() {
           <a href="https://sostento.org" target="_blank" rel="noreferrer">
             Sostento
           </a>
-          &nbsp;is a tax-exempt 501c3 charitable organization. Proceeds will directly
-          support programs that reduce burnout among frontline healthcare
-          workers who provide services to families living in poverty.
+          &nbsp;is a tax-exempt 501c3 charitable organization. Proceeds will
+          directly support programs that reduce burnout among frontline
+          healthcare workers who provide services to families living in poverty.
         </p>
 
         <div id="splashModule3Social">
@@ -95,10 +94,7 @@ function SplashModule2() {
   };
 
   return (
-    <div
-      className="toboModule"
-      id="toboSplashModule2"
-    >
+    <div className="toboModule" id="toboSplashModule2">
       <div className="moduleColumn splashModuleColumnL">
         <h3>"THE COLORS THAT HEAL"</h3>
         <p>
@@ -120,7 +116,7 @@ function SplashModule2() {
       </div>
 
       <div className="moduleColumn splashModuleColumnR">
-        <TOBOMint invocation="2" live={ true } />
+        <TOBOMint invocation="2" live={true} />
         <div className="splashModule2Circle" id="splashModule2Circle1"></div>
         <div className="splashModule2Circle" id="splashModule2Circle2"></div>
       </div>
@@ -144,14 +140,11 @@ function SplashModule1() {
   };
 
   const mintClick = () => {
-    navigate('/project/0');
-  }
+    navigate("/project/0");
+  };
 
   return (
-    <div
-      className="toboModule"
-      id="toboSplashModule1"
-    >
+    <div className="toboModule" id="toboSplashModule1">
       <img
         src="/img/tobo/splash/module-1-shape.png"
         alt=""
@@ -170,14 +163,14 @@ function SplashModule1() {
           id="splashModule1Logo"
         />
         <p>
-          Face it — we're all a bit burnt out. Let's raise funds to reduce burnout
-          amongst healthcare workers through a generative art event &amp;
-          auction.
+          Face it — we're all a bit burnt out. Let's raise funds to reduce
+          burnout amongst healthcare workers through a generative art event
+          &amp; auction.
         </p>
 
         <div id="splashModule1Mint">
-          <TOBOButton text="Mint a Charity Piece" action={ mintClick } />
-          { /*<span>Minting begins November 15th, 2022</span>*/ }
+          <TOBOButton text="Mint a Charity Piece" action={mintClick} />
+          {/*<span>Minting begins November 15th, 2022</span>*/}
         </div>
 
         <TOBOButton text="Donate NFTs" viaEndaoment={true} action={nftClick} />

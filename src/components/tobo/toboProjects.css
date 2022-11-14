@@ -25,12 +25,19 @@
 
 a#projectsArtBlocks {
   position: absolute;
-  top: 81px;
+  top: 150px;
   right: 150px;
+  display: flex;
+  flex-direction: column;
+  font-family: "anonymous-pro-b", serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  gap: 1rem;
+  text-decoration: none;
 }
 
 a#projectsArtBlocks img {
-  height: 49px;
+  height: 80px;
   filter: invert(1);
 }
 
@@ -80,9 +87,11 @@ a#projectsArtBlocks img#artBlocksArrow {
   border-radius: 65px;
   padding-bottom: 47px;
   position: relative;
+  cursor: pointer;
+  display: inline-block;
 }
 
-.toboProject iframe {
+.toboProject .toboMint {
   width: 27.8%;
   margin-top: 47px;
   margin-left: 3.5%;
