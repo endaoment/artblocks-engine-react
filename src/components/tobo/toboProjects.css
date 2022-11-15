@@ -97,7 +97,7 @@ a#projectsArtBlocks img#artBlocksArrow {
 }
 
 .toboProject .toboMint {
-  width: 27.8%;
+  width: 340px;
   margin-top: 47px;
   margin-left: 3.5%;
   float: left;
@@ -116,7 +116,7 @@ a#projectsArtBlocks img#artBlocksArrow {
 
 .projectDetails {
   float: right;
-  width: 57.3%;
+  width: calc(100% - 480px);
   margin-right: 4%;
   margin-top: 47px;
   position: relative;

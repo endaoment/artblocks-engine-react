@@ -53,7 +53,11 @@ const MintSuccessDialog = ({
 
       {mintedTokenId && (
         <Box
-          sx={{ display: "flex", justifyContent: "center", margin: "24px 0" }}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            margin: "24px 0 12px",
+          }}
         >
           <TokenPreview
             id={`${coreContractAddress?.toLowerCase()}-${mintedTokenId}`}
@@ -73,7 +77,7 @@ const MintSuccessDialog = ({
             borderRadius: 25,
             fontWeight: "700",
             color: "white",
-            padding: "8px 18px",
+            padding: "6px 16px",
           }}
           onClick={handleClose}
         >
@@ -82,6 +86,14 @@ const MintSuccessDialog = ({
         <Button
           href={`/token/${coreContractAddress?.toLowerCase()}-${mintedTokenId}`}
           color="primary"
+          sx={{
+            marginRight: 1,
+            background: "black !important",
+            borderRadius: 25,
+            fontWeight: "700",
+            color: "white",
+            padding: "6px 16px",
+          }}
         >
           View details
         </Button>
