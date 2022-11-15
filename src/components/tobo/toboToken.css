@@ -1,0 +1,220 @@
+/* Token preview */
+
+#toboToken {
+  margin-top: 80px;
+}
+
+#toboTokenPreview {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  /* background-color: #fafafa; */
+}
+
+#toboTokenPreview .toboMint {
+  margin: auto;
+  width: 39.5%;
+  background-color: #fafafa;
+}
+
+#toboTokenPreview .toboMint button {
+  min-width: unset;
+}
+
+#toboTokenPreview iframe {
+  display: block;
+}
+
+#toboTokenPreview h3 {
+  margin-top: 57px;
+  margin-left: 4.8%;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#toboTokenPreview h3 span {
+  font-family: "anonymous-pro-b", serif;
+  font-size: 32px;
+  margin-left: 28px;
+}
+
+#toboTokenPreview h3 i {
+  font-family: "anonymous-pro-b", serif;
+  font-size: 22px;
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  #toboTokenPreview {
+    padding-bottom: 30px;
+    padding-top: 24px;
+  }
+
+  #toboTokenPreview iframe {
+    width: 85%;
+  }
+
+  #toboTokenPreview h3 {
+    margin-top: 32px;
+  }
+
+  #toboTokenPreview h3 span {
+    font-size: 16px;
+    margin-left: 12px;
+  }
+}
+
+/* Token info */
+
+#toboTokenInfo {
+  border-top: 1px solid var(--tobo-dark);
+}
+
+#toboTokenInfo .moduleColumn {
+  padding-top: 70px;
+  padding-bottom: 78px;
+  padding-left: 4.8%;
+  padding-right: 4.8%;
+}
+
+#toboTokenInfo #infoDetails {
+  /* border-right: 1px solid var(--tobo-dark); */
+  /* padding-left: 6.8%; */
+  width: 100%;
+}
+
+#toboTokenInfo h3 {
+  font-size: 24px;
+}
+
+#infoDetails a {
+  line-height: 1;
+  color: var(--tobo-dark);
+  font-family: "anonymous-pro-b", serif;
+  font-size: 22px;
+}
+
+#infoDetails a span {
+  text-decoration: underline;
+}
+
+#infoDetails p {
+  font-size: 22px;
+  line-height: 87%;
+  font-family: "anonymous-pro", serif;
+  margin-top: 33px;
+  margin-bottom: 41px;
+}
+
+#infoDetails p span {
+  font-family: "anonymous-pro-b", serif;
+}
+
+a.detailsFooterLink {
+  width: 285px;
+  margin-right: 60px;
+  float: left;
+  margin-top: 22px;
+  text-decoration: none;
+}
+
+#toboTokenInfo #infoMeta {
+  padding-left: 2.4%;
+  padding-right: 5.6%;
+}
+
+.toboInfoItem {
+  border-bottom: 1px solid var(--tobo-dark);
+  width: 100%;
+}
+
+.toboInfoItem span {
+  line-height: 1;
+  font-family: "anonymous-pro-b", serif;
+  font-size: 22px;
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-bottom: 23px;
+  margin-top: 29px;
+  float: left;
+}
+
+span.itemValue {
+  float: right;
+  font-family: "anonymous-pro", serif;
+}
+
+@media only screen and (max-width: 767px) {
+  #toboTokenInfo .moduleColumn {
+    padding-top: 32px;
+    padding-bottom: 42px;
+  }
+
+  #toboTokenInfo #infoDetails {
+    border-right: none;
+    padding-bottom: 32px;
+  }
+
+  #infoDetails a {
+    font-size: 16px;
+  }
+
+  #infoDetails p {
+    font-size: 18px;
+    line-height: 1;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  a.detailsFooterLink {
+    width: 200px;
+    margin-right: 32px;
+    margin-top: 12px;
+  }
+
+  #toboTokenInfo #infoMeta {
+    border-top: 1px solid var(--tobo-dark);
+    padding-top: 16px;
+  }
+
+  .toboInfoItem span {
+    font-size: 18px;
+    margin: 12px;
+  }
+}
+
+/* Other tokens */
+
+#toboOtherTokens {
+  padding-bottom: 129px;
+  border-top: 1px solid var(--tobo-dark);
+  padding-top: 73px;
+  padding-left: 7.2%;
+}
+
+#toboOtherTokens h3 {
+  margin-right: 10.7%;
+}
+
+.otherTokensMint {
+  width: 42%;
+  float: left;
+  margin-top: 43px;
+  margin-right: 5.3%;
+}
+
+@media only screen and (max-width: 767px) {
+  #toboOtherTokens {
+    padding-top: 32px;
+    padding-bottom: 65px;
+    padding-right: 7.2%;
+  }
+
+  #toboOtherTokens h3 {
+    margin-right: 0;
+  }
+
+  .otherTokensMint {
+    width: 100%;
+    margin-top: 24px;
+  }
+}

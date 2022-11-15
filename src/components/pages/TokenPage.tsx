@@ -1,16 +1,19 @@
-import Page from 'components/Page';
+//import Page from 'components/Page';
+import TOBOPage from 'components/tobo/TOBOPage';
 import { useParams } from 'react-router-dom';
-import TokenDetails from 'components/TokenDetails';
+//import TokenDetails from 'components/TokenDetails';
+import TOBOToken from 'components/tobo/TOBOToken';
 
 const TokenPage = () => {
   const { id } = useParams();
 
   return (
-    <Page>
-      {
-        id && <TokenDetails id={id} /> 
-      }
-    </Page>
+    <TOBOPage>
+      {/* {
+        id && <TokenDetails id={id} />
+      } */}
+      <TOBOToken id={id} />
+    </TOBOPage>
   )
 }
 

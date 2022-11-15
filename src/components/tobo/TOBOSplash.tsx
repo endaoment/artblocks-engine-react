@@ -1,12 +1,19 @@
 import TOBOButton from "./TOBOButton";
+import TOBOProjects from "./TOBOProjects";
+import { useNavigate } from "react-router-dom";
+import TOBOMint from "./TOBOMint";
 import "./toboSplash.css";
 
 /* SplashModule4 */
 
 function SplashModule4() {
+  const navigate = useNavigate();
+  const mintClick = () => {
+    navigate("/project/0");
+  };
   return (
-    <div className="toboSplashModule" id="toboSplashModule4">
-      <div className="splashModuleColumn splashModuleColumnL">
+    <div className="toboModule" id="toboSplashModule4">
+      <div className="moduleColumn splashModuleColumnL">
         <h3>FROM ARTISTS WHO UNDERSTAND</h3>
         <p>
           "Some people might navigate workload and pressure more efficiently
@@ -27,13 +34,11 @@ function SplashModule4() {
             Erick Calderon, Artblocks CEO
           </a>
         </p>
+        <TOBOButton text="Generate a Charity Piece" action={mintClick} />
       </div>
 
-      <div className="splashModuleColumn splashModuleColumnR">
-        <img
-          src="https://endaoment-gallery-for-good---flex-goerli.s3.amazonaws.com/8.png"
-          alt=""
-        />
+      <div className="moduleColumn splashModuleColumnR">
+        <TOBOMint invocation="5" live={true} hideInfo />
         <div className="splashModule4Circle" id="splashModule4Circle1"></div>
         <div className="splashModule4Circle" id="splashModule4Circle2"></div>
       </div>
@@ -48,17 +53,17 @@ function SplashModule4() {
 function SplashModule3() {
   const postClick = () => {
     window.open(
-      "http://twitter.com/intent/tweet?text=Join%20me%20November%2015th%20for%20the%20%23TurnoutForBurnout!%20Mint%20generative%20art%20to%20fund%20wellness%20programs%20for%20healthcare%20workers.%20%0A%0ALearn%20more%20at%3A&url=http%3A%2F%2Fwww.turnoutforburnout.com%0A%0ABrought%20to%20you%20by%20your%20friends%20at%0A%40EndaomentDotOrg%20%40Sostento%20and%20%40Artblocks_io%20"
+      "http://twitter.com/intent/tweet?text=Join%20me%20November%2017th%20for%20the%20%23TurnoutForBurnout!%20Mint%20generative%20art%20to%20fund%20wellness%20programs%20for%20healthcare%20workers.%20%0A%0ALearn%20more%20at%3A&url=http%3A%2F%2Fwww.turnoutforburnout.com%0A%0ABrought%20to%20you%20by%20your%20friends%20at%0A%40EndaomentDotOrg%20%40Sostento%20and%20%40Artblocks_io%20"
     );
   };
 
   return (
-    <div className="toboSplashModule" id="toboSplashModule3">
-      <div className="splashModuleColumn splashModuleColumnL">
-        <img src="img/tobo/splash/module-3-hero.png" alt="" />
+    <div className="toboModule" id="toboSplashModule3">
+      <div className="moduleColumn splashModuleColumnL">
+        <img src="/img/tobo/splash/module-3-hero.png" alt="" />
       </div>
 
-      <div className="splashModuleColumn splashModuleColumnR">
+      <div className="moduleColumn splashModuleColumnR">
         <h3>FIGHTING BURNOUT</h3>
         <p>
           <a href="https://sostento.org" target="_blank" rel="noreferrer">
@@ -83,8 +88,8 @@ function SplashModule3() {
 
 function SplashModule2() {
   return (
-    <div className="toboSplashModule" id="toboSplashModule2">
-      <div className="splashModuleColumn splashModuleColumnL">
+    <div className="toboModule" id="toboSplashModule2">
+      <div className="moduleColumn splashModuleColumnL">
         <h3>"THE COLORS THAT HEAL"</h3>
         <p>
           Our marquee generative art collection is a box of memories,a garden of
@@ -107,11 +112,8 @@ function SplashModule2() {
         </p>
       </div>
 
-      <div className="splashModuleColumn splashModuleColumnR">
-        <img
-          src="https://endaoment-gallery-for-good---flex-goerli.s3.amazonaws.com/20.png"
-          alt=""
-        />
+      <div className="moduleColumn splashModuleColumnR">
+        <TOBOMint invocation="2" live={true} hideInfo />
         <div className="splashModule2Circle" id="splashModule2Circle1"></div>
         <div className="splashModule2Circle" id="splashModule2Circle2"></div>
       </div>
@@ -124,6 +126,8 @@ function SplashModule2() {
 /* SplashModule1 */
 
 function SplashModule1() {
+  const navigate = useNavigate();
+
   const nftClick = () => {
     window.open("https://opensea.io/endaoment");
   };
@@ -132,26 +136,26 @@ function SplashModule1() {
     window.open("https://app.endaoment.org/orgs/843739888");
   };
 
-  const spaceClick = () => {
-    window.open("https://twitter.com/i/spaces/1vOxwMWERPdGB");
+  const mintClick = () => {
+    navigate("/project/0");
   };
 
   return (
-    <div className="toboSplashModule" id="toboSplashModule1">
+    <div className="toboModule" id="toboSplashModule1">
       <img
-        src="img/tobo/splash/module-1-shape.png"
+        src="/img/tobo/splash/module-1-shape.png"
         alt=""
         id="splashModule1Shape"
       />
 
-      <div className="splashModuleColumn splashModuleColumnL">
-        <img src="img/tobo/splash/module-1-hero.jpg" alt="" />
+      <div className="moduleColumn splashModuleColumnL">
+        <img src="/img/tobo/splash/module-1-hero.jpg" alt="" />
         <div id="splashModule1Circle"></div>
       </div>
 
-      <div className="splashModuleColumn splashModuleColumnR">
+      <div className="moduleColumn splashModuleColumnR">
         <img
-          src="img/tobo/splash/module-1-logo.svg"
+          src="/img/tobo/splash/module-1-logo.svg"
           alt="TURNOUT FOR BURNOUT"
           id="splashModule1Logo"
         />
@@ -160,27 +164,18 @@ function SplashModule1() {
           burnout amongst healthcare workers through a generative art event
           &amp; auction.
         </p>
-        <TOBOButton text="Donate NFTs" viaEndaoment={false} action={nftClick} />
+
+        <div id="splashModule1Mint">
+          <TOBOButton text="Generate a Charity Piece" action={mintClick} />
+          <span>Auction begins 4pm ET Nov. 17th, 2022</span>
+        </div>
+
+        <TOBOButton text="Donate NFTs" viaEndaoment={true} action={nftClick} />
         <TOBOButton
           text="Donate Crypto"
           viaEndaoment={true}
           action={cryptoClick}
         />
-
-        <div id="splashModule1Mint">
-          <TOBOButton text="Listen: Twitter Space" action={spaceClick} />
-          <span>
-            Space begins November 17th at 4PM EST:{" "}
-            <a href="https://www.eventbrite.com/e/turnout-for-burnout-wellness-through-collective-action-tickets-460095597317">
-              Eventbrite
-            </a>
-          </span>
-        </div>
-      </div>
-
-      <div className="clear"></div>
-      <div id="splashModule1Banner">
-        Generative Art + <span>&nbsp;Charity Fundraiser</span>
       </div>
     </div>
   );
@@ -191,7 +186,7 @@ function SplashModule1() {
 function SplashHeader() {
   return (
     <div id="toboSplashHeader">
-      <img src="img/tobo/splash/header.jpg" alt="" id="splashHeaderBg" />
+      <img src="/img/tobo/splash/header.jpg" alt="" id="splashHeaderBg" />
       <div id="splashHeaderBgOverlay"></div>
       <div className="splashHeaderLine" id="splashHeaderLineXL"></div>
       <div className="splashHeaderLine" id="splashHeaderLineXR"></div>
@@ -206,13 +201,13 @@ function SplashHeader() {
       <div id="splashHeaderLogos">
         <span>POWERED BY</span>
         <a href="https://sostento.org/" target="_blank" rel="noreferrer">
-          <img src="img/tobo/logo-sostento.png" alt="Sostento" />
+          <img src="/img/tobo/logo-sostento.png" alt="Sostento" />
         </a>
         <a href="https://endaoment.org/" target="_blank" rel="noreferrer">
-          <img src="img/tobo/logo-endaoment.png" alt="Endaoment" />
+          <img src="/img/tobo/logo-endaoment.png" alt="Endaoment" />
         </a>
         <a href="https://www.artblocks.io/" target="_blank" rel="noreferrer">
-          <img src="img/tobo/logo-artblocks.png" alt="ArtBlocks" />
+          <img src="/img/tobo/logo-artblocks.png" alt="ArtBlocks" />
         </a>
       </div>
     </div>
@@ -225,6 +220,7 @@ const TOBOSplash = () => {
   return (
     <div className="splashContainer">
       <SplashHeader />
+      <TOBOProjects />
       <SplashModule1 />
       <SplashModule2 />
       <SplashModule3 />

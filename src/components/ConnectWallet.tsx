@@ -1,13 +1,13 @@
-import { useEffect, useState } from 'react';
-import { useWeb3React } from '@web3-react/core';
-import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog';
-import Divider from '@mui/material/Divider';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Alert from '@mui/material/Alert';
-import IconButton from '@mui/material/IconButton';
-import LogoutIcon from '@mui/icons-material/Logout';
+import { useEffect, useState } from "react";
+import { useWeb3React } from "@web3-react/core";
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import Divider from "@mui/material/Divider";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Alert from "@mui/material/Alert";
+import IconButton from "@mui/material/IconButton";
+//import LogoutIcon from '@mui/icons-material/Logout';
 import {
   metaMask,
   metaMaskHooks,
@@ -15,11 +15,11 @@ import {
   walletConnectHooks,
   coinbaseWallet,
   coinbaseWalletHooks,
-} from 'utils/connectors';
-import WalletConnector from './WalletConnector';
-import Address from './Address';
+} from "utils/connectors";
+import WalletConnector from "./WalletConnector";
+import Address from "./Address";
 
-const ConnectWallet = () => {
+const ConnectWallet = ({ className }: { className?: string }) => {
   const [open, setOpen] = useState(false);
   const [error, setError] = useState<string | undefined>(undefined);
   const { isActive, account, connector } = useWeb3React();
@@ -29,7 +29,7 @@ const ConnectWallet = () => {
       if (connector?.connectEagerly) {
         connector.connectEagerly();
       }
-    } catch(error) {
+    } catch (error) {
       console.log(error);
     }
   }, []); // eslint-disable-line
@@ -38,7 +38,7 @@ const ConnectWallet = () => {
   const handleClose = () => {
     setOpen(false);
     setError(undefined);
-  }
+  };
 
   const disconnect = () => {
     if (connector?.deactivate) {
@@ -48,26 +48,31 @@ const ConnectWallet = () => {
         console.log(error);
       }
     } else {
-      void connector.resetState()
+      void connector.resetState();
     }
-  }
+  };
 
   return (
     <>
-      {
-        isActive && account ? (
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+      {isActive && account ? (
+        <Box
+          sx={{ display: "flex", alignItems: "center" }}
+          className={className}
+        >
+          {/* <Address address={account} /> */}
+          <IconButton
+            onClick={disconnect}
+            sx={{ marginLeft: 1, color: "white" }}
+          >
+            {/* <LogoutIcon /> */}
             <Address address={account} />
-            <IconButton onClick={disconnect} sx={{ marginLeft: 1, color: 'white' }}>
-              <LogoutIcon />
-            </IconButton>
-          </Box>
-        ) : (
-          <Button variant="contained" onClick={handleOpen}>
-            Connect Wallet
-          </Button>
-        )
-      }
+          </IconButton>
+        </Box>
+      ) : (
+        <Button variant="contained" onClick={handleOpen} className={className}>
+          Connect
+        </Button>
+      )}
 
       <Dialog
         open={open}
@@ -75,30 +80,34 @@ const ConnectWallet = () => {
         PaperProps={{
           sx: {
             m: 0,
-            position: 'fixed',
+            position: "fixed",
             top: 140,
-          }
+          },
         }}
         fullWidth
       >
-        <Box sx={{
-          padding: 2,
-        }}>
+        <Box
+          sx={{
+            padding: 2,
+          }}
+        >
           <Typography pb={1} variant="h6">
             Choose a wallet
           </Typography>
-          
+
           <Divider />
-          
-          <Box sx={{
-            display: 'flex',
-            marginTop: 3,
-            margin: '8px auto',
-            width: '100%',
-            maxWidth: '550px',
-            alignItems: 'center',
-            flexDirection: ['column', 'row'],
-          }}>
+
+          <Box
+            sx={{
+              display: "flex",
+              marginTop: 3,
+              margin: "8px auto",
+              width: "100%",
+              maxWidth: "550px",
+              alignItems: "center",
+              flexDirection: ["column", "row"],
+            }}
+          >
             <WalletConnector
               name="MetaMask"
               logo="/img/metamask-logo.svg"
@@ -125,18 +134,11 @@ const ConnectWallet = () => {
             />
           </Box>
 
-          {
-            error && (
-              <Alert severity="error">
-                { error }
-              </Alert>
-            )
-          }
-
+          {error && <Alert severity="error">{error}</Alert>}
         </Box>
       </Dialog>
     </>
   );
-}
+};
 
 export default ConnectWallet;

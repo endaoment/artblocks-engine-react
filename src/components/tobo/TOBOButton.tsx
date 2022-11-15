@@ -8,7 +8,7 @@ const TOBOButton = (props: { text: string; viaEndaoment?: boolean | undefined; d
   return (
     <button onClick={ props.action ? buttonClick : () => null} className={ `toboButton ${ props.disabled && 'disabled' }` }>
       { props.text }
-      { props.viaEndaoment && <span>via<img src="img/tobo/logo-endaoment.png" alt="Endaoment" /></span> }
+      { props.viaEndaoment && <span>via<img src="/img/tobo/logo-endaoment.png" alt="Endaoment" /></span> }
     </button>
   );
 }

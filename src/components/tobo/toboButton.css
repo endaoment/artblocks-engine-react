@@ -8,16 +8,20 @@
   display: flex;
   align-items: center;
   padding-left: 19px;
-  padding-right: 74px;
+  padding-right: 19px;
   cursor: pointer;
   font-size: 24px;
   font-family: "inter-bold", sans-serif;
-  background-image: url("assets/img/button-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right 25px center;
   position: relative;
   outline: 1px solid transparent;
   transition: 0.2s all;
+}
+
+#toboPage button.toboButton:not(.mintButton) {
+  padding-right: 74px;
+  background-image: url("assets/img/button-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
 }
 
 @media (hover: hover) {

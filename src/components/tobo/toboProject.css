@@ -1,0 +1,256 @@
+/* Project details */
+
+#toboProject {
+  margin-top: 80px;
+}
+
+#toboProjectDetails {
+  padding-bottom: 71px;
+  padding-top: 69px;
+}
+
+#projectDetailsPreview {
+  float: left;
+  width: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#projectDetailsPreview .toboMint {
+  background-color: #fafafa;
+}
+
+#projectDetailsInfo {
+  float: right;
+  width: 50%;
+  padding-right: 6%;
+  position: relative;
+}
+
+#projectDetailsInfo h3 {
+  float: left;
+  width: calc(100% - 160px);
+  color: var(--tobo-dark);
+}
+
+#infoMint button {
+  /* width: 320px !important; */
+  height: 56px;
+  background-color: var(--tobo-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  color: #fff;
+  font-family: "inter-bold", sans-serif;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  background-image: none;
+}
+
+#infoMint button:hover {
+  outline: 1px solid #fff;
+  filter: invert(1);
+  transform: translatey(-6px) rotate(-2deg);
+  transform-origin: center center;
+  box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.5);
+}
+
+#projectDetailsInfo h4 {
+  margin-top: 21px;
+  color: var(--tobo-dark);
+}
+
+#projectDetailsInfo h5 {
+  font-family: "inter-regular", sans-serif;
+  font-size: 20px;
+  margin-top: 12px;
+  color: var(--tobo-dark);
+}
+
+#projectDetailsInfo h5 span {
+  font-family: "inter-bold", sans-serif;
+}
+
+p#infoTime {
+  font-size: 20px;
+  line-height: 134%;
+  font-family: "inter-regular", sans-serif;
+  padding: 21px;
+  padding-left: 28px;
+  padding-right: 28px;
+  border-radius: 27px;
+  border: 1px solid var(--tobo-dark);
+  margin-top: 39px;
+  color: var(--tobo-dark);
+}
+
+p#infoTime span {
+  font-family: "inter-bold", sans-serif;
+}
+
+p#infoNote {
+  border-top: 1px solid var(--tobo-dark);
+  margin-top: 36px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+p#infoNote,
+p#infoNote p {
+  font-size: 22px;
+  line-height: 27px;
+  font-family: "inter-regular", sans-serif;
+  color: var(--tobo-dark);
+}
+
+p#infoNote h3 {
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+#infoLinks {
+  border-top: 1px solid var(--tobo-dark);
+  margin-top: 32px;
+  padding-top: 39px;
+}
+
+span#linksHeading {
+  display: block;
+  line-height: 1;
+  font-size: 21px;
+  color: var(--tobo-dark);
+  font-family: "inter-bold", sans-serif;
+}
+
+#infoLinks a {
+  margin-top: 20px;
+  float: left;
+  margin-right: 37px;
+}
+
+#infoLinks a img {
+  filter: invert(1);
+  height: 45px;
+}
+
+#infoLinks .clear {
+  padding-top: 43px;
+}
+
+#infoLinks button {
+  width: 438px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  #toboProjectDetails {
+    padding-top: 32px;
+    padding-bottom: 35px;
+  }
+
+  #projectDetailsPreview {
+    width: 100%;
+  }
+
+  #projectDetailsInfo {
+    width: 100%;
+    padding-left: 6%;
+    margin-top: 16px;
+  }
+
+  #projectDetailsInfo h3 {
+    width: 100%;
+    float: none;
+  }
+
+  #infoMint button {
+    margin-top: 16px;
+    width: 260px !important;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  #projectDetailsInfo h4 {
+    margin-top: 16px;
+  }
+
+  #projectDetailsInfo h5 {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  p#infoTime {
+    font-size: 14px;
+    line-height: 1.25;
+    padding: 16px;
+    border-radius: 16px;
+    margin-top: 24px;
+  }
+
+  p#infoNote {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-top: 24px;
+    padding-top: 16px;
+  }
+
+  #infoLinks {
+    margin-top: 16px;
+    padding-top: 12px;
+  }
+
+  #infoLinks span {
+    font-size: 16px;
+  }
+
+  #infoLinks a {
+    margin-top: 12px;
+    margin-right: 12px;
+  }
+
+  #infoLinks a img {
+    height: 28px;
+  }
+
+  #infoLinks .clear {
+    padding-top: 16px;
+  }
+
+  #infoLinks button {
+    width: 280px;
+    margin-top: 10px;
+  }
+}
+
+/* Tokens */
+
+#toboProjectTokens {
+  padding-bottom: 129px;
+  border-top: 1px solid var(--tobo-dark);
+  padding-top: 73px;
+  padding-left: 7.2%;
+}
+
+.projectTokensMint {
+  width: 42%;
+  float: left;
+  margin-top: 43px;
+  margin-right: 5.3%;
+}
+
+@media only screen and (max-width: 767px) {
+  #toboProjectTokens {
+    padding-top: 32px;
+    padding-bottom: 65px;
+    padding-right: 7.2%;
+  }
+
+  .projectTokensMint {
+    width: 100%;
+    margin-top: 24px;
+  }
+}

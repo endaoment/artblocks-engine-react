@@ -6,6 +6,11 @@
 }
 
 @font-face {
+  font-family: "anonymous-pro";
+  src: url("assets/fonts/anonymous-pro.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "inter-regular";
   src: url("assets/fonts/inter-regular.woff2") format("woff2");
 }
@@ -37,15 +42,27 @@
 /* TOBOPage */
 
 body {
-  background-color: var(--tobo-blue) !important;
+  background-color: var(--tobo-blue);
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 #toboPage {
   width: 100%;
-  /* max-width: 1512px; */
   margin: auto;
   position: relative;
   line-height: 0;
+}
+
+#toboPage main {
+  margin-top: 0px;
 }
 
 #toboPage h1,
@@ -61,6 +78,12 @@ body {
 #toboPage h3 {
   font-size: 62px;
   font-family: "oswald-medium", sans-serif;
+  color: var(--tobo-dark);
+}
+
+#toboPage h4 {
+  font-family: "anonymous-pro-b", serif;
+  font-size: 36px;
   color: var(--tobo-dark);
 }
 
@@ -84,12 +107,47 @@ body {
   line-height: 1;
 }
 
+.toboModule {
+  border-radius: 70px 70px 0px 0px;
+  position: sticky;
+  top: 0px;
+  margin-top: -70px;
+  min-height: 75vh;
+  background-color: #fff;
+  display: inline-block;
+}
+
+.moduleColumn {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+
 @media only screen and (max-width: 767px) {
+  #toboPage main {
+    margin-top: 60px;
+  }
+
   #toboPage h3 {
     font-size: 30px;
   }
 
+  #toboPage h4 {
+    font-size: 24px;
+  }
+
   #toboPage p {
     font-size: 18px;
+  }
+
+  .toboModule {
+    border-radius: 36px 36px 0px 0px;
+    margin-top: -36px;
+    position: relative;
+    top: 0;
+  }
+
+  .moduleColumn {
+    width: 100% !important;
   }
 }

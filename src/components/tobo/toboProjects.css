@@ -1,0 +1,353 @@
+/* TOBOProjects */
+
+#toboProjects {
+  background-color: var(--tobo-yellow);
+  min-height: 125vh;
+  padding-bottom: 187px;
+  position: relative;
+  top: 0;
+}
+
+#toboProjects .moduleColumn {
+  width: 100%;
+}
+
+#toboProjects h3 {
+  margin-top: 76px;
+  margin-left: 7.3%;
+  width: 50%;
+}
+
+#toboProjects p {
+  margin-top: 29px;
+  margin-left: 7.3%;
+  width: 50%;
+}
+
+a#projectsArtBlocks {
+  position: absolute;
+  top: 140px;
+  right: 150px;
+  display: flex;
+  flex-direction: column;
+  font-family: "anonymous-pro-b", serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+a#projectsArtBlocks img {
+  height: 60px;
+  filter: invert(1);
+}
+
+a#projectsArtBlocks img#artBlocksArrow {
+  height: 24px;
+  margin-left: 17px;
+  vertical-align: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  #toboProjects {
+    padding-bottom: 94px;
+  }
+
+  #toboProjects h3 {
+    margin-top: 32px;
+    width: 100%;
+  }
+
+  #toboProjects p {
+    width: 75%;
+  }
+
+  a#projectsArtBlocks {
+    position: relative;
+    top: unset;
+    right: unset;
+    left: unset;
+    margin-left: 7.3%;
+    margin-top: 32px;
+  }
+
+  a#projectsArtBlocks img {
+    height: 32px;
+  }
+
+  a#projectsArtBlocks img#artBlocksArrow {
+    height: 16px;
+    margin-left: 8px;
+    vertical-align: 6px;
+  }
+}
+
+/* TOBOProject */
+
+.toboProject {
+  background-color: #fff;
+  margin-left: 5.6%;
+  width: 88.7%;
+  margin-top: 45px;
+  border-radius: 65px;
+  padding-bottom: 47px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.toboProject .toboMint {
+  width: 340px;
+  margin-top: 47px;
+  margin-left: 60px;
+  float: left;
+}
+
+.projectCircle {
+  position: absolute;
+  width: 100px;
+  aspect-ratio: 4/4;
+  background-color: var(--tobo-red);
+  mix-blend-mode: multiply;
+  border-radius: 999px;
+  top: 239px;
+  left: 20px;
+}
+
+.projectDetails {
+  float: right;
+  width: calc(100% - 480px);
+  margin-right: 40px;
+  margin-top: 47px;
+  position: relative;
+}
+
+#toboProjects .projectDetails h3 {
+  margin-top: 22px;
+  margin-left: 0;
+  font-size: 48px;
+}
+
+#toboProjects .projectDetails h4 {
+  margin-top: 14px;
+}
+
+.projectDetails h4 span {
+  color: var(--tobo-red);
+}
+
+.projectDetails button {
+  width: 320px;
+  height: 56px;
+  background-color: var(--tobo-dark) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  color: #fff;
+  font-family: "inter-bold", sans-serif;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  margin-top: 24px;
+}
+
+.projectDetails button:hover {
+  outline: 1px solid #fff;
+  filter: invert(1);
+  transform: translatey(-6px) rotate(-2deg);
+  transform-origin: center center;
+  box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.5);
+}
+
+#toboProjects .projectDetails p {
+  margin-top: 12px;
+  width: 100%;
+  margin-left: 0;
+  font-size: 20px;
+  font-family: "inter-regular", sans-serif;
+  line-height: 134%;
+  letter-spacing: 0.015em;
+}
+
+#toboProjects .projectDetails > p {
+  margin-top: 25px;
+}
+
+#toboProjects .projectDetails p h3 {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+p#projectTime p {
+  font-size: 20px;
+  line-height: 134%;
+  font-family: "inter-regular", sans-serif;
+  padding: 21px;
+  padding-left: 28px;
+  padding-right: 28px;
+  border-radius: 27px;
+  border: 1px solid var(--tobo-dark);
+  margin-top: 39px;
+  color: var(--tobo-dark);
+}
+
+p#projectTime > p h3 {
+  width: 100%;
+  font-size: 24px;
+}
+
+p#projectTime span {
+  font-family: "inter-bold", sans-serif;
+}
+
+span.projectMinted {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+  font-family: "inter-regular", sans-serif;
+  border: 1px solid var(--tobo-dark);
+  line-height: 1;
+  border-radius: 999px;
+  padding: 14px;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+.projectLogos {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 35px;
+  padding-top: 21px;
+}
+
+.projectLogos span {
+  display: block;
+  line-height: 1;
+  font-size: 21px;
+  color: var(--tobo-red);
+  font-family: "inter-bold", sans-serif;
+}
+
+.projectLogos a {
+  margin-top: 20px;
+  float: left;
+  margin-right: 37px;
+}
+
+.projectLogos a img {
+  filter: invert(1);
+  height: 45px;
+}
+
+#toboPage button.projectMint {
+  background-color: var(--tobo-red);
+  color: #fff;
+  font-family: "inter-medium", sans-serif;
+  font-size: 28px;
+  border-radius: 999px;
+  padding: 12px;
+  padding-left: 29px;
+  padding-right: 29px;
+  cursor: pointer;
+  position: absolute;
+  right: 3.6%;
+  margin-top: 20px;
+  transition: transform 0.5s;
+}
+
+button.projectMint:hover {
+  transform: translateY(-8px);
+}
+
+button.projectMint span {
+  font-family: "inter-bold", sans-serif;
+}
+
+@media only screen and (max-width: 767px) {
+  .toboProject {
+    border-radius: 36px;
+    padding-bottom: 24px;
+  }
+
+  .toboProject .toboMint {
+    width: 90%;
+    margin-top: 32px;
+    margin-left: 5%;
+  }
+
+  .projectCircle {
+    width: 16%;
+    left: auto;
+    right: -2.8%;
+  }
+
+  .projectDetails {
+    width: 90%;
+    margin-right: 5%;
+    margin-top: 24px;
+  }
+
+  .projectDetails button {
+    margin-top: 16px;
+    width: 260px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  #toboProjects .projectDetails h3 {
+    margin-top: 48px;
+    font-size: 30px;
+  }
+
+  #toboProjects .projectDetails h4 {
+    margin-top: 8px;
+  }
+
+  #toboProjects .projectDetails p {
+    margin-top: 12px;
+    font-size: 14px;
+  }
+
+  p#projectTime {
+    font-size: 14px;
+    line-height: 1.25;
+    padding: 16px;
+    border-radius: 16px;
+    margin-top: 24px;
+  }
+
+  span.projectMinted {
+    font-size: 12px;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .projectLogos {
+    margin-top: 16px;
+    padding-top: 12px;
+  }
+
+  .projectLogos span {
+    font-size: 16px;
+  }
+
+  .projectLogos a {
+    margin-top: 12px;
+    margin-right: 12px;
+  }
+
+  .projectLogos a img {
+    height: 28px;
+  }
+
+  #toboPage button.projectMint {
+    font-size: 16px;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    right: 3.6%;
+    margin-top: 8px;
+  }
+}

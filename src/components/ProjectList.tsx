@@ -71,7 +71,7 @@ const ProjectList = () => {
               </NativeSelect>
             </FormControl>
           </Box>
-                
+
           <Typography fontSize="14px" pt={2} ml={3}>
             Showing  { data?.projects ? Math.min(projectsPerPage, data?.projects?.length) : '-' }
           </Typography>
