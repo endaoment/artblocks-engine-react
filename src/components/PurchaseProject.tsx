@@ -84,35 +84,22 @@ const PurchaseProject = ({ project }: Props) => {
     return null;
   }
 
-  if (project.paused) {
-    return (
-      <Button variant="contained" color="primary" disabled>
-        Purchases paused
-      </Button>
-    );
-  }
-
-  if (startTime && startTime.isAfter()) {
-    return <Alert severity="info">Upcoming</Alert>;
-  }
-
-  if (!project.active) {
-    return <Alert severity="info">Project is not active</Alert>;
-  }
-
-  if (!project.active) {
-    return <Alert severity="info">Project is not active</Alert>;
-  }
-
-  if (project.complete) {
-    return <Alert severity="info">Sold out</Alert>;
-  }
-
   if (!isActive) {
     return (
       <button className="toboButton mintButton" onClick={connect}>
         Connect to Generate
       </button>
+    );
+  }
+
+  if (
+    project.paused &&
+    account !== "0x8bB1A6245603a30eb5B3Bf51c369089927979A5F"
+  ) {
+    return (
+      <Button variant="contained" color="primary" disabled>
+        Purchases paused
+      </Button>
     );
   }
 
@@ -122,6 +109,25 @@ const PurchaseProject = ({ project }: Props) => {
         Switch to {CHAINS[expectedChainId]?.name} to purchase
       </Alert>
     );
+  }
+
+  if (
+    startTime &&
+    startTime.isAfter() &&
+    account !== "0x8bB1A6245603a30eb5B3Bf51c369089927979A5F"
+  ) {
+    return <Alert severity="info">Upcoming</Alert>;
+  }
+
+  if (
+    !project.active &&
+    account !== "0x8bB1A6245603a30eb5B3Bf51c369089927979A5F"
+  ) {
+    return <Alert severity="info">Project is not active</Alert>;
+  }
+
+  if (project.complete) {
+    return <Alert severity="info">Sold out</Alert>;
   }
 
   let customToken: ERC20Token;
