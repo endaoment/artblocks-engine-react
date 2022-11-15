@@ -9,6 +9,7 @@ import {
   openseaBaseUrl,
 } from "config";
 import { useNavigate } from "react-router-dom";
+import parse from "html-react-parser";
 import "./toboToken.css";
 
 /* OtherTokens */
@@ -62,21 +63,7 @@ function TokenInfo(props: { token: any }) {
           <span>https://linktr.ee/ryangreen8</span>
         </a>
         <p>
-          I find the patterns which emerge from the herding of sheep and the
-          murmuration of starlings an apt metaphor for our own journeys of
-          searching for truth, beauty and love while we're here. These pieces
-          are best viewed live to witness how the path of these digital
-          creatures' lives paint their tiny planet. ***
-          <br />
-          I behold the sleeping planet ​| Plucked from the sky | Rolled around
-          in my hands. | “My Word formed it.” | Time worn, | Life stained, |
-          Soil rinsed and washed. | “Our story in repose.” | Love lost, |
-          Wanderlust, | Loud surrender. | “It must have been painful.” | Placed
-          in my collection, | Delicate and beautiful, | When viewed from this
-          distance. | Selah. | I return my gaze to the heavens. *** 25% of sales
-          above resting price will be used to fund The Playability Initiative
-          whose mission is to design free, fun video games and creative digital
-          tools to kids with disabilities.
+          {props.token && parse(props.token.description.toString())}
           <br />
           <br />
           <br />

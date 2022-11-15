@@ -97,27 +97,27 @@ a#projectsArtBlocks img#artBlocksArrow {
 }
 
 .toboProject .toboMint {
-  width: 27.8%;
+  width: 340px;
   margin-top: 47px;
-  margin-left: 3.5%;
+  margin-left: 60px;
   float: left;
 }
 
 .projectCircle {
   position: absolute;
-  width: 7.8%;
+  width: 100px;
   aspect-ratio: 4/4;
   background-color: var(--tobo-red);
   mix-blend-mode: multiply;
   border-radius: 999px;
   top: 239px;
-  left: 27.4%;
+  left: 20px;
 }
 
 .projectDetails {
   float: right;
-  width: 57.3%;
-  margin-right: 4%;
+  width: calc(100% - 480px);
+  margin-right: 40px;
   margin-top: 47px;
   position: relative;
 }
