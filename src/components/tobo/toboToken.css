@@ -18,6 +18,7 @@
 #toboTokenPreview h3 {
   margin-top: 97px;
   margin-left: 4.8%;
+  cursor: pointer;
 }
 
 #toboTokenPreview h3 span {
@@ -59,8 +60,9 @@
   padding-right: 2.8%;
 }
 
-#infoDetails {
+#toboTokenInfo #infoDetails {
   /* border-right: 1px solid var(--tobo-dark); */
+  padding-left: 6.8%;
 }
 
 #infoDetails a {
@@ -169,7 +171,6 @@ span.itemValue {
 
 #toboOtherTokens h3 {
   margin-right: 10.7%;
-  text-align: center;
 }
 
 .otherTokensMint {

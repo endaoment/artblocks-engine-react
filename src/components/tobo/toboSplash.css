@@ -153,13 +153,11 @@ img#splashModule1Shape {
   top: 593px;
 }
 
-#toboSplashModule1 .moduleColumn.splashModuleColumnL .toboMint {
+#toboSplashModule1 .moduleColumn.splashModuleColumnL img {
   width: 100%;
   padding-left: 9.9%;
   padding-right: 7.5%;
   margin-top: 118px;
-  max-height: 50vh;
-  object-fit: cover;
 }
 
 #splashModule1Circle {
@@ -291,7 +289,7 @@ img#splashModule1Logo {
   margin-top: 29px;
 }
 
-#toboSplashModule2 button {
+#toboSplashModule2 .moduleColumn.splashModuleColumnL button {
   margin-left: 14.6%;
   margin-top: 33px;
 }
@@ -460,7 +458,7 @@ img#splashModule1Logo {
   margin-top: 29px;
 }
 
-#toboSplashModule4 button {
+#toboSplashModule4 .moduleColumn.splashModuleColumnL button {
   margin-left: 14.6%;
   margin-top: 33px;
 }

@@ -30,7 +30,6 @@ const TOBOMint = (props: {
   return (
     <div
       className="toboMint"
-      style={{ backgroundColor: props.live ? "transparent" : "#FAFAFA" }}
     >
       {props.live ? (
         <iframe
@@ -50,21 +49,17 @@ const TOBOMint = (props: {
           alt=""
         />
       )}
-      {!props.hideInfo && (
-        <>
-          <span onClick={linkClick}>ARTWORK #{props.invocation}</span>
-          <button onClick={expandClick}>
-            <img src="/img/tobo/mint/icon-mint-expand.png" alt="" />
-          </button>
-          <button onClick={fullClick}>
-            <img src="/img/tobo/mint/icon-mint-full.png" alt="" />
-          </button>
-          <button onClick={linkClick}>
-            <img src="/img/tobo/mint/icon-mint-link.png" alt="" />
-          </button>
-          <div className="clear"></div>
-        </>
-      )}
+      <span onClick={linkClick}>ARTWORK #{props.invocation}</span>
+      <button onClick={expandClick}>
+        <img src="/img/tobo/mint/icon-mint-expand.png" alt="" />
+      </button>
+      <button onClick={fullClick}>
+        <img src="/img/tobo/mint/icon-mint-full.png" alt="" />
+      </button>
+      <button onClick={linkClick}>
+        <img src="/img/tobo/mint/icon-mint-link.png" alt="" />
+      </button>
+      <div className="clear"></div>
     </div>
   );
 };

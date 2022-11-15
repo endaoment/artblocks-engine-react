@@ -3,6 +3,7 @@ import TOBOProjects from "./TOBOProjects";
 import useProject from 'hooks/useProject';
 import useToken from 'hooks/useToken';
 import { mediaUrl } from 'config';
+import { useNavigate } from "react-router-dom";
 import "./toboToken.css";
 
 /* OtherTokens */
@@ -77,11 +78,17 @@ function TokenInfo(props: {token: any;}) {
 /* TokenPreview */
 
 function TokenPreview(props: {token: any; invocation: string}) {
+  const navigate = useNavigate();
+
+  const headingClick = () => {
+    navigate(`/project/0`);
+  };
+
   return (
     <div id="toboTokenPreview">
       <TOBOMint invocation={ props.invocation } live={ true } />
       { /*<img src={ `${ mediaUrl }/thumb/${ props.invocation }.png` } alt="" />*/ }
-      <h3>{ props.token.project.name }<span>by { props.token.project.artistName }</span></h3>
+      <h3 onClick={ headingClick }>{ props.token.project.name }<span>by { props.token.project.artistName }</span></h3>
     </div>
   );
 }
