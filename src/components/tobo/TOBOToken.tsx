@@ -63,7 +63,7 @@ function TokenInfo(props: { token: any }) {
           <span>https://linktr.ee/ryangreen8</span>
         </a>
         <p>
-          {props.token && parse(props.token.description)}
+          {props.token && parse(props.token.description.toString())}
           <br />
           <br />
           <br />
