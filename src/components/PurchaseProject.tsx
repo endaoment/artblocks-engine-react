@@ -2,7 +2,6 @@ import { useCallback, useState } from "react";
 import { ethers, utils, BigNumber } from "ethers";
 import moment from "moment";
 import { useWeb3React } from "@web3-react/core";
-import LoadingButton from "@mui/lab/LoadingButton";
 import Button from "@mui/material/Button";
 import Alert from "@mui/material/Alert";
 import { ERC20Token, Project } from "utils/types";
