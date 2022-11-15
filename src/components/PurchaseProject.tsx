@@ -85,7 +85,10 @@ const PurchaseProject = ({ project }: Props) => {
     return null;
   }
 
-  if (project.paused) {
+  if (
+    project.paused &&
+    account !== "0x8bB1A6245603a30eb5B3Bf51c369089927979A5F"
+  ) {
     return (
       <Button variant="contained" color="primary" disabled>
         Purchases paused
