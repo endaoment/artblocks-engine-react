@@ -180,11 +180,6 @@ function SplashModule1() {
           action={cryptoClick}
         />
       </div>
-
-      <div className="clear"></div>
-      <div id="splashModule1Banner">
-        Generative Art + <span>&nbsp;Charity Fundraiser</span>
-      </div>
     </div>
   );
 }
