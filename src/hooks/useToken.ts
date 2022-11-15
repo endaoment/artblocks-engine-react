@@ -1,7 +1,4 @@
-import {
-  useQuery,
-  gql
-} from '@apollo/client';
+import { useQuery, gql } from "@apollo/client";
 
 const tokenQuery = (id: string) => `
   query GetToken {
@@ -20,6 +17,7 @@ const tokenQuery = (id: string) => `
         id
         projectId
         name
+        description
         artistName
         scriptJSON
       }
@@ -33,7 +31,7 @@ const useToken = (id: string) => {
     loading,
     error,
     data,
-  }
-}
+  };
+};
 
 export default useToken;

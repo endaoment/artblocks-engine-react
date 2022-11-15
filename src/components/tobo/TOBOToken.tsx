@@ -55,8 +55,6 @@ function InfoItem(props: { feature: string; value: string }) {
 }
 
 function TokenInfo(props: { token: any }) {
-  const { data } = useProject(props.token?.project.id);
-  const project = data?.project;
   //console.log(props.token)
   return (
     <div id="toboTokenInfo">
@@ -65,7 +63,7 @@ function TokenInfo(props: { token: any }) {
           <span>https://linktr.ee/ryangreen8</span>
         </a>
         <p>
-          {props.token && parse(project.description)}
+          {props.token && parse(props.token.project.description)}
           <br />
           <br />
           <br />
