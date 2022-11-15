@@ -91,13 +91,25 @@ p#infoTime span {
 }
 
 p#infoNote {
+  border-top: 1px solid var(--tobo-dark);
+  margin-top: 36px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+p#infoNote,
+p#infoNote p {
   font-size: 22px;
   line-height: 27px;
   font-family: "inter-regular", sans-serif;
-  margin-top: 36px;
-  padding-top: 30px;
-  border-top: 1px solid var(--tobo-dark);
   color: var(--tobo-dark);
+}
+
+p#infoNote h3 {
+  font-size: 24px;
+  margin-top: 12px;
 }
 
 #infoLinks {
