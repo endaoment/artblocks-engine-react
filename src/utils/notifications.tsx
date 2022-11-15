@@ -1,42 +1,47 @@
-import { toast } from 'react-toastify';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import { ContractTransaction, ContractReceipt } from '@ethersproject/contracts';
-import { confirmations as numConfirmations, etherscanBaseUrl } from 'config';
+import { toast } from "react-toastify";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import { ContractTransaction, ContractReceipt } from "@ethersproject/contracts";
+import { confirmations as numConfirmations, etherscanBaseUrl } from "config";
 
-const displayError = (customError:any, error:any) => (
+const displayError = (customError: any, error: any) => (
   <>
-    <Typography fontSize="16px" fontWeight="bold">{ customError }</Typography>
-    <Typography fontSize="14px">{ error }</Typography>
+    <Typography fontSize="16px" fontWeight="bold">
+      {customError}
+    </Typography>
+    <Typography fontSize="14px">{error}</Typography>
   </>
-)
+);
 
-const displayMessage = (message:string, txLink:string) => (
+const displayMessage = (message: string, txLink: string) => (
   <>
-    <Box mb={2}>
-      { message }
-    </Box>
+    <Box mb={2}>{message}</Box>
     <Box fontSize="14px" textAlign="right">
-      <a href={txLink} target="_blank" style={{ color: 'black' }} rel="noopener noreferrer">
+      <a
+        href={txLink}
+        target="_blank"
+        style={{ color: "black" }}
+        rel="noopener noreferrer"
+      >
         View in explorer
       </a>
     </Box>
   </>
-)
+);
 
-const formatError = (err:any) => {
-  console.log({ err })
-  if (typeof err === 'string') {
-    return err
+const formatError = (err: any) => {
+  console.log({ err });
+  if (typeof err === "string") {
+    return err;
   }
-  if (err.data?.message && typeof err.data?.message === 'string') {
+  if (err.data?.message && typeof err.data?.message === "string") {
     return err.data?.message;
   }
-  if (err.message && typeof err.message === 'string') {
-    return err.message
+  if (err.message && typeof err.message === "string") {
+    return err.message;
   }
-  return 'Unexpected error';
-}
+  return "Unexpected error";
+};
 
 interface NotificationParams {
   pending?: string;
@@ -47,17 +52,17 @@ interface NotificationParams {
   method: () => Promise<ContractTransaction>;
   chainId: number;
   onSubmitted?: () => void;
-  onSuccess?: (res?:ContractReceipt) => void;
-  onError?: (err?:any) => void;
+  onSuccess?: (res?: ContractReceipt) => void;
+  onError?: (err?: any) => void;
 }
 
 export const notifyTx = async ({
-  pending='Waiting for your confirmation',
-  submitted='Your transaction was submitted',
-  success='Transaction succeeded',
-  error='Your transaction failed',
+  pending = "Waiting for your confirmation",
+  submitted = "Your transaction was submitted",
+  success = "Transaction succeeded",
+  error = "Your transaction failed",
   method,
-  confirmations=numConfirmations || 3,
+  confirmations = numConfirmations || 5,
   onSubmitted,
   onSuccess,
   onError,
@@ -92,4 +97,4 @@ export const notifyTx = async ({
     });
     onError && onError(err);
   }
-}
+};
