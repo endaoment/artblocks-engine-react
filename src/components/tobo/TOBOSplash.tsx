@@ -53,7 +53,7 @@ function SplashModule4() {
 function SplashModule3() {
   const postClick = () => {
     window.open(
-      "http://twitter.com/intent/tweet?text=Join%20me%20November%2015th%20for%20the%20%23TurnoutForBurnout!%20Mint%20generative%20art%20to%20fund%20wellness%20programs%20for%20healthcare%20workers.%20%0A%0ALearn%20more%20at%3A&url=http%3A%2F%2Fwww.turnoutforburnout.com%0A%0ABrought%20to%20you%20by%20your%20friends%20at%0A%40EndaomentDotOrg%20%40Sostento%20and%20%40Artblocks_io%20"
+      "http://twitter.com/intent/tweet?text=Join%20me%20November%2017th%20for%20the%20%23TurnoutForBurnout!%20Mint%20generative%20art%20to%20fund%20wellness%20programs%20for%20healthcare%20workers.%20%0A%0ALearn%20more%20at%3A&url=http%3A%2F%2Fwww.turnoutforburnout.com%0A%0ABrought%20to%20you%20by%20your%20friends%20at%0A%40EndaomentDotOrg%20%40Sostento%20and%20%40Artblocks_io%20"
     );
   };
 
@@ -170,7 +170,7 @@ function SplashModule1() {
 
         <div id="splashModule1Mint">
           <TOBOButton text="Generate a Charity Piece" action={mintClick} />
-          {/*<span>Minting begins November 15th, 2022</span>*/}
+          <span>Auction begins 4pm ET Nov. 17th, 2022</span>
         </div>
 
         <TOBOButton text="Donate NFTs" viaEndaoment={true} action={nftClick} />
