@@ -1,12 +1,13 @@
 /* Token preview */
 
 #toboToken {
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 
 #toboTokenPreview {
   padding-bottom: 60px;
-  padding-top: 53px;
+  padding-top: 133px;
+  background-color: #fafafa;
 }
 
 #toboTokenPreview iframe {
@@ -16,8 +17,9 @@
 }
 
 #toboTokenPreview h3 {
-  margin-top: 97px;
+  margin-top: 57px;
   margin-left: 4.8%;
+  line-height: 1;
   cursor: pointer;
 }
 
@@ -25,6 +27,12 @@
   font-family: "anonymous-pro-b", serif;
   font-size: 32px;
   margin-left: 28px;
+}
+
+#toboTokenPreview h3 i {
+  font-family: "anonymous-pro-b", serif;
+  font-size: 22px;
+  margin-top: 0px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -93,6 +101,7 @@ a.detailsFooterLink {
   margin-right: 60px;
   float: left;
   margin-top: 22px;
+  text-decoration: none;
 }
 
 #toboTokenInfo #infoMeta {

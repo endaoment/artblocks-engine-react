@@ -53,6 +53,10 @@ img#toboMobileLogo {
     height: 60px;
   }
 
+  #toboPage header button {
+    display: none;
+  }
+
   img#toboLogo {
     display: none;
   }
