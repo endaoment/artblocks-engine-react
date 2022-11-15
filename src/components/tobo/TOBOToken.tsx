@@ -55,7 +55,7 @@ function InfoItem(props: { feature: string; value: string }) {
 }
 
 function TokenInfo(props: { token: any }) {
-  const { data } = useProject(props.token?.projectId);
+  const { data } = useProject(props.token?.project.id);
   const project = data?.project;
   //console.log(props.token)
   return (
