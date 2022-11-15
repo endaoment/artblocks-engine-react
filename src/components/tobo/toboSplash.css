@@ -230,7 +230,8 @@ img#splashModule1Logo {
 
 @media only screen and (max-width: 1023px) {
   #toboSplashModule1 .moduleColumn.splashModuleColumnR button {
-    width: 278px;
+    width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -241,7 +242,8 @@ img#splashModule1Logo {
   }
 
   #toboSplashModule1 .moduleColumn.splashModuleColumnR {
-    padding-left: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   img#splashModule1Shape {
@@ -330,15 +332,31 @@ img#splashModule1Logo {
 
   #toboSplashModule2 h3 {
     margin-top: 58px;
+    margin-left: 0;
   }
 
   #toboPage #toboSplashModule2 p {
-    margin-right: 4.6%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #toboSplashModule2 .moduleColumn.splashModuleColumnL button {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #toboSplashModule2 .moduleColumn.splashModuleColumnR .toboMint {
     margin-top: 40px;
     width: 100%;
+  }
+
+  #toboSplashModule2 .moduleColumn.splashModuleColumnL {
+    padding: 0 24px;
+  }
+
+  #toboSplashModule2 .moduleColumn.splashModuleColumnR {
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .splashModule2Circle {
@@ -417,15 +435,25 @@ img#splashModule1Logo {
 
   #toboSplashModule3 .moduleColumn.splashModuleColumnR {
     padding-bottom: 32px;
-    padding-left: 8%;
+    padding-left: 24px;
+  }
+
+  #toboSplashModule3 .moduleColumn.splashModuleColumnL {
+    padding: 0 24px;
   }
 
   #toboSplashModule3 h3 {
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  #toboPage #toboSplashModule3 p {
+    margin-left: 0;
   }
 
   #splashModule3Social {
     width: 200px;
+    margin-left: 0;
   }
 
   #splashModule3Social span {
@@ -500,10 +528,12 @@ img#splashModule1Logo {
 
   #toboSplashModule4 h3 {
     margin-top: 58px;
+    margin-left: 24px;
   }
 
   #toboPage #toboSplashModule4 p {
-    margin-right: 4.6%;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 
   #toboSplashModule4 .moduleColumn.splashModuleColumnR .toboMint {

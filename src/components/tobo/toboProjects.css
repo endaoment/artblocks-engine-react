@@ -53,7 +53,7 @@ a#projectsArtBlocks img#artBlocksArrow {
   }
 
   #toboProjects h3 {
-    margin-top: 96px;
+    margin-top: 32px;
   }
 
   #toboProjects p {
@@ -61,9 +61,12 @@ a#projectsArtBlocks img#artBlocksArrow {
   }
 
   a#projectsArtBlocks {
-    position: absolute;
-    top: 54px;
-    right: 7.3%;
+    position: relative;
+    top: unset;
+    right: unset;
+    left: unset;
+    margin-left: 7.3%;
+    margin-top: 32px;
   }
 
   a#projectsArtBlocks img {
@@ -251,7 +254,7 @@ button.projectMint span {
     padding-bottom: 24px;
   }
 
-  .toboProject iframe {
+  .toboProject .toboMint {
     width: 90%;
     margin-top: 32px;
     margin-left: 5%;
