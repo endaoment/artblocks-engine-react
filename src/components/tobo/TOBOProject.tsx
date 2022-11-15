@@ -64,7 +64,7 @@ function ProjectDetails(props: { id: string }) {
           for auction on OpenSea in December.
           <br />
           <br />
-          <span>price per token:</span> 0.20Ξ
+          <span>price per artwork:</span> 0.20Ξ
         </p>
         <p id="infoNote">{project && project.description}</p>
 

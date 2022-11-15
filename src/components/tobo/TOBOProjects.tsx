@@ -37,11 +37,11 @@ const TOBOProject = (props: { project: Project }) => {
           on OpenSea in December.
           <br />
           <br />
-          <span>price per token:</span> 0.20Ξ
+          <span>price per artwork:</span> 0.20Ξ
         </p>
         <p>{props.project.description}</p>
         <span className="projectMinted">{`${props.project.invocations} of ${props.project.maxInvocations} generated`}</span>
-        {project && <PurchaseProject project={project} />}
+        {/* {project && <PurchaseProject project={project} />} */}
 
         {/*<div className="projectLogos">
           <span>Proceeds go to:</span>
