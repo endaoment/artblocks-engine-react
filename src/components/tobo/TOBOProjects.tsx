@@ -7,6 +7,7 @@ import { mediaUrl } from "config";
 import PurchaseProject from "../PurchaseProject";
 import useProject from "hooks/useProject";
 import TOBOMint from "./TOBOMint";
+import parse from "html-react-parser";
 import "./toboProjects.css";
 
 /* TOBOProject */
@@ -39,7 +40,7 @@ const TOBOProject = (props: { project: Project }) => {
           <br />
           <span>price per artwork:</span> 0.20Ξ
         </p>
-        <p>{props.project.description}</p>
+        <p>{parse(props.project.description)}</p>
         <span className="projectMinted">{`${props.project.invocations} of ${props.project.maxInvocations} generated`}</span>
         {/* {project && <PurchaseProject project={project} />} */}
 

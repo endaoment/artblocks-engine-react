@@ -2,6 +2,7 @@ import TOBOButton from "./TOBOButton";
 import TOBOMint from "./TOBOMint";
 import TOBOProjects from "./TOBOProjects";
 import useProject from "hooks/useProject";
+import parse from "html-react-parser";
 import PurchaseProject from "../PurchaseProject";
 import "./toboProject.css";
 
@@ -66,7 +67,7 @@ function ProjectDetails(props: { id: string }) {
           <br />
           <span>price per artwork:</span> 0.20Ξ
         </p>
-        <p id="infoNote">{project && project.description}</p>
+        <p id="infoNote">{project && parse(project.description)}</p>
 
         <div id="infoLinks">
           {/*<span id="linksHeading">Proceeds go to:</span>
