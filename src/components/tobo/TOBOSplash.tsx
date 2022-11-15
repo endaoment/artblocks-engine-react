@@ -133,7 +133,7 @@ function SplashModule1() {
   };
 
   const spaceClick = () => {
-    window.open("https://twitter.com/i/spaces/1nAJErlaQabxL");
+    window.open("https://twitter.com/i/spaces/1vOxwMWERPdGB");
   };
 
   return (
