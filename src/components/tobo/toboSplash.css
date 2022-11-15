@@ -202,7 +202,6 @@ img#splashModule1Logo {
 
 #toboSplashModule1 #splashModule1Mint button {
   margin-top: 31px;
-  background-color: var(--tobo-blue);
 }
 
 @media (hover: hover) {

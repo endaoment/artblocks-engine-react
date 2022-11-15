@@ -87,6 +87,12 @@ function SplashModule3() {
 /* SplashModule2 */
 
 function SplashModule2() {
+  const navigate = useNavigate();
+
+  const mintClick = () => {
+    navigate("/project/0");
+  };
+
   return (
     <div className="toboModule" id="toboSplashModule2">
       <div className="moduleColumn splashModuleColumnL">
@@ -96,8 +102,8 @@ function SplashModule2() {
           hope,and a beacon of encouragement from generative artist Ryan Green.
         </p>
         <div id="splashModule2Mint">
-          <TOBOButton text="Generate Artwork" disabled={true} />
-          <span>Minting begins 11/15/22</span>
+          <TOBOButton text="Generate Artwork" action={mintClick} />
+          <span>Minting begins 4pm ET 11/17/22</span>
         </div>
         <p>
           "Having someone that will say 'I see you, let me go with you' is a
