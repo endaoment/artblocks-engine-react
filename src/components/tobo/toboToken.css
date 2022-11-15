@@ -1,18 +1,26 @@
 /* Token preview */
 
 #toboToken {
-  /* margin-top: 80px; */
+  margin-top: 80px;
 }
 
 #toboTokenPreview {
   padding-bottom: 60px;
-  padding-top: 133px;
+  padding-top: 60px;
+  /* background-color: #fafafa; */
+}
+
+#toboTokenPreview .toboMint {
+  margin: auto;
+  width: 39.5%;
   background-color: #fafafa;
 }
 
+#toboTokenPreview .toboMint button {
+  min-width: unset;
+}
+
 #toboTokenPreview iframe {
-  margin: auto;
-  width: 39.5%;
   display: block;
 }
 
@@ -65,12 +73,13 @@
   padding-top: 70px;
   padding-bottom: 78px;
   padding-left: 4.8%;
-  padding-right: 2.8%;
+  padding-right: 4.8%;
 }
 
 #toboTokenInfo #infoDetails {
   /* border-right: 1px solid var(--tobo-dark); */
-  padding-left: 6.8%;
+  /* padding-left: 6.8%; */
+  width: 100%;
 }
 
 #infoDetails a {

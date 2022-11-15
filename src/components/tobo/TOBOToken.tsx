@@ -87,7 +87,14 @@ function TokenInfo(props: { token: any }) {
           <br />
           <br />
           <br />
-          <span>Owned by:</span> {props.token.owner.id}
+          <span>Owned by:</span>{" "}
+          <a
+            href={`${etherscanBaseUrl}/address/${props.token.owner.id}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {props.token.owner.id}
+          </a>
         </p>
         <a
           href={`${etherscanBaseUrl}/token/${coreContractAddress}?a=${props.token.tokenId}`}

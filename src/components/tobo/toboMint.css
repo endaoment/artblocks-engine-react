@@ -30,7 +30,6 @@
 .toboMint button {
   float: right;
   cursor: pointer;
-  min-width: 320px;
 }
 
 .toboMint button img {
