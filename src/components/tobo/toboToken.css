@@ -48,8 +48,7 @@
     padding-bottom: 30px;
     padding-top: 24px;
   }
-
-  #toboTokenPreview iframe {
+  #toboTokenPreview .toboMint {
     width: 85%;
   }
 
