@@ -2,6 +2,7 @@
 
 .toboMint {
   border-radius: 0 0 12px 12px;
+  background-color: #fafafa;
 }
 
 .toboMint img {
@@ -30,7 +31,6 @@
 .toboMint button {
   float: right;
   cursor: pointer;
-  min-width: 320px;
 }
 
 .toboMint button img {
