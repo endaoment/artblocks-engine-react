@@ -161,7 +161,7 @@ a#projectsArtBlocks img#artBlocksArrow {
 }
 
 #toboProjects .projectDetails p {
-  margin-top: 25px;
+  margin-top: 12px;
   width: 100%;
   margin-left: 0;
   font-size: 20px;
@@ -170,7 +170,16 @@ a#projectsArtBlocks img#artBlocksArrow {
   letter-spacing: 0.015em;
 }
 
-p#projectTime {
+#toboProjects .projectDetails > p {
+  margin-top: 25px;
+}
+
+#toboProjects .projectDetails p h3 {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+p#projectTime p {
   font-size: 20px;
   line-height: 134%;
   font-family: "inter-regular", sans-serif;
@@ -181,6 +190,11 @@ p#projectTime {
   border: 1px solid var(--tobo-dark);
   margin-top: 39px;
   color: var(--tobo-dark);
+}
+
+p#projectTime > p h3 {
+  width: 100%;
+  font-size: 24px;
 }
 
 p#projectTime span {

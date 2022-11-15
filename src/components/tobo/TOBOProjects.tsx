@@ -33,7 +33,7 @@ const TOBOProject = (props: { project: Project }) => {
         </h4>
         <p id="projectTime">
           This auction of 250 unique pieces is priced at 0.20Ξ each, beginning
-          at 12pm ET November 17th, 2022. The first five pieces have been minted
+          at 9pm ET November 15th, 2022. The first five pieces have been minted
           by the artist as a donation to Sostento, and as 1/1 pieces for auction
           on OpenSea in December.
           <br />
