@@ -103,7 +103,7 @@ function SplashModule2() {
         </p>
         <div id="splashModule2Mint">
           <TOBOButton text="Generate Artwork" action={mintClick} />
-          <span>Minting begins 4pm ET 11/17/22</span>
+          <span>Auction begins 4pm ET 11/17/22</span>
         </div>
         <p>
           "Having someone that will say 'I see you, let me go with you' is a
