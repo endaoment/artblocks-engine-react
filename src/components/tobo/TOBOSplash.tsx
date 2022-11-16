@@ -87,10 +87,10 @@ function SplashModule3() {
 /* SplashModule2 */
 
 function SplashModule2() {
-  const spaceClick = () => {
-    window.open(
-      "https://twitter.com/artblocksengine/status/1564256836764798978"
-    );
+  const navigate = useNavigate();
+
+  const mintClick = () => {
+    navigate("/project/0");
   };
 
   return (
@@ -101,7 +101,10 @@ function SplashModule2() {
           Our marquee generative art collection is a box of memories,a garden of
           hope,and a beacon of encouragement from generative artist Ryan Green.
         </p>
-        <TOBOButton text="About AB Engine" action={spaceClick} />
+        <div id="splashModule2Mint">
+          <TOBOButton text="Generate Artwork" action={mintClick} />
+          <span>Auction begins 4pm ET 11/17/22</span>
+        </div>
         <p>
           "Having someone that will say 'I see you, let me go with you' is a
           simple gesture that is profoundly encouraging.” -&nbsp;

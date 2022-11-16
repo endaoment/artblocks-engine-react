@@ -1,5 +1,14 @@
 /* SplashHeader */
 
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 #toboSplashHeader {
   position: sticky;
   top: 0px;
@@ -195,6 +204,12 @@ img#splashModule1Logo {
   margin-top: 31px;
 }
 
+@media (hover: hover) {
+  #toboSplashModule1 #splashModule1Mint button:hover {
+    background-color: var(--tobo-light);
+  }
+}
+
 #splashModule1Mint span {
   line-height: 1;
   margin-left: 3.4%;
@@ -294,6 +309,21 @@ img#splashModule1Logo {
 #toboSplashModule2 .moduleColumn.splashModuleColumnL button {
   margin-left: 80px;
   margin-top: 33px;
+}
+
+#toboSplashModule2 #splashModule2Mint button {
+  margin-top: 31px;
+}
+
+#splashModule2Mint span {
+  line-height: 1;
+  margin-left: 8.6%;
+  margin-top: 10px;
+  display: block;
+  padding-left: 10px;
+  font-family: "inter-regular", sans-serif;
+  font-size: 14px;
+  color: var(--tobo-dark);
 }
 
 #toboSplashModule2 .moduleColumn.splashModuleColumnR {
