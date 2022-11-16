@@ -2,7 +2,12 @@ import { toast } from "react-toastify";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { ContractTransaction, ContractReceipt } from "@ethersproject/contracts";
-import { confirmations as numConfirmations, etherscanBaseUrl } from "config";
+import {
+  confirmations as numConfirmations,
+  coreContractAddress,
+  etherscanBaseUrl,
+  tokenUrl,
+} from "config";
 
 const displayError = (customError: any, error: any) => (
   <>
@@ -62,7 +67,7 @@ export const notifyTx = async ({
   success = "Transaction succeeded",
   error = "Your transaction failed",
   method,
-  confirmations = numConfirmations || 5,
+  confirmations = numConfirmations || 3,
   onSubmitted,
   onSuccess,
   onError,
@@ -77,7 +82,19 @@ export const notifyTx = async ({
     });
     onSubmitted && onSubmitted();
     const receipt = await res.wait(confirmations);
-    if (receipt.status === 1) {
+    if (receipt.status === 1 && receipt.events) {
+      let minted = false;
+
+      const tokenId = parseInt(receipt?.events[0]?.topics[3], 16);
+
+      while (minted === false) {
+        const res = (await fetch(
+          `${tokenUrl}/${coreContractAddress}/${tokenId}`
+        )) as any;
+
+        minted = res.minted;
+      }
+
       toast.update(toastId, {
         render: displayMessage(success, txLink),
         type: toast.TYPE.SUCCESS,
