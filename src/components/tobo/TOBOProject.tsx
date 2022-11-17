@@ -18,11 +18,13 @@ function ProjectTokens(props: { id: string }) {
       <h3>MORE ARTWORK</h3>
 
       {project &&
-        [...Array(invocations < 10 ? invocations : 10)].map((_n, i: number) => (
-          <div key={i} className="projectTokensMint">
-            <TOBOMint invocation={i.toString()} />
-          </div>
-        ))}
+        [...Array(invocations < 100 ? invocations : 100)].map(
+          (_n, i: number) => (
+            <div key={i} className="projectTokensMint">
+              <TOBOMint invocation={i.toString()} />
+            </div>
+          )
+        )}
 
       <div className="clear"></div>
     </div>
