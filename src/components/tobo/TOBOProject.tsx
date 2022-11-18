@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import TOBOButton from "./TOBOButton";
 import TOBOMint from "./TOBOMint";
 import TOBOProjects from "./TOBOProjects";
@@ -12,13 +13,22 @@ function ProjectTokens(props: { id: string }) {
   const { data } = useProject(props.id);
   const project = data?.project;
   const invocations = parseInt(project?.invocations);
+  const [tokensShown, setTokensShown] = useState<number>(12);
+
+  const moreClick = () => {
+    if ((tokensShown + 12) >= invocations) {
+      setTokensShown(invocations);
+    } else {
+      setTokensShown(tokensShown + 12);
+    }
+  };
 
   return (
     <div id="toboProjectTokens">
       <h3>MORE ARTWORK</h3>
 
       {project &&
-        [...Array(invocations < 100 ? invocations : 100)].map(
+        [...Array(tokensShown)].map(
           (_n, i: number) => (
             <div key={i} className="projectTokensMint">
               <TOBOMint invocation={i.toString()} />
@@ -27,6 +37,7 @@ function ProjectTokens(props: { id: string }) {
         )}
 
       <div className="clear"></div>
+      { tokensShown < invocations && <button id="tokensViewMore" onClick={ moreClick }>VIEW MORE</button> }
     </div>
   );
 }

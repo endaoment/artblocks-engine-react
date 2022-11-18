@@ -123,6 +123,15 @@ a:hover {
   position: relative;
 }
 
+button#tokensViewMore {
+  font-family: "anonymous-pro-b", serif;
+  font-size: 48px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--tobo-dark);
+  cursor: pointer;
+  margin-top: 64px;
+}
+
 @media only screen and (max-width: 767px) {
   #toboPage main {
     margin-top: 60px;
