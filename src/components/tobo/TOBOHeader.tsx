@@ -25,7 +25,7 @@ const TOBOHeader = () => {
   return (
     <header>
       <h3 onClick={logoClick} className="masthead">The <span style={{color:"#7ac4e2"}}>Colors</span> That Heal</h3>
-      <ConnectWallet className={!isActive ? "hide" : ""} />
+      <ConnectWallet />
     </header>
   );
 };
