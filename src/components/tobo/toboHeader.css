@@ -48,23 +48,21 @@ img#toboMobileLogo {
   display: none;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 553px) {
   #toboPage header {
     height: 60px;
   }
 
   #toboPage header button {
-    display: none;
+    /*display: none;*/
   }
 
   img#toboLogo {
     display: none;
   }
 
-  img#toboMobileLogo {
-    display: inline;
-    height: 60px;
-    padding: 4px;
+  #toboPage  header h3 {
+    padding-top:60px;
   }
 
   #toboPage header button {
