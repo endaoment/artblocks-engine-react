@@ -1,11 +1,20 @@
 import "./toboFooter.css";
+import { useNavigate } from "react-router-dom";
 
 /* TOBOFooter */
 
 const TOBOFooter = () => {
+  
+const navigate = useNavigate();
+
+const headingClick = () => {
+  navigate(`/about`);
+};
+
   return (
     <footer>
-      <img
+      
+      <img onClick={headingClick}
         src="/img/tobo/logo-footer.svg"
         alt="TURNOUT FOR BURNOUT"
         id="footer-logo"
@@ -40,9 +49,9 @@ const TOBOFooter = () => {
         <div id="footerDetailsDisclaimer">
           <h6>About</h6>
           <p>
-            Turnout for Burnout is a fundraising effort dedicated to finding
-            solutions for burnout and combatting the resulting symptoms in local
-            healthcare worker populations.
+            <em>The Colors That Heal</em> is a project in support of "Turnout for Burnout," a fundraising effort dedicated to finding
+            solutions for burnout and combatting the resulting symptoms in local healthcare worker populations. To discover more ways 
+            to support the "Turnout for Burnout" campaign, <a href="/about">click here.</a>
           </p>
           <span>(c) 2022</span>
         </div>

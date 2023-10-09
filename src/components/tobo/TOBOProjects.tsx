@@ -18,11 +18,11 @@ const TOBOProject = (props: { project: Project }) => {
   const navigate = useNavigate();
 
   const ctaClick = () => {
-    navigate(`/project/${props.project.projectId}`);
+    navigate(`/`);
   };
 
   return (
-    <a className="toboProject" href={`/project/${props.project.projectId}`}>
+    <a className="toboProject" href={`/`}>
       <TOBOMint invocation="0" live />
       <div className="projectCircle"></div>
 

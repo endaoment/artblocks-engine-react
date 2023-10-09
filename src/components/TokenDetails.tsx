@@ -50,9 +50,6 @@ const TokenDetails = ({ id }: Props) => {
         <Link href="/" underline="hover" sx={{ color: '#666' }}>
           Home
         </Link>
-        <Link href={`/project/${token.project.projectId}`} underline="hover" sx={{ color: '#666' }}>
-          { token.project.name }
-        </Link>
         <Typography>
           #{ token.invocation }
         </Typography>

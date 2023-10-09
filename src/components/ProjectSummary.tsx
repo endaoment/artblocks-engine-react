@@ -40,7 +40,7 @@ const ProjectSummary = ({
         />
       </Box>
       <Box mt={2}>
-        <Link href={`/project/${project.projectId}`} underline="hover" sx={{ marginTop: 1, fontSize: 32 }}>
+        <Link href={`/`} underline="hover" sx={{ marginTop: 1, fontSize: 32 }}>
           { project.name }
         </Link>
         <Typography variant="h6" mb={2}>

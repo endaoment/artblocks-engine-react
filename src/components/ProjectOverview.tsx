@@ -58,11 +58,6 @@ const ProjectOverview = ({ project }:Props) => {
               startTime={project.minterConfiguration?.startTime}
             />
 
-            <Link href={`/project/${project.projectId}`} sx={{ display: 'block', marginTop: 3 }} underline="hover">
-              <Typography variant="h4">
-                { project.name }
-              </Typography>
-            </Link>
             <Typography variant="h6">
               { project.artistName }
             </Typography>

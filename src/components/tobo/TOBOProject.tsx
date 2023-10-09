@@ -51,9 +51,8 @@ function ProjectDetails(props: { id: string }) {
       </div>
 
       <div id="projectDetailsInfo">
-        <h3>{project && project.name}</h3>
         <div className="clear"></div>
-        <h4>{project && project.artistName}</h4>
+        <h4>by {project && project.artistName}</h4>
         <h5>
           <span>{project && project.invocations}</span> of{" "}
           <span>{project && project.maxInvocations}</span> generated
