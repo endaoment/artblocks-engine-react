@@ -7,9 +7,8 @@
   top: 0;
 }
 
-#toboPage header h1 {
+#toboPage header h3 {
   cursor: pointer;
-  width: max-content;
   margin: auto;
 }
 

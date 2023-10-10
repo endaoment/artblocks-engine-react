@@ -131,7 +131,7 @@ function TokenPreview(props: { token: any; invocation: string }) {
       <h4>
         <div>by {props.token.project.artistName}</div>
         <br />
-        <a onClick={headingClick}><em>VIEW PROJECT</em></a>
+        <a onClick={headingClick} style={{cursor:'pointer'}}><em>VIEW PROJECT</em></a>
       </h4>
     </div>
   );
