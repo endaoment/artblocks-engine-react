@@ -42,7 +42,7 @@
     "util": "^0.12.4"
   },
   "scripts": {
-    "start": "GENERATE_SOURCEMAP=false react-scripts start",
+    "start": "cross-env GENERATE_SOURCEMAP=false react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -67,6 +67,7 @@
   },
   "devDependencies": {
     "@typechain/ethers-v5": "^10.1.0",
+    "cross-env": "^7.0.3",
     "typechain": "^8.1.0"
   }
 }

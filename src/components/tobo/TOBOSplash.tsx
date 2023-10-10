@@ -9,7 +9,7 @@ import "./toboSplash.css";
 function SplashModule4() {
   const navigate = useNavigate();
   const mintClick = () => {
-    navigate("/project/0");
+    navigate("/");
   };
   return (
     <div className="toboModule" id="toboSplashModule4">
@@ -90,7 +90,7 @@ function SplashModule2() {
   const navigate = useNavigate();
 
   const mintClick = () => {
-    navigate("/project/0");
+    navigate("/");
   };
 
   return (
@@ -143,7 +143,7 @@ function SplashModule1() {
   };
 
   const mintClick = () => {
-    navigate("/project/0");
+    navigate("/");
   };
 
   return (

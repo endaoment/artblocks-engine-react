@@ -7,8 +7,7 @@ import { coreContractAddress } from 'config';
 import TOBOProject from 'components/tobo/TOBOProject';
 
 const ProjectPage = () => {
-  const { projectId } = useParams();
-
+  const { projectId = 0} = useParams();
   return (
     <TOBOPage>
       {/* {

@@ -12,10 +12,9 @@ function App() {
     <AppProviders>
       <Router>
         <Routes>
-          <Route index element={<HomePage />} />
-          <Route path="projects" element={<ProjectsPage />} />
-          <Route path="project/:projectId" element={<ProjectPage />} />
+          <Route index element={<ProjectPage />} />
           <Route path="token/:id" element={<TokenPage />} />
+          <Route path="about" element={<HomePage />} />
         </Routes>
       </Router>
 

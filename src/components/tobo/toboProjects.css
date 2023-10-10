@@ -51,6 +51,7 @@ a#projectsArtBlocks img#artBlocksArrow {
 @media only screen and (max-width: 767px) {
   #toboProjects {
     padding-bottom: 94px;
+    overflow: hidden;
   }
 
   #toboProjects h3 {

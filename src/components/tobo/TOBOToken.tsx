@@ -132,19 +132,18 @@ function TokenPreview(props: { token: any; invocation: string }) {
   const navigate = useNavigate();
 
   const headingClick = () => {
-    navigate(`/project/0`);
+    navigate(`/`);
   };
 
   return (
     <div id="toboTokenPreview">
       <TOBOMint invocation={props.invocation} live={true} />
       {/*<img src={ `${ mediaUrl }/thumb/${ props.invocation }.png` } alt="" />*/}
-      <h3 onClick={headingClick}>
-        {props.token.project.name}
-        <span>by {props.token.project.artistName}</span>
+      <h4>
+        <div>by {props.token.project.artistName}</div>
         <br />
-        <i>VIEW PROJECT</i>
-      </h3>
+        <a onClick={headingClick} style={{cursor:'pointer'}}><em>VIEW PROJECT</em></a>
+      </h4>
     </div>
   );
 }

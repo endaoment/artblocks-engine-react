@@ -15,16 +15,8 @@ const TOBOHeader = () => {
 
   return (
     <header>
-      <h1 onClick={logoClick}>
-        <img src="/img/tobo/logo.svg" alt="TURNOUT FOR BURNOUT" id="toboLogo" />
-        <img
-          src="/img/tobo/logo-footer.svg"
-          alt="TURNOUT FOR BURNOUT"
-          id="toboMobileLogo"
-        />
-      </h1>
-
-      <ConnectWallet className={!isActive ? "hide" : ""} />
+      <h3 onClick={logoClick} className="masthead">The <span style={{color:"#7ac4e2"}}>Colors</span> That Heal</h3>
+      <ConnectWallet />
     </header>
   );
 };
