@@ -14,6 +14,7 @@ function App() {
         <Routes>
           <Route index element={<ProjectPage />} />
           <Route path="token/:id" element={<TokenPage />} />
+          <Route path="token/:contract/:id" element={<TokenPage />} />
           <Route path="about" element={<HomePage />} />
         </Routes>
       </Router>

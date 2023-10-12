@@ -5,14 +5,19 @@ import { useParams } from 'react-router-dom';
 import TOBOToken from 'components/tobo/TOBOToken';
 
 const TokenPage = () => {
-  const { id } = useParams();
+  const { contract,id } = useParams();
+  let nid = id;
+  if(contract)
+  {
+    nid = contract+id;
+  }
 
   return (
     <TOBOPage>
       {/* {
         id && <TokenDetails id={id} />
       } */}
-      <TOBOToken id={id} />
+      <TOBOToken id={nid} />
     </TOBOPage>
   )
 }
